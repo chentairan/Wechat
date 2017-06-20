@@ -8,6 +8,7 @@ AppID(小程序ID): wx2994ad5bb8b672e0
 <h1>学习指南：</h1>
 
 <h3>必备：</h3></br>
+Git:<a href=http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000>Git教程<a></br>
 HTML：http://w3school.com.cn/html/index.asp</br>
 CSS：http://w3school.com.cn/css/index.asp</br>
 JavaScript：http://w3school.com.cn/js/index.asp</br>
