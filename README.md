@@ -21,6 +21,7 @@ Behance:https://www.behance.net</br>
 Dribbble:https://dribbble.com</br>
 
 <h3>后端：</h3></br>
+腾讯云官方微信小程序实验室：https://www.qcloud.com/developer/labs/lab/10004/console</br>
 网站构建：http://www.w3school.com.cn/site/index.asp</br>
 PHP：http://www.w3school.com.cn/php/index.asp</br>
 MySQL：http://www.w3school.com.cn/sql/index.asp</br>
