@@ -23,6 +23,7 @@ AppID(小程序ID): wx2994ad5bb8b672e0
 
 <h3>后端：</h3>
 <p>腾讯云官方微信小程序实验室：https://www.qcloud.com/developer/labs/lab/10004/console</p>
+<p>Linux：Linux笔记</p>
 <p>网站构建：http://www.w3school.com.cn/site/index.asp</p>
 <p>PHP：http://www.w3school.com.cn/php/index.asp</p>
 <p>MySQL：http://www.w3school.com.cn/sql/index.asp</p>
@@ -30,7 +31,7 @@ AppID(小程序ID): wx2994ad5bb8b672e0
 
 <font color="red"><h2>`备注：`</h2></font>
 <p>必备知识需要所有人都了解，另外还需要学习侧重方向的知识。</p>
-<h3>学习它们的用途：</h3>
+<h2>学习它们的用途：</h2>
 <p>Git：管理代码，置于Github平台上。学习之后，找陈泰然添加SSH KEY</p>
 <p>HTML：网页开发的基础语言，简单易懂。学习时不必纠结具体属性名称，而是要有整体性的广层面的理解。用到时知道在哪查阅手册即可。基础知识学习 2~3 小时就可以基本掌握。</p>
 <p>CSS：HTML 下的样式描述语言，用于美化和统一格式使用，同 HTML 一样注重广度学习。</p>
@@ -40,11 +41,7 @@ AppID(小程序ID): wx2994ad5bb8b672e0
 <p>Photoshop：图片处理、美化。</p>
 <p>审美：参考国外的交互设计。</p>
 <p>腾讯云官方微信小程序实验室：提供了腾讯云小程序配置的教程和开发流程。</p>
+<p>Linux：服务器系统基本操作，用该系统（Ubuntu）开发PHP、MySQL</p>
 <p>网站构建：基础的网站构建概念。</p>
 <p>PHP：写服务器程序。</p>
 <p>MySQL：服务器的数据存储。</p>
-
-
-
-
-
