@@ -5,7 +5,7 @@ Hello Wechat!
 AppID(小程序ID): wx2994ad5bb8b672e0
 
 
-#学习指南：
+学习指南：
 
 必备：
 HTML：http://w3school.com.cn/html/index.asp
