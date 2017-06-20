@@ -28,7 +28,7 @@ AppID(小程序ID): wx2994ad5bb8b672e0
 <p>MySQL：http://www.w3school.com.cn/sql/index.asp</p>
 
 
-<h2 style="color:red;">备注：</h2>
+<font color="red"><h2>备注：</h2></font>
 <p>必备知识需要所有人都了解，另外还需要学习侧重方向的知识。</p>
 <h3>学习它们的用途：</h3>
 <p>Git：管理代码，置于Github平台上。学习之后，找陈泰然添加SSH KEY</p>
