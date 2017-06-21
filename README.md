@@ -3,6 +3,8 @@ Hello Wechat!
 暑假正式开工！
 
 AppID(小程序ID): wx2994ad5bb8b672e0
+
+<p><a href=https://raw.githubusercontent.com/chentairan/Wechat/master/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B.docx>开发环境配置教程</a><p>
 <h1>目录：</h1>
 <a href="#C1">学习指南</a>
 <ul type="disc">
@@ -35,7 +37,7 @@ AppID(小程序ID): wx2994ad5bb8b672e0
 
 <a name="C4"><h3>后端：</h3></a>
 <p>腾讯云官方微信小程序实验室：https://www.qcloud.com/developer/labs/lab/10004/console</p>
-<p>Linux：Linux笔记</p>
+<p>Linux：<a href=https://github.com/chentairan/Wechat/raw/master/Linux笔记.pdf>Linux笔记</a></p>
 <p>网站构建：http://www.w3school.com.cn/site/index.asp</p>
 <p>PHP：http://www.w3school.com.cn/php/index.asp</p>
 <p>MySQL：http://www.w3school.com.cn/sql/index.asp</p>
