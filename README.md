@@ -4,14 +4,14 @@ Hello Wechat!
 
 AppID(小程序ID): wx2994ad5bb8b672e0
 <h1>目录：</h1>
-<a href="#C1">学习指南：</a>
+<a href="#C1">学习指南</a>
 <ul type="disc">
-	<li><a href="#C2">必备：</a></li>
-	<li><a href="#C3">前端：</a></li>
-	<li><a href="#C4">后端：</a></li>
+	<li><a href="#C2">必备</a></li>
+	<li><a href="#C3">前端</a></li>
+	<li><a href="#C4">后端</a></li>
 </ul> 
-<a href="#C5"><p>备注：<p></a>
-<a href="#C6"><p>学习它们的用途：<p></a>
+<a href="#C5"><p>备注<p></a>
+<a href="#C6"><p>学习它们的用途<p></a>
 
 
 
