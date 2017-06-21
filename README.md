@@ -29,7 +29,7 @@ AppID(小程序ID): wx2994ad5bb8b672e0
 <p>微信小程序官方文档：https://mp.weixin.qq.com/debug/wxadoc/dev/index.html?t=201769</p>
 
 <a name="C3"><h3>前端：</h3></a>
-<p>PS</p>
+<p>PhotoShop</p>
 <h4>审美：</h4>
 <p>Behance:https://www.behance.net</p>
 <p>Dribbble:https://dribbble.com</p>
