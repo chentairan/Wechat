@@ -4,10 +4,22 @@ Hello Wechat!
 
 AppID(小程序ID): wx2994ad5bb8b672e0
 <h1>目录：</h1>
-<a href="#C1">学习指南</a>
-<a name="C1"><h1>学习指南：</h1></a>
+<a href="#C1">学习指南：</a>
+<ul type="disc">
+	<li><a href="#C2">必备：</a></li>
+	<li><a href="#C3">前端：</a></li>
+	<li><a href="#C4">后端：</a></li>
+</ul> 
+<a href="#C5"><p>备注：<p></a>
+<a href="#C6"><p>学习它们的用途：<p></a>
 
-<h3>必备：</h3></br>
+
+
+
+
+
+<a name="C1"><h1>学习指南：</h1></a>
+<a name="C2"><h3>必备：</h3></a>
 <p>Git：<a href=http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000>Git教程<a></p>
 <p>HTML：http://w3school.com.cn/html/index.asp</p>
 <p>CSS：http://w3school.com.cn/css/index.asp</p>
@@ -15,13 +27,13 @@ AppID(小程序ID): wx2994ad5bb8b672e0
 <p>JSON：http://w3school.com.cn/json/index.asp</p>
 <p>微信小程序官方文档：https://mp.weixin.qq.com/debug/wxadoc/dev/index.html?t=201769</p>
 
-<h3>前端：</h3>
+<a name="C3"><h3>前端：</h3></a>
 <p>PS</p>
 <h4>审美：</h4>
 <p>Behance:https://www.behance.net</p>
 <p>Dribbble:https://dribbble.com</p>
 
-<h3>后端：</h3>
+<a name="C4"><h3>后端：</h3></a>
 <p>腾讯云官方微信小程序实验室：https://www.qcloud.com/developer/labs/lab/10004/console</p>
 <p>Linux：Linux笔记</p>
 <p>网站构建：http://www.w3school.com.cn/site/index.asp</p>
@@ -29,9 +41,9 @@ AppID(小程序ID): wx2994ad5bb8b672e0
 <p>MySQL：http://www.w3school.com.cn/sql/index.asp</p>
 
 
-<font color="red"><h2>`备注：`</h2></font>
+<a name="C5"><h2>备注：</h2></a>
 <p>必备知识需要所有人都了解，另外还需要学习侧重方向的知识。</p>
-<h2>学习它们的用途：</h2>
+<a name="C6"><h2>学习它们的用途：</h2></a>
 <p>Git：管理代码，置于Github平台上。学习之后，找陈泰然添加SSH KEY</p>
 <p>HTML：网页开发的基础语言，简单易懂。学习时不必纠结具体属性名称，而是要有整体性的广层面的理解。用到时知道在哪查阅手册即可。基础知识学习 2~3 小时就可以基本掌握。</p>
 <p>CSS：HTML 下的样式描述语言，用于美化和统一格式使用，同 HTML 一样注重广度学习。</p>
