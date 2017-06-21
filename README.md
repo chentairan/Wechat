@@ -4,7 +4,7 @@ Hello Wechat!
 
 AppID(小程序ID): wx2994ad5bb8b672e0
 
-<p><a href=https://raw.githubusercontent.com/chentairan/Wechat/master/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B.docx>开发环境配置教程</a><p>
+<p><a href=https://github.com/chentairan/Wechat/raw/master/开发环境配置教程.docx>开发环境配置教程</a><p>
 <h1>目录：</h1>
 <a href="#C1">学习指南</a>
 <ul type="disc">
