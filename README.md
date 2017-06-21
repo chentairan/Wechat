@@ -12,9 +12,8 @@ AppID(小程序ID): wx2994ad5bb8b672e0
 	<li><a href="#C3">前端</a></li>
 	<li><a href="#C4">后端</a></li>
 </ul> 
-<a href="#C5"><p>备注<p></a>
-<a href="#C6"><p>学习它们的用途<p></a>
-
+<a href="#C5"><p>学习它们的用途<p></a>
+<a href="#C6"><p>备注<p></a>
 
 
 
@@ -42,10 +41,7 @@ AppID(小程序ID): wx2994ad5bb8b672e0
 <p>PHP：http://www.w3school.com.cn/php/index.asp</p>
 <p>MySQL：http://www.w3school.com.cn/sql/index.asp</p>
 
-
-<a name="C5"><h2>备注：</h2></a>
-<p>必备知识需要所有人都了解，另外还需要学习侧重方向的知识。</p>
-<a name="C6"><h2>学习它们的用途：</h2></a>
+<a name="C5"><h2>学习它们的用途：</h2></a>
 <p>Git：管理代码，置于Github平台上。学习之后，找陈泰然添加SSH KEY</p>
 <p>HTML：网页开发的基础语言，简单易懂。学习时不必纠结具体属性名称，而是要有整体性的广层面的理解。用到时知道在哪查阅手册即可。基础知识学习 2~3 小时就可以基本掌握。</p>
 <p>CSS：HTML 下的样式描述语言，用于美化和统一格式使用，同 HTML 一样注重广度学习。</p>
@@ -59,3 +55,7 @@ AppID(小程序ID): wx2994ad5bb8b672e0
 <p>网站构建：基础的网站构建概念。</p>
 <p>PHP：写服务器程序。</p>
 <p>MySQL：服务器的数据存储。</p>
+
+<a name="C6"><h2>备注：</h2></a>
+<p>必备知识需要所有人都了解，另外还需要学习侧重方向的知识。</p>
+<p>从远程库克隆命令：git clone git@github.com:chentairan/Wechat.git</p>
