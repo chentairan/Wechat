@@ -3,9 +3,9 @@ Hello Wechat!
 暑假正式开工！
 
 AppID(小程序ID): wx2994ad5bb8b672e0
-
-
-<h1>学习指南：</h1>
+<h1>目录：</h1>
+<a href="#C1">学习指南</a>
+<a name="C1"><h1>学习指南：</h1></a>
 
 <h3>必备：</h3></br>
 <p>Git：<a href=http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000>Git教程<a></p>
