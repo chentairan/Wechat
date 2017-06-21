@@ -36,10 +36,10 @@ AppID(小程序ID): wx2994ad5bb8b672e0
 
 <a name="C4"><h3>后端：</h3></a>
 <p>腾讯云官方微信小程序实验室：https://www.qcloud.com/developer/labs/lab/10004/console</p>
-<p>Linux：<a href=https://github.com/chentairan/Wechat/raw/master/Linux笔记.pdf>Linux笔记</a></p>
+<p>Linux：<a href=https://github.com/chentairan/Wechat/raw/master/Linux笔记.pdf>Linux笔记</a><a href=https://www.w3cschool.cn/linux/>Linux教程</a></p>
 <p>网站构建：http://www.w3school.com.cn/site/index.asp</p>
 <p>PHP：http://www.w3school.com.cn/php/index.asp</p>
-<p>MySQL：http://www.w3school.com.cn/sql/index.asp</p>
+<p>MySQL：https://www.w3cschool.cn/mysql/</p>
 
 <a name="C5"><h2>学习它们的用途：</h2></a>
 <p>Git：管理代码，置于Github平台上。学习之后，找陈泰然添加SSH KEY</p>
