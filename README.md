@@ -58,4 +58,4 @@ AppID(小程序ID): wx2994ad5bb8b672e0
 
 <a name="C6"><h2>备注：</h2></a>
 <p>必备知识需要所有人都了解，另外还需要学习侧重方向的知识。</p>
-<p>从远程库克隆命令：git clone git@github.com:chentairan/Wechat.git</p>
+<p><b>从远程库克隆命令：</b>git clone git@github.com:chentairan/Wechat.git</p>
