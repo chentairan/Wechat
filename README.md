@@ -21,25 +21,25 @@ AppID(小程序ID): wx2994ad5bb8b672e0
 
 <a name="C1"><h1>学习指南：</h1></a>
 <a name="C2"><h3>必备：</h3></a>
-<p>Git：<a href=http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000>Git教程<a></p>
-<p>HTML：http://w3school.com.cn/html/index.asp</p>
-<p>CSS：http://w3school.com.cn/css/index.asp</p>
-<p>JavaScript：http://w3school.com.cn/js/index.asp</p>
-<p>JSON：http://w3school.com.cn/json/index.asp</p>
-<p>微信小程序官方文档：https://mp.weixin.qq.com/debug/wxadoc/dev/index.html?t=201769</p>
+<p><b>Git：</b><a href=http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000>Git教程<a></p>
+<p><b>HTML：</b>http://w3school.com.cn/html/index.asp</p>
+<p><b>CSS：</b>http://w3school.com.cn/css/index.asp</p>
+<p><b>JavaScript：</b>http://w3school.com.cn/js/index.asp</p>
+<p><b>JSON：</b>http://w3school.com.cn/json/index.asp</p>
+<p><b>微信小程序官方文档：</b>https://mp.weixin.qq.com/debug/wxadoc/dev/index.html?t=201769</p>
 
 <a name="C3"><h3>前端：</h3></a>
-<p>PhotoShop</p>
-<h4>审美：</h4>
-<p>Behance:https://www.behance.net</p>
-<p>Dribbble:https://dribbble.com</p>
+<p><b>PhotoShop</b></p>
+<h4><b>审美：</b></h4>
+<p><b>Behance:</b>https://www.behance.net</p>
+<p><b>Dribbble:</b>https://dribbble.com</p>
 
 <a name="C4"><h3>后端：</h3></a>
-<p>腾讯云官方微信小程序实验室：https://www.qcloud.com/developer/labs/lab/10004/console</p>
-<p>Linux：<a href=https://github.com/chentairan/Wechat/raw/master/Linux笔记.pdf>Linux笔记</a><a href=https://www.w3cschool.cn/linux/>Linux教程</a></p>
-<p>网站构建：http://www.w3school.com.cn/site/index.asp</p>
-<p>PHP：http://www.w3school.com.cn/php/index.asp</p>
-<p>MySQL：https://www.w3cschool.cn/mysql/</p>
+<p><b>腾讯云官方微信小程序实验室：</b>https://www.qcloud.com/developer/labs/lab/10004/console</p>
+<p><b>Linux：</b><a href=https://github.com/chentairan/Wechat/raw/master/Linux笔记.pdf>Linux笔记</a><a href=https://www.w3cschool.cn/linux/>Linux教程</a></p>
+<p><b>网站构建：</b>http://www.w3school.com.cn/site/index.asp</p>
+<p><b>PHP：</b>http://www.w3school.com.cn/php/index.asp</p>
+<p><b>MySQL：</b>https://www.w3cschool.cn/mysql/</p>
 
 <a name="C5"><h2>学习它们的用途：</h2></a>
 <p><b>Git：</b>其作用是方便团队协作开发，将代码上传至Github平台上，共享给所有人，Github会自动统计上传代码量，也起到监督的作用，并且会保留历史记录，便于后期维护。简单配置好Git环境之后，找陈泰然添加SSH KEY，将本地的Git程序库链接到Github上</p>
