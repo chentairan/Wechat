@@ -1,7 +1,7 @@
 <h1>小程序开发指南</h1>
 <h2>开发进程</h2>
 <h2>AppID(小程序ID): wx2994ad5bb8b672e0</h2>
-<img src="https://github.com/chentairan/Wechat/blob/master/微信小程序项目/图片素材/流程图.jpg" width="800" height="100" />
+<img src="https://github.com/chentairan/Wechat/blob/master/微信小程序项目/图片素材/流程图1.jpg" width="800" height="100" />
 </p>
 
 <p><a href=https://github.com/chentairan/Wechat/raw/master/开发环境配置教程.docx>开发环境配置教程</a><p>
