@@ -39,7 +39,7 @@
 
 <a name="C4"><h3>后端：</h3></a>
 <p><b>腾讯云官方微信小程序实验室：</b>https://www.qcloud.com/developer/labs/lab/10004/console</p>
-<p><b>Linux：</b><a href=https://github.com/chentairan/Wechat/raw/master/Linux笔记.pdf>Linux笔记</a><a href=https://www.w3cschool.cn/linux/>Linux教程</a></p>
+<p><b>Linux：</b><a href=https://github.com/chentairan/Wechat/raw/master/Linux笔记.pdf>Linux笔记</a>、<a href=https://www.w3cschool.cn/linux/>Linux教程</a></p>
 <p><b>网站构建：</b>http://www.w3school.com.cn/site/index.asp</p>
 <p><b>PHP：</b>http://www.w3school.com.cn/php/index.asp</p>
 <p><b>MySQL：</b>https://www.w3cschool.cn/mysql/</p>
