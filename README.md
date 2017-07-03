@@ -32,7 +32,7 @@
 <p><b>微信小程序官方文档：</b>https://mp.weixin.qq.com/debug/wxadoc/dev/index.html?t=201769</p>
 
 <a name="C3"><h3>前端：</h3></a>
-<p><b>PhotoShop</b></p>
+<p><b>PhotoShop</b>http://study.163.com/course/introduction/269006.htm</p>
 <h4><b>审美：</b></h4>
 <p><b>Behance:</b>https://www.behance.net</p>
 <p><b>Dribbble:</b>https://dribbble.com</p>
