@@ -34,8 +34,8 @@
 <a name="C3"><h3>前端：</h3></a>
 <p><b>PhotoShop：</b>http://study.163.com/course/introduction/269006.htm</p>
 <h4><b>审美：</b></h4>
-<p><b>Behance:</b>https://www.behance.net</p>
-<p><b>Dribbble:</b>https://dribbble.com</p>
+<p><b>Behance：</b>https://www.behance.net</p>
+<p><b>Dribbble：</b>https://dribbble.com</p>
 
 <a name="C4"><h3>后端：</h3></a>
 <p><b>腾讯云官方微信小程序实验室：</b>https://www.qcloud.com/developer/labs/lab/10004/console</p>
