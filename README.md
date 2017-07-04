@@ -1,3 +1,13 @@
+<html>
+<head>
+	<script type="text/javascript">
+		function myFunction()
+		{
+			alert("Hello World!");
+		}
+	</script>
+</head>
+<body>
 <h1>小程序开发指南</h1>
 <h2>AppID(小程序ID): wx2994ad5bb8b672e0</h2>
 <h2>开发进程：</h2>
@@ -56,10 +66,12 @@
 <p><b>网站构建：</b>基础的网站构建概念。</p>
 <p><b>PHP：</b>写服务器程序。</p>
 <p><b>MySQL：</b>服务器的数据存储。</p>
-
+<button type="button" onclick="myFunction()">点击这里</button>>
 <a name="C6"><h2>备注：</h2></a>
 <h2>Git常用命令速查表：</h2>
 <img src="https://github.com/chentairan/Wechat/blob/master/微信小程序项目/图片素材/Git常用命令速查表.jpg">
 </p>
 <p>必备知识需要所有人都了解，另外还需要学习侧重方向的知识。</p>
 <p><b>从远程库克隆命令：</b>git clone git@github.com:chentairan/Wechat.git</p>
+</body>
+</html>
