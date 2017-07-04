@@ -58,7 +58,7 @@
 <p><b>MySQL：</b>服务器的数据存储。</p>
 
 <a name="C6"><h2>备注：</h2></a>
-<h2>Git常用命令速查表</h2>>
+<h2>Git常用命令速查表：</h2>
 <img src="https://github.com/chentairan/Wechat/blob/master/微信小程序项目/图片素材/Git常用命令速查表.jpg">
 </p>
 <p>必备知识需要所有人都了解，另外还需要学习侧重方向的知识。</p>
