@@ -2,7 +2,7 @@
 <h2>开发进程：</h2>
 <img src="https://github.com/chentairan/Wechat/blob/master/微信小程序项目/图片素材/流程图.jpg">
 </p>
-<p>黄色圆代表正在进行，红色圆代表待进行，绿色圆代表已完成</p>
+<p>黄色圆代表正在进行，红色圆代表待进行，绿色圆代表已完成,AJAX和JSON待确定</p>
 <img src="https://github.com/chentairan/Wechat/blob/master/微信小程序项目/图片素材/Git常用命令速查表.jpg">
 </p>
 <h2>AppID(小程序ID): wx2994ad5bb8b672e0</h2>
