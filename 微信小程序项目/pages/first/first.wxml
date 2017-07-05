@@ -1,0 +1,4 @@
+<!--first.wxml-->
+<button class="button-li">理教</button>
+<button class="button-za">综教A</button>
+<button class="button-zb">综教B</button>
