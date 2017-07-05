@@ -3,7 +3,7 @@
 <h1>小程序开发指南</h1>
 <h2>AppID(小程序ID): wx2994ad5bb8b672e0</h2>
 <h2>开发进程：</h2>
-<img src="https://github.com/chentairan/Wechat/blob/master/微信小程序项目/图片素材/流程图.jpg">
+<img src="https://github.com/chentairan/Wechat/blob/master/image/流程图.jpg">
 </p>
 <p>黄色圆代表正在进行，红色圆代表待进行，绿色圆代表已完成，AJAX和JSON待确定</p>
 <p><a href=https://github.com/chentairan/Wechat/blob/master/开发环境配置教程.md>开发环境配置教程</a><p>
@@ -60,7 +60,7 @@
 <p><b>MySQL：</b>服务器的数据存储。</p>
 <a name="C6"><h2>备注：</h2></a>
 <h2>Git常用命令速查表：</h2>
-<img src="https://github.com/chentairan/Wechat/blob/master/微信小程序项目/图片素材/Git常用命令速查表.jpg">
+<img src="https://github.com/chentairan/Wechat/blob/master/image/Git常用命令速查表.jpg">
 </p>
 <p>必备知识需要所有人都了解，另外还需要学习侧重方向的知识。</p>
 <p><b>从远程库克隆命令：</b>git clone git@github.com:chentairan/Wechat.git</p>
