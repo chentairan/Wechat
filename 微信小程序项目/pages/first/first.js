@@ -11,7 +11,7 @@ Page({
   buttonli : function() {
     console.log('小程序已启动')
     this.setData({
-      text: '您单击了按钮'
+      text: '您单击了按钮-理教'
     })
   },
   /**
