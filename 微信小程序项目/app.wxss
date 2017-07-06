@@ -9,3 +9,24 @@
   box-sizing: border-box;
 } 
 
+/*字体样式*/
+.color-text
+{
+  color: snow;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 32rpx;
+  display:-webkit-box;
+  -webkit-box-pack:center;
+  align-items: center;
+  line-height: 75rpx;
+}
+
+/*字体样式*/
+.color-text2
+{
+  color: black;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 32rpx;
+  display:-webkit-box;
+  -webkit-box-pack:center;
+}

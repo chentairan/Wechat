@@ -8,12 +8,12 @@ Page({
     text:''
   },
 
-  buttonli : function() {
+  buttonli : function() 
+  {
     console.log('小程序已启动')
-    this.setData({
-      text: '您单击了按钮-理教'
-    })
+    this.setData({text: '赶快滚去实现 js ！！！'})
   },
+
   /**
    * 生命周期函数--监听页面加载
    */
@@ -70,7 +70,3 @@ Page({
   
   }
 })
-
-
-
-
