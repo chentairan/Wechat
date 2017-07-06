@@ -1,4 +1,5 @@
 <!--first.wxml-->
+<<<<<<< HEAD
 <view>
 
 <!--理教 Button-->
@@ -13,3 +14,15 @@
 <text class="color-text2">{{text}}</text>
 
 </view>
+=======
+<<<<<<< HEAD
+<button class="button-li blue">理教</button>
+<button class="button-za pink">综教A</button>
+<button class="button-zb rosy">综教B</button>
+=======
+<button class="button-li" bindtap="buttonli">理教</button>
+<button class="button-za" bindtap="buttonza">综教A</button>
+<button class="button-zb" bindtap="buttonzb">综教B</button>
+<text>{{text}}</text>
+>>>>>>> 68730f6a78fd6c768ee1c41d4c1cf85d678d4d3a
+>>>>>>> 4f51d57f20860c674fd570737196a2f1476c18e3
