@@ -3,12 +3,14 @@
 .button-li {
   width: 150rpx;
   height: 75rpx;
-  border-radius: 80rpx;
+  border-radius: 36rpx;
   position: absolute;
   left: 68rpx;
   top: 60rpx;
   font-size: 32rpx;
   color :white;
+  box-shadow: 0rpx 6rpx 5rpx #C9C9C9;
+  line-height: 75rpx;
 }
 .button-li:hover {  
   position: absolute;
@@ -46,12 +48,14 @@
   background-color: #db4378;
   width: 150rpx;
   height: 75rpx;
-  border-radius: 80rpx;
+  border-radius: 36rpx;
   position: absolute;
   left:300rpx;
   top:60rpx;
   font-size: 32rpx;
   color :white;
+  box-shadow: 0rpx 6rpx 5rpx #C9C9C9;
+  line-height: 75rpx;
 }
 .button-za:hover {  
   position: absolute;
@@ -88,12 +92,13 @@
 .button-zb {
   width: 150rpx;
   height: 75rpx;
-  border-radius: 80rpx;
+  border-radius: 36rpx;
   position: absolute;
   left:516rpx;
   top:60rpx;
   font-size: 32rpx;
   color :white;
+<<<<<<< HEAD
 }
 .button-zb:hover {  
     text-decoration: none;  
@@ -124,3 +129,8 @@
   filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#bf404f', endColorstr='#f16c7c');  
 }  
   
+=======
+  box-shadow: 0rpx 6rpx 5rpx #C9C9C9;
+  line-height: 75rpx;
+}
+>>>>>>> 68730f6a78fd6c768ee1c41d4c1cf85d678d4d3a

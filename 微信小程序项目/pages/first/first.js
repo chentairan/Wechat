@@ -5,9 +5,15 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    text:''
   },
 
+  buttonli : function() {
+    console.log('小程序已启动')
+    this.setData({
+      text: '您单击了按钮-理教'
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -64,3 +70,7 @@ Page({
   
   }
 })
+
+
+
+
