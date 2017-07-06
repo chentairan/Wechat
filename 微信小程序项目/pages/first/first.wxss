@@ -4,34 +4,40 @@
   background-color: #81a7c1;
   width: 150rpx;
   height: 75rpx;
-  border-radius: 80rpx;
+  border-radius: 36rpx;
   position: absolute;
   left: 68rpx;
   top: 60rpx;
   font-size: 32rpx;
   color :white;
+  box-shadow: 0rpx 6rpx 5rpx #C9C9C9;
+  line-height: 75rpx;
 }
 /*综教A样式*/
 .button-za {
   background-color: #db4378;
   width: 150rpx;
   height: 75rpx;
-  border-radius: 80rpx;
+  border-radius: 36rpx;
   position: absolute;
   left:300rpx;
   top:60rpx;
   font-size: 32rpx;
   color :white;
+  box-shadow: 0rpx 6rpx 5rpx #C9C9C9;
+  line-height: 75rpx;
 }
 /*综教B样式*/
 .button-zb {
   background-color: #d39b78;
   width: 150rpx;
   height: 75rpx;
-  border-radius: 80rpx;
+  border-radius: 36rpx;
   position: absolute;
   left:516rpx;
   top:60rpx;
   font-size: 32rpx;
   color :white;
+  box-shadow: 0rpx 6rpx 5rpx #C9C9C9;
+  line-height: 75rpx;
 }

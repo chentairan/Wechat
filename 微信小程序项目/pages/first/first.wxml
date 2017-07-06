@@ -1,4 +1,5 @@
 <!--first.wxml-->
-<button class="button-li">理教</button>
-<button class="button-za">综教A</button>
-<button class="button-zb">综教B</button>
+<button class="button-li" bindtap="buttonli">理教</button>
+<button class="button-za" bindtap="buttonza">综教A</button>
+<button class="button-zb" bindtap="buttonzb">综教B</button>
+<text>{{text}}</text>
