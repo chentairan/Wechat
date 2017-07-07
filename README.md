@@ -2,13 +2,13 @@
 <body>
 <h1>小程序开发指南</h1>
 <h2>AppID(小程序ID): wx2994ad5bb8b672e0</h2>
-<h2>分工:</h2>
-<p>WXML:李德莹、雷凡丁</p>
-<p>WXSS:关迎丹</p>
-<p>JavaScript:施念</p>
-<p>API:徐泽文</p>
+<h2>分工：</h2>
+<p>WXML：李德莹、雷凡丁</p>
+<p>WXSS：关迎丹</p>
+<p>JavaScript：施念</p>
+<p>API：徐泽文</p>
 <p>设计：朱宇旻</p>
-<p>后端:陈泰然</p>
+<p>后端：陈泰然</p>
 <h2>开发进程：</h2>
 <img src="https://github.com/chentairan/Wechat/blob/master/image/流程图.jpg">
 </p>
