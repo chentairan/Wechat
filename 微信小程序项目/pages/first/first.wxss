@@ -33,7 +33,7 @@
 {
   background: -webkit-radial-gradient(rgba(175,95,45,1),rgba(175,95,45,0.7));
   position: absolute;
-  left:516rpx;
+  left:532rpx;
   top:60rpx;
 }
 
@@ -65,6 +65,6 @@
 {
   background: -webkit-radial-gradient(rgba(255,167,0,1),rgba(255,167,0,0.7));
   position: absolute;
-  left:732rpx;
+  left:764rpx;
   top:60rpx;
 }
