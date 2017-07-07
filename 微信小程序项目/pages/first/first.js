@@ -5,15 +5,24 @@ Page({
    * 页面的初始数据
    */
   data: {
-    text:'',
+    text:false,
+    image:false
   },
-
-  buttonli : function() 
+  buttonli:function() 
   {
-    console.log('小程序已启动')
-    this.setData({text: '赶快滚去实现 js ！！！'})
+    console.log('点击理教')
+    this.setData({text:true})
   },
-
+  buttonza:function()
+  {
+    console.log('点击综教 A')
+    this.setData({image:true})
+  },
+  buttonzb:function()
+  {
+    console.log('点击综教 B')
+    this.setData({image:false,text:false})
+  },
   /**
    * 生命周期函数--监听页面加载
    */

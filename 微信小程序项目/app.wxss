@@ -26,7 +26,15 @@
 {
   color: black;
   font-family: 'Times New Roman', Times, serif;
-  font-size: 32rpx;
-  display:-webkit-box;
-  -webkit-box-pack:center;
+  font-size: 50rpx;
+  position: absolute;
+  top:552rpx;
+  left:200rpx;
+}
+
+.image
+{
+  position: absolute;
+  top:400rpx;
+  left:65rpx;
 }

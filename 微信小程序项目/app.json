@@ -1,9 +1,11 @@
 {
-  "pages": [
+  "pages": 
+  [
     "pages/first/first",
     "pages/second/second"
   ],
-  "window": {
+  "window": 
+  {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#53bbbb",
     "navigationBarTitleText": "BIT教室",
@@ -11,13 +13,15 @@
     "backgroundColor": "#eeeeee"
   },
 
-  "tabBar": {
+  "tabBar": 
+  {
     "color":"#a5a5a5",
     "selectedColor": "#00978a",
     "borderStyle": "black",
     "backgroundColor": "#ffffff",
 
-    "list": [
+    "list": 
+    [
       {
         "pagePath": "pages/first/first",
         "text": "查询",

@@ -9,6 +9,13 @@
   box-shadow: 6rpx 6rpx 5rpx #C9C9C9;
 }
 
+/*滚动区域样式*/
+.scroll
+{
+  width:750rpx;
+  height:145rpx;
+}
+
 /*理教样式*/
 .button.li
 {
@@ -54,13 +61,6 @@
   background: -webkit-radial-gradient(rgba(175,95,45,0.8),rgba(175,95,45,0.7));
 }
 
-.scroll
-{
-  width: 750rpx;
-  height:800rpx;
- 
-}
-
 .button.test
 {
   background: -webkit-radial-gradient(rgba(255,167,0,1),rgba(255,167,0,0.7));
@@ -68,3 +68,9 @@
   left:764rpx;
   top:60rpx;
 }
+
+.button.test:hover
+{
+  background: -webkit-radial-gradient(rgba(255,167,0,0.8),rgba(255,167,0,0.7));
+}
+

@@ -1,5 +1,6 @@
 <!--first.wxml-->
 <view>
+
 <scroll-view scroll-x="true" class="scroll" >
 
 <!--理教 Button-->
@@ -13,9 +14,10 @@
 
 <!--测试 Button-->
 <view class="button test" hover="true" hover-stay-time="0" bindtap="buttontest"><text class="color-text">测试</text></view>
-<text class="color-text2">{{text}}</text>
-
 
 </scroll-view>
 
+<!--测试文字-->
+<text wx:if="{{text}}" class="color-text2">赶快去写 js ！！！！</text>
+<image wx:if="{{image}}" mode="aspectFit" class="image" src="/图片素材/表情.jpg"></image>
 </view>
