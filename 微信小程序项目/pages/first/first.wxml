@@ -2,13 +2,13 @@
 <view>
 
 <!--理教 Button-->
-<view class="button-li" hover="true"  hover-class="hover-style-li" hover-stay-time="0" bindtap="buttonli"><text class="color-text">理教</text></view>
+<view class="button li" hover="true"   hover-stay-time="0" bindtap="buttonli"><text class="color-text">理教</text></view>
 
 <!--综教 A Button-->
-<view class="button-za" hover="true"  hover-class="hover-style-za"  hover-stay-time="0" bindtap="buttonza"><text class="color-text">综教A</text></view>
+<view class="button za" hover="true"   hover-stay-time="0" bindtap="buttonza"><text class="color-text">综教A</text></view>
 
 <!--综教 B Button-->
-<view class="button-zb" hover="true"  hover-class="hover-style-zb"  hover-stay-time="0" bindtap="buttonzb"><text class="color-text">综教B</text></view>
+<view class="button zb" hover="true"   hover-stay-time="0" bindtap="buttonzb"><text class="color-text">综教B</text></view>
 
 <text class="color-text2">{{text}}</text>
 
