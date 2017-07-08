@@ -1,2 +1,4 @@
 <!--third.wxml-->
-<text>third.wxml</text>
+<view class="container">
+<input placeholder="输入您的反馈" placeholder-class="color-text" />
+</view>

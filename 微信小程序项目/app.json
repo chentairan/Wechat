@@ -6,22 +6,24 @@
     "pages/third/third",
     "pages/fourth/fourth"
   ],
-  "window": {
+  "window": 
+  {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#53bbbb",
     "navigationBarTitleText": "BIT教室",
-    "navigationBarTextStyle": "white",
-    "backgroundColor": "#eeeeee"
+    "navigationBarTextStyle": "white"
   },
-  "tabBar": {
+  "tabBar": 
+  {
     "color": "#a5a5a5",
     "selectedColor": "#00978a",
     "borderStyle": "black",
     "backgroundColor": "#ffffff",
-    "list": [
+    "list": 
+    [
       {
         "pagePath": "pages/first/first",
-        "text": "查询",
+        "text": "找教室",
         "iconPath": "/图片素材/查找.png",
         "selectedIconPath": "/图片素材/查找-2.png"
       },

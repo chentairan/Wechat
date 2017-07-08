@@ -1,4 +1,5 @@
 /**app.wxss**/
+
 .container {
   height: 100%;
   display: flex;
@@ -12,40 +13,11 @@
 /*字体样式*/
 .color-text
 {
-  color: snow;
+  color: white;
   font-family: 'Times New Roman', Times, serif;
   font-size: 32rpx;
   display:-webkit-box;
   -webkit-box-pack:center;
   align-items: center;
   line-height: 75rpx;
-}
-
-/*字体样式*/
-.color-text2
-{
-  color: black;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 50rpx;
-  position: absolute;
-  top:552rpx;
-  left:200rpx;
-}
-.color-text3
-{
-  margin-top: 10px;
-  color: #a5a5a5;
-  font-family: 'Times New Roman', Times, serif;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 30rpx;
-}
-
-.image
-{
-  position: relative;
-  left:175rpx;
-  height:400rpx;
-  width:400rpx; 
 }
