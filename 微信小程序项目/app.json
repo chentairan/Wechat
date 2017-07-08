@@ -1,8 +1,8 @@
 {
   "pages": 
   [
-    "pages/second/second",
     "pages/first/first",
+    "pages/second/second",
     "pages/third/third",
     "pages/fourth/fourth"
   ],
