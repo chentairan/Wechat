@@ -13,3 +13,22 @@
     <view class="cell__ft"></view>
     </navigator>
 </view>
+
+
+<view>
+  <view class="btn" bindtap="toggleDialog">
+    <view class="cell">支持我们</view>
+  </view>
+</view>
+
+
+
+<view class="dialog {{ showDialog ? 'dialog--show' : '' }}">
+    <view class="dialog__mask" bindtap="toggleDialog" />
+      <view class="dialog__container">
+        <view style="padding: 20rpx 0;">
+          <image  mode="aspectFit" class="image"  src="/图片素材/支付.png"></image>
+          <view class="color-text3">感谢您对我们的支持！</view>
+        </view>
+      </view>
+  </view>

@@ -33,16 +33,19 @@
 }
 .color-text3
 {
-  color: black;
+  margin-top: 10px;
+  color: #a5a5a5;
   font-family: 'Times New Roman', Times, serif;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 30rpx;
 }
 
 .image
 {
-  position: absolute;
-  top:400rpx;
-  left:65rpx;
+  position: relative;
+  left:175rpx;
+  height:400rpx;
+  width:400rpx; 
 }

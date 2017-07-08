@@ -8,6 +8,7 @@ Page({
   data: 
   {
     userInfo: {},
+    showDialog: false,
     list:
     [
       {
@@ -20,7 +21,12 @@ Page({
       }
     ]
   },
-
+  toggleDialog() {
+    this.setData
+    ({
+      showDialog: !this.data.showDialog
+    });
+    },
   /**
    * 生命周期函数--监听页面加载
    */

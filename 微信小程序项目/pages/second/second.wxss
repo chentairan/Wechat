@@ -59,3 +59,40 @@ page {
   text-align: right;
   color: #666;
 }
+
+.btn{
+  background: #fff;
+  border-top: 1rpx solid #f8f8f8;
+  border-bottom: 1rpx solid #f8f8f8;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+
+.dialog__mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+.dialog__container {
+  position: fixed;
+  bottom: 0;
+  width: 750rpx;
+  background: rgba(255,255,255,1);
+  transform: translateY(150%);
+  transition: all 0.4s ease;
+  z-index: 11;
+}
+.dialog--show .dialog__container
+{
+  transform: translateY(0);
+}
+.dialog--show .dialog__mask
+{
+  display: block;
+}
