@@ -20,5 +20,5 @@
 
 <!--测试文字-->
 <text wx:if="{{text}}" >赶快去写 js ！！！！</text>
-<image wx:if="{{image}}" mode="aspectFit" class="image" src="/图片素材/表情.jpg"></image>
+<image wx:if="{{image}}" mode="aspectFit" class="image" src="/image/hhh.jpg"></image>
 </view>

@@ -26,7 +26,7 @@
     <view class="dialog__mask" bindtap="toggleDialog" />
       <view class="dialog__container">
         <view style="padding: 20rpx 0;">
-          <image  mode="aspectFit" class="image"  src="/图片素材/支付.png"></image>
+          <image  mode="aspectFit" class="image"  src="/image/pay.png"></image>
         <view class="color-text">感谢您对我们的支持！</view>
       </view>
     </view>

@@ -24,14 +24,14 @@
       {
         "pagePath": "pages/first/first",
         "text": "找教室",
-        "iconPath": "/图片素材/查找.png",
-        "selectedIconPath": "/图片素材/查找-2.png"
+        "iconPath": "/image/find.png",
+        "selectedIconPath": "/image/find-2.png"
       },
       {
         "pagePath": "pages/second/second",
         "text": "我的",
-        "iconPath": "/图片素材/用户.png",
-        "selectedIconPath": "/图片素材/用户-2.png"
+        "iconPath": "/image/user.png",
+        "selectedIconPath": "/image/user-2.png"
       }
     ]
   }
