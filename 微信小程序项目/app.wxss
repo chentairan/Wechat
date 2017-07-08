@@ -31,6 +31,14 @@
   top:552rpx;
   left:200rpx;
 }
+.color-text3
+{
+  color: black;
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .image
 {

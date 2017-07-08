@@ -1,2 +1,15 @@
 <!--second.wxml-->
-<view class="color-text2">致力于打造全球第二好的校园小程序</view>
+
+<view class="container">
+  <view  class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  </view>
+ 
+<view class="panel">
+  <navigator wx:for="{{ list }}" wx:key="name" class="cell cell--access" url="{{ item.path }}">
+    <view class="cell__bd">{{ item.name }}</view>
+    <view class="cell__ft"></view>
+    </navigator>
+</view>
