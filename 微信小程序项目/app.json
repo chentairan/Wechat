@@ -1,34 +1,34 @@
 {
   "pages": 
   [
-    "pages/second/second",
-
     "pages/first/first",
     "pages/first/first_1/first_1",
     "pages/first/first_2/first_2",
     "pages/first/first_3/first_3",
-    
+    "pages/second/second",
     "pages/third/third",
     "pages/fourth/fourth"
   ],
-  "window": {
+  "window": 
+  {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#53bbbb",
     "navigationBarTitleText": "BIT教室",
-    "navigationBarTextStyle": "white",
-    "backgroundColor": "#eeeeee"
+    "navigationBarTextStyle": "white"
   },
-  "tabBar": {
+  "tabBar": 
+  {
     "color": "#a5a5a5",
     "selectedColor": "#00978a",
     "borderStyle": "black",
     "backgroundColor": "#ffffff",
-    "list": [
+    "list": 
+    [
       {
         "pagePath": "pages/first/first",
-        "text": "查询",
-        "iconPath": "/image/search.png",
-        "selectedIconPath": "/image/search-2.png"
+        "text": "找教室",
+        "iconPath": "/image/find.png",
+        "selectedIconPath": "/image/find-2.png"
       },
       {
         "pagePath": "pages/second/second",

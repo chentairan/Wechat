@@ -1,9 +1,10 @@
 .index{
-    background-color: #FBF9FE;
+    background-color: #f8f8f8;
     font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
     flex: 1;
     min-height: 100%;
     font-size: 32rpx;
+    height: 1750rpx;
 }
 .head{
     padding: 80rpx;

@@ -16,11 +16,10 @@
 
 
 <view>
-  <view class="btn" bindtap="toggleDialog">
+  <view class="panel"  bindtap="toggleDialog">
     <view class="cell">支持我们</view>
   </view>
 </view>
-
 
 
 <view class="dialog {{ showDialog ? 'dialog--show' : '' }}">
@@ -28,7 +27,17 @@
       <view class="dialog__container">
         <view style="padding: 20rpx 0;">
           <image  mode="aspectFit" class="image"  src="/image/pay.png"></image>
-          <view class="color-text3">感谢您对我们的支持！</view>
-        </view>
+        <view class="color-text">感谢您对我们的支持！</view>
       </view>
-  </view>
+    </view>
+</view>
+
+
+
+
+<view class="loading_box">
+  <view class="pulse pulse_1"></view>
+  <view class="pulse pulse_2"></view>
+  <view class="pulse pulse_3"></view>
+  <view class="pulse pulse_4"></view>
+</view>

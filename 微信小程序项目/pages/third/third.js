@@ -1,4 +1,7 @@
 // third.js
+var Bmob = require('../../utils/bmob.js');
+var Suggestion=Bmob.Object.extend("Suggestion");
+
 Page({
 
   /**
@@ -7,7 +10,24 @@ Page({
   data: {
   
   },
-
+  /*提交反馈*/
+  Submite:function(e)
+  {
+    var suggestion=new Suggestion();
+    suggestion.set("text",e.detail.value);
+    suggestion.save(null, 
+    {
+      success: function (result)
+      {
+        console.log("添加反馈成功, objectId:" + result.id);
+      },
+      error: function (result, error)
+      {
+        // 添加失败
+        console.log('添加反馈失败');
+      }
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
