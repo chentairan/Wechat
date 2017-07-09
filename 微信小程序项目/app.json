@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/first/first",
+    "pages/second/second"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#53bbbb",
+    "navigationBarTitleText": "BIT教室",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#eeeeee"
+  },
+
+  "tabBar": {
+    "color":"##95989A",
+    "selectedColor": "#000000",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+
+    "list": [
+      {
+        "pagePath": "pages/first/first",
+        "text": "查询",
+        "iconPath": "/图片素材/查找.png",
+        "selectedIconPath": "/图片素材/查找-2.png"
+      },
+      {
+        "pagePath": "pages/second/second",
+        "text": "关于我们",
+        "iconPath": "/图片素材/用户.png",
+        "selectedIconPath": "/图片素材/用户-2.png"
+      }
+    ]
+  }
+}

@@ -1,4 +1,4 @@
-// pages/first/first.js
+// first.js
 Page({
 
   /**

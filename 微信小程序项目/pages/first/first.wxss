@@ -1,80 +1,126 @@
 /* first.wxss */
-
-/*按钮样式*/
-.button
-{
+/*理教样式*/
+.button-li {
   width: 150rpx;
   height: 75rpx;
-  border-radius: 37.5rpx;
-  box-shadow: 6rpx 6rpx 5rpx #C9C9C9;
-}
-
-/*滚动区域样式*/
-.scroll
-{
-  margin-top:60rpx;
-  width:750rpx;
-  height:80rpx;
-}
-
-/*理教样式*/
-.button.li
-{
-  background: -webkit-radial-gradient(rgba(129,167,193,1),rgba(129,167,193,0.7));
+  border-radius: 80rpx;
   position: absolute;
   left: 68rpx;
+  top: 60rpx;
+  font-size: 32rpx;
+  color :white;
 }
-
+.button-li:hover {  
+  position: absolute;
+  left: 68rpx;
+  top: 60rpx;
+  text-decoration: none;
+}  
+.button-li:active {  
+  position: absolute;  
+  left: 68rpx;
+  top: 60rpx;  
+}  
+.blue {  
+  color: #d9eef7;  
+  border: solid 1px #0076a3;  
+  background: #0095cd;  
+  background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));  
+  background: -moz-linear-gradient(top,  #00adee,  #0078a5);  
+  filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#00adee', endColorstr='#0078a5');  
+}  
+.blue:hover {  
+  background: #007ead;  
+  background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));  
+  background: -moz-linear-gradient(top,  #0095cc,  #00678e);  
+  filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#0095cc', endColorstr='#00678e');  
+}  
+.blue:active {  
+  color: #80bed6;  
+  background: -webkit-gradient(linear, left top, left bottom, from(#0078a5), to(#00adee));  
+  background: -moz-linear-gradient(top,  #0078a5,  #00adee);  
+  filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#0078a5', endColorstr='#00adee');  
+}  
 /*综教A样式*/
-.button.za
-{
-  background: -webkit-radial-gradient(rgba(339,69,86,1),rgba(339,69,86,0.7));
+.button-za {
+  background-color: #db4378;
+  width: 150rpx;
+  height: 75rpx;
+  border-radius: 80rpx;
   position: absolute;
-  left:300rpx;
+  left:295rpx;
+  top:60rpx;
+  font-size: 32rpx;
+  color :white;
 }
-
+.button-za:hover {  
+  position: absolute;
+  left:295rpx;
+  top:60rpx;
+  text-decoration: none;  
+}  
+.button-za:active {  
+  position: absolute;  
+  left:295rpx;
+  top:60rpx;
+}
+.pink {  
+    color: #feeef5;  
+    border: solid 1px #d2729e;  
+    background: #f895c2;  
+    background: -webkit-gradient(linear, left top, left bottom, from(#feb1d3), to(#f171ab));  
+    background: -moz-linear-gradient(top,  #feb1d3,  #f171ab);  
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#feb1d3', endColorstr='#f171ab');  
+}  
+.pink:hover {  
+    background: #d57ea5;  
+    background: -webkit-gradient(linear, left top, left bottom, from(#f4aacb), to(#e86ca4));  
+    background: -moz-linear-gradient(top,  #f4aacb,  #e86ca4);  
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f4aacb', endColorstr='#e86ca4');  
+}  
+.pink:active {  
+    color: #f3c3d9;  
+    background: -webkit-gradient(linear, left top, left bottom, from(#f171ab), to(#feb1d3));  
+    background: -moz-linear-gradient(top,  #f171ab,  #feb1d3);  
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f171ab', endColorstr='#feb1d3');  
+} 
 /*综教B样式*/
-.button.zb
-{
-  background: -webkit-radial-gradient(rgba(175,95,45,1),rgba(175,95,45,0.7));
+.button-zb {
+  width: 148rpx;
+  height: 75rpx;
+  border-radius: 80rpx;
   position: absolute;
-  left:532rpx;
+  left:516rpx;
+  top:60rpx;
+  font-size: 32rpx;
+  color :white;
 }
-
-/*按住样式*/
-
-.button.li:hover
-{
- background: -webkit-radial-gradient(rgba(129,167,193,0.8),rgba(129,167,193,0.7));
-}
-
-.button.za:hover
-{
-  background: -webkit-radial-gradient(rgba(339,69,86,0.8),rgba(339,69,86,0.7));
-}
-
-.button.zb:hover
-{
-  background: -webkit-radial-gradient(rgba(175,95,45,0.8),rgba(175,95,45,0.7));
-}
-
-/*测试按钮*/
-.button.test
-{
-  background: -webkit-radial-gradient(rgba(255,167,0,1),rgba(255,167,0,0.7));
-  position: absolute;
-  left:764rpx;
-}
-
-.button.test:hover
-{
-  background: -webkit-radial-gradient(rgba(255,167,0,0.8),rgba(255,167,0,0.7));
-}
-
-.image
-{
-  position: relative;
-  left:175rpx;
-  height:400rpx;
-  width:400rpx; 
-}
+.button-zb:hover {  
+    text-decoration: none;  
+}  
+.button-zb:active {  
+  position: absolute;  
+  left:516rpx;
+  top:60rpx;  
+}  
+.rosy {  
+  color: #fae7e9;  
+  border: solid 1px #b73948;  
+  background: #da5867;  
+  background: -webkit-gradient(linear, left top, left bottom, from(#f16c7c), to(#bf404f));  
+  background: -moz-linear-gradient(top,  #f16c7c,  #bf404f);  
+  filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f16c7c', endColorstr='#bf404f');  
+}  
+.rosy:hover {  
+  background: #ba4b58;  
+  background: -webkit-gradient(linear, left top, left bottom, from(#cf5d6a), to(#a53845));  
+  background: -moz-linear-gradient(top,  #cf5d6a,  #a53845);  
+  filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#cf5d6a', endColorstr='#a53845');  
+}  
+.rosy:active {  
+  color: #dca4ab;  
+  background: -webkit-gradient(linear, left top, left bottom, from(#bf404f), to(#f16c7c));  
+  background: -moz-linear-gradient(top,  #bf404f,  #f16c7c);  
+  filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#bf404f', endColorstr='#f16c7c');  
+}  
+  

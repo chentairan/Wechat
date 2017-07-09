@@ -1,6 +1,4 @@
-
 /**app.wxss**/
-
 .container {
   height: 100%;
   display: flex;
@@ -10,16 +8,4 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
-
-/*字体样式*/
-.color-text
-{
-  color: white;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 32rpx;
-  display:-webkit-box;
-  -webkit-box-pack:center;
-  align-items: center;
-  line-height: 75rpx;
-}
 

@@ -1,5 +1,0 @@
-<!--pages/logs/index.wxml-->
-<view>{{message}}</view>
-<button catchtap="test1">click here</button>
-<view>{{test}}</view>
-<button bindtap="test2">click there</button>
