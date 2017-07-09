@@ -1,21 +1,16 @@
 /* second.wxss */
-
-/*页面背景灰色*/
-page 
-{
+page {
   display: block;
+  min-height: 100%;
   background-color: #f8f8f8;
 }
-
-/*用户头像，昵称样式*/
-.container
-{
+.container {
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 20rpx 0;
+  padding: 30rpx 0;
   box-sizing: border-box;
   background: #53bbbb;
 } 
@@ -36,59 +31,45 @@ page
 .userinfo-nickname 
 {
   color: snow;
-  font-size: 30rpx;
 }
-
-/*列表栏*/
 .panel
 {
   background: #fff;
   border-top: 1rpx solid #f8f8f8;
   border-bottom: 1rpx solid #f8f8f8;
-  margin-top: 30rpx;
+  margin-top: 30px;
   overflow: hidden;
 }
 
-.cell
-{
+.cell {
   position: relative;
-  padding: 30rpx 30rpx;
+  padding: 12px 15px;
   display: flex;
   align-items: center;
   line-height: 1.4;
   font-size: 14px;
 }
 
-.cell__bd
-{
+.cell__bd {
   flex: 1;
 }
 
-.cell__ft
-{
+.cell__ft {
   position: relative;
   text-align: right;
   color: #666;
 }
 
-.cell--access .cell__ft::after
-{
-  position: absolute;
-  top: 50%;
-  right: 2px;
-  content: " ";
-  display: inline-block;
-  height: 6px;
-  width: 6px;
-  border-width: 2px 2px 0 0;
-  border-color: #c8c8c8;
-  border-style: solid;
-  transform: translateY(-50%) matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+.btn{
+  background: #fff;
+  border-top: 1rpx solid #f8f8f8;
+  border-bottom: 1rpx solid #f8f8f8;
+  margin-top: 10px;
+  overflow: hidden;
 }
 
-/*底部弹出栏*/
-.dialog__mask
-{
+
+.dialog__mask {
   position: fixed;
   top: 0;
   left: 0;
@@ -98,106 +79,20 @@ page
   background: rgba(0, 0, 0, 0.7);
   display: none;
 }
-.dialog__container
-{
+.dialog__container {
   position: fixed;
   bottom: 0;
   width: 750rpx;
   background: rgba(255,255,255,1);
   transform: translateY(150%);
-  transition: all 0.5s ease;
+  transition: all 0.4s ease;
   z-index: 11;
 }
-
 .dialog--show .dialog__container
 {
   transform: translateY(0);
 }
-
 .dialog--show .dialog__mask
 {
   display: block;
-}
-
-
-/*文字、图片样式*/
-.color-text
-{
-  color: #a5a5a5;
-  font-family: 'Times New Roman', Times, serif;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 30rpx;
-}
-
-.image
-{
-  position: relative;
-  left:175rpx;
-  height:400rpx;
-  width:400rpx; 
-}
-
-
-
-/*动画样式*/
-.loading_box {
-  width: 100%;
-  text-align: center;
-  padding: 100rpx 0;
-}
-
-.loading_box>view {
-  display: inline-block;
-}
-
-.pulse {
-  width: 8rpx;
-  height: 40rpx;
-  background: #1ab394;
-  margin: 8rpx;
-  border-radius: 20rpx;
-}
-
-.pulse_1 {
-  -webkit-animation: pulse 0.5s linear infinite alternate;
-  animation: pulse 0.5s linear infinite alternate;
-}
-
-.pulse_2 {
-  -webkit-animation: pulse 0.5s linear infinite alternate;
-  animation: pulse 0.5s linear infinite alternate;
-  animation-delay: 0.1s;
-}
-
-.pulse_3 {
-  -webkit-animation: pulse 0.5s linear infinite alternate;
-  animation: pulse 0.5s linear infinite alternate;
-  animation-delay: 0.2s;
-}
-
-.pulse_4 {
-  -webkit-animation: pulse 0.5s linear infinite alternate;
-  animation: pulse 0.5s linear infinite alternate;
-  animation-delay: 0.3s;
-}
-@-webkit-keyframes pulse {
-  0% {
-    transform: scaleY(1);
-  }
-
-  100% {
-    transform: scaleY(0);
-  }
-}
-
-@keyframes pulse {
-  0% {
-    transform: scaleY(1);
-  }
-
-  100% {
-    transform: scaleY(0);
-  }
 }
