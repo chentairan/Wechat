@@ -4,8 +4,8 @@
 <h2>AppID(小程序ID): wx2994ad5bb8b672e0</h2>
 <img src="https://github.com/chentairan/Wechat/blob/master/image/流程图.jpg">
 </p>
-<p>后端文档：http://docs.bmob.cn/data/wechatApp/b_developdoc/doc/index.html</p>
 <p>黄色圆代表正在进行，红色圆代表待进行，绿色圆代表已完成</p>
+<p>后端文档：http://docs.bmob.cn/data/wechatApp/b_developdoc/doc/index.html</p>
 <h1>目录：</h1>
 <a href="#C1">学习指南</a>
 <ul type="disc">
