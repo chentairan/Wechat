@@ -1,36 +1,26 @@
 {
-  "pages": 
-  [
-    "pages/second/second",
-    "pages/first/first",
-    "pages/third/third",
-    "pages/fourth/fourth"
+  "pages": [
+    "pages/index/index",
+    "pages/logs/index"
   ],
   "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#53bbbb",
-    "navigationBarTitleText": "BIT教室",
-    "navigationBarTextStyle": "white",
-    "backgroundColor": "#eeeeee"
+    "navigationBarTitleText": "Demo"
   },
   "tabBar": {
-    "color": "#a5a5a5",
-    "selectedColor": "#00978a",
-    "borderStyle": "black",
-    "backgroundColor": "#ffffff",
     "list": [
       {
-        "pagePath": "pages/first/first",
-        "text": "查询",
-        "iconPath": "/图片素材/查找.png",
-        "selectedIconPath": "/图片素材/查找-2.png"
+        "pagePath": "pages/index/index",
+        "text": "首页"
       },
       {
-        "pagePath": "pages/second/second",
-        "text": "我的",
-        "iconPath": "/图片素材/用户.png",
-        "selectedIconPath": "/图片素材/用户-2.png"
+        "pagePath": "pages/logs/index",
+        "text": "日志"
       }
     ]
-  }
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
 }
