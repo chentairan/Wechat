@@ -1,7 +1,0 @@
-<!--fourth.wxml-->
-
-<text class="color-text">致力于打造全球第二好用的校园小程序</text>
-
-<view class="loading_box">
-  <view class="loading_fade_circle"></view>
-</view>
