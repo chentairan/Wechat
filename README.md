@@ -2,18 +2,10 @@
 <body>
 <h1>小程序开发指南</h1>
 <h2>AppID(小程序ID): wx2994ad5bb8b672e0</h2>
-<h2>分工：</h2>
-<p>WXML：李德莹、雷凡丁</p>
-<p>WXSS：关迎丹</p>
-<p>JavaScript：施念</p>
-<p>API：徐泽文</p>
-<p>设计：朱宇旻</p>
-<p>后端：陈泰然</p>
-<h2>开发进程：</h2>
 <img src="https://github.com/chentairan/Wechat/blob/master/image/流程图.jpg">
 </p>
-<p>黄色圆代表正在进行，红色圆代表待进行，绿色圆代表已完成，AJAX和JSON待确定</p>
-<p><a href=https://github.com/chentairan/Wechat/blob/master/开发环境配置教程.md>开发环境配置教程</a><p>
+<p>黄色圆代表正在进行，红色圆代表待进行，绿色圆代表已完成</p>
+<p>后端文档：http://docs.bmob.cn/data/wechatApp/b_developdoc/doc/index.html</p>
 <h1>目录：</h1>
 <a href="#C1">学习指南</a>
 <ul type="disc">

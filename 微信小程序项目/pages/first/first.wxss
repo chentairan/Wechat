@@ -5,16 +5,15 @@
 {
   width: 150rpx;
   height: 75rpx;
-  border-radius: 37.5rpx;
+  border-radius: 36rpx;
   box-shadow: 6rpx 6rpx 5rpx #C9C9C9;
 }
 
 /*滚动区域样式*/
 .scroll
 {
-  margin-top:60rpx;
   width:750rpx;
-  height:80rpx;
+  height:145rpx;
 }
 
 /*理教样式*/
@@ -23,6 +22,8 @@
   background: -webkit-radial-gradient(rgba(129,167,193,1),rgba(129,167,193,0.7));
   position: absolute;
   left: 68rpx;
+  top: 60rpx;
+  
 }
 
 /*综教A样式*/
@@ -31,6 +32,7 @@
   background: -webkit-radial-gradient(rgba(339,69,86,1),rgba(339,69,86,0.7));
   position: absolute;
   left:300rpx;
+  top:60rpx;
 }
 
 /*综教B样式*/
@@ -39,6 +41,7 @@
   background: -webkit-radial-gradient(rgba(175,95,45,1),rgba(175,95,45,0.7));
   position: absolute;
   left:532rpx;
+  top:60rpx;
 }
 
 /*按住样式*/
@@ -58,12 +61,12 @@
   background: -webkit-radial-gradient(rgba(175,95,45,0.8),rgba(175,95,45,0.7));
 }
 
-/*测试按钮*/
 .button.test
 {
   background: -webkit-radial-gradient(rgba(255,167,0,1),rgba(255,167,0,0.7));
   position: absolute;
   left:764rpx;
+  top:60rpx;
 }
 
 .button.test:hover
@@ -71,10 +74,3 @@
   background: -webkit-radial-gradient(rgba(255,167,0,0.8),rgba(255,167,0,0.7));
 }
 
-.image
-{
-  position: relative;
-  left:175rpx;
-  height:400rpx;
-  width:400rpx; 
-}

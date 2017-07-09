@@ -2,6 +2,9 @@
   "pages": 
   [
     "pages/first/first",
+    "pages/first/first_1/first_1",
+    "pages/first/first_2/first_2",
+    "pages/first/first_3/first_3",
     "pages/second/second",
     "pages/third/third",
     "pages/fourth/fourth"

@@ -1,4 +1,4 @@
 <!--third.wxml-->
 <view class="container">
-<input placeholder="输入您的反馈" placeholder-class="color-text" />
+<input bindconfirm="Submite" confirm-type="send" placeholder="输入您的反馈" placeholder-class="color-text" />
 </view>
