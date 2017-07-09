@@ -1,28 +1,13 @@
-// first.js
+// fourth.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    text:false,
-    image:false
+  
   },
-  buttonli:function() 
-  {
-    console.log('点击理教')
-    this.setData({text:true})
-  },
-  buttonza:function()
-  {
-    console.log('点击综教 A')
-    this.setData({image:true})
-  },
-  buttonzb:function()
-  {
-    console.log('点击综教 B')
-    this.setData({image:false,text:false})
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */
@@ -76,9 +61,6 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-    return {
-      title: 'BIT教室',
-      path: '/page/first'
-    }
+  
   }
 })

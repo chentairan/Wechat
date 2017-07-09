@@ -1,4 +1,23 @@
 <!--first.wxml-->
-<button class="button-li blue">理教</button>
-<button class="button-za pink">综教A</button>
-<button class="button-zb rosy">综教B</button>
+<view>
+
+<scroll-view scroll-x="true" class="scroll" >
+
+  <!--理教 Button-->
+  <view class="button li" hover="true"   hover-stay-time="0" bindtap="buttonli"><text class="color-text">理教</text></view>
+
+  <!--综教 A Button-->
+  <view class="button za" hover="true"   hover-stay-time="0" bindtap="buttonza"><text class="color-text">综教A</text></view>
+
+  <!--综教 B Button-->
+  <view class="button zb" hover="true"   hover-stay-time="0" bindtap="buttonzb"><text class="color-text">综教B</text></view>
+
+  <!--测试 Button-->
+  <view class="button test" hover="true" hover-stay-time="0" bindtap="buttontest"><text class="color-text">测试</text></view>
+
+
+</scroll-view>
+
+<!--测试文字-->
+
+</view>
