@@ -1,3 +1,7 @@
+page
+{
+  background-color: #f8f8f8;
+}
 .index{
     background-color: #f8f8f8;
     font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
