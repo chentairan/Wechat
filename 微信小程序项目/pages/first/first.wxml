@@ -19,6 +19,5 @@
 </scroll-view>
 
 <!--测试文字-->
-<text wx:if="{{text}}" >赶快去写 js ！！！！</text>
-<image wx:if="{{image}}" mode="aspectFit" class="image" src="/image/hhh.jpg"></image>
+
 </view>
