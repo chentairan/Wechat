@@ -5,6 +5,8 @@
   flex-direction: row;
   background:-webkit-linear-gradient(top, #53bbbb, rgba(83,187,187,0.9));
   box-shadow: 0 6rpx 8rpx rgba(83,187,187,0.5);
+  border-bottom-left-radius: 8rpx;
+  border-bottom-right-radius: 8rpx;
 }
 .tab
 {

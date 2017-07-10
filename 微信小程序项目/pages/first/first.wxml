@@ -1,4 +1,6 @@
 <!--first.wxml-->
+<view class="first">
+
 <view class="contain">
 
 
@@ -25,4 +27,6 @@
     
     </view>
   </block>
+</view>
+
 </view>
