@@ -1,9 +1,6 @@
 /* first.wxss */
 .contain
 {
-  width: 800rpx;
-  position: relative;
-  left:-10rpx;
   display:flex;
   flex-direction: row;
   background:-webkit-linear-gradient(top, #53bbbb, rgba(83,187,187,0.9));
@@ -19,9 +16,9 @@
 {
   font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
   color: white;
-  text-align: center;
   position: relative;
   top:20rpx;
+  left:40rpx;
   font-size: 30rpx;
 }
 
@@ -32,7 +29,7 @@
     align-items: center;
     position: relative;
     top:-22rpx;
-    left:145rpx;
+    left:90rpx;
     border-left: 8rpx solid transparent;
     border-right: 8rpx solid transparent;
     border-top: 14rpx solid rgba(238, 238, 238,0.6);
@@ -44,7 +41,7 @@
     align-items: center;
     position: relative;
     top:-22rpx;
-    left:160rpx;
+    left:120rpx;
     border-left: 8rpx solid transparent;
     border-right: 8rpx solid transparent;
     border-top: 14rpx solid rgba(238, 238, 238,0.6);
