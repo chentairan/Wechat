@@ -5,24 +5,20 @@ Page({
    * 页面的初始数据
    */
   data: {
-    text:false,
-    image:false
+  list:
+  [
+    {
+      text:"楼层"
+    },
+    {
+      text:"教室"
+    },
+    {
+      text:"时间"
+    }
+  ]
   },
-  buttonli:function() 
-  {
-    console.log('点击理教')
-    this.setData({text:true})
-  },
-  buttonza:function()
-  {
-    console.log('点击综教 A')
-    this.setData({image:true})
-  },
-  buttonzb:function()
-  {
-    console.log('点击综教 B')
-    this.setData({image:false,text:false})
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */
@@ -61,15 +57,9 @@ Page({
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
-    //下拉更新
-   onPullDownRefresh: function() {
-      if (app._user.is_bind) {
-        this.getCardData();
-      } else {
-        wx.stopPullDownRefresh();
-      }
+  onPullDownRefresh: function () {
+  
   },
-
 
   /**
    * 页面上拉触底事件的处理函数
@@ -82,9 +72,6 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-    return {
-      title: 'BIT教室',
-      path: '/page/first'
-    }
+  
   }
 })
