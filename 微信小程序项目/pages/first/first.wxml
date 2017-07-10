@@ -1,32 +1,12 @@
 <!--first.wxml-->
-<view class="first">
-
 <view class="contain">
-
-
-<view  class="tab">
-      <view class="text" bindtap="tap">
-        教学楼
-        <view class="triangle-bug">
-        </view>
-      </view>
-    
-    </view>
-
-
-
-
-
   <block wx:for="{{list}}" wx:for-item="i">
     <view  class="tab">
       <view class="text" bindtap="tap">
-        {{i.text}}
-        <view class="triangle">
+        {{i.name}}
+        <view class="{{i.name=='教学楼'?'triangle-bug':'triangle'}}">
         </view>
       </view>
-    
     </view>
   </block>
-</view>
-
 </view>
