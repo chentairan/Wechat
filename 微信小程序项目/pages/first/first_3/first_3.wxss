@@ -8,7 +8,6 @@ page
     flex: 1;
     min-height: 100%;
     font-size: 32rpx;
-    height: 1750rpx;
 }
 .head{
     padding: 80rpx;
