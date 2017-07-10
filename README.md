@@ -2,6 +2,8 @@
 <body>
 <h1>小程序开发指南</h1>
 <h2>AppID(小程序ID): wx2994ad5bb8b672e0</h2>
+<img src="https://github.com/chentairan/Wechat/blob/master/image/Deadline.jpg">
+</p>
 <img src="https://github.com/chentairan/Wechat/blob/master/image/流程图.jpg">
 </p>
 <p>黄色圆代表正在进行，红色圆代表待进行，绿色圆代表已完成</p>
