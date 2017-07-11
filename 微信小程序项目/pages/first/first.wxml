@@ -1,22 +1,7 @@
 <!--first.wxml-->
 <view class="main-core"></view>
 
-
-<!--理教 Button-->
-  <navigator class="button li" hover="true"          hover-stay-time="0" bindtap="buttonli" url="./first_1/first_1">
-    <text class="color-text">理教</text>
-  </navigator>
-
-<!--综教 A Button-->
-  <navigator class="button za" hover="true"   hover-stay-time="0" bindtap="buttonza" url="./first_2/first_2">
-    <text class="color-text">综教A</text>
-  </navigator>
-
-<!--综教 B Button-->
-  <navigator class="button zb" hover="true"   hover-stay-time="0" bindtap="buttonzb" url="./first_3/first_3">
-    <text class="color-text">综教B</text>
-  </navigator>
-
-
-
-
+<!--Search Button-->
+<navigator class="button" hover="true" hover-stay-time="0" bindtap="buttonli" url="">
+<image  class="Search-pic" src="/image/Search.png" mode="aspectFill"></image>
+ </navigator>
