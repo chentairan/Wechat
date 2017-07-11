@@ -39,31 +39,30 @@ Page({
         list_2: ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
       }
     ],
-    
-/*Diff-下面*/
+  /*Diff-下面*/
     /*检索条件*/
-    choiceOfSearch:["理教","一层","1","1"],
-    presentPage:1
-/*Diff-上面*/
+    choiceOfSearch: ["理教", "一层", "1", "1"],
+    presentPage: 1
+    /*Diff-上面*/
 
   },
 
-/*Diff-下面*/
+  /*Diff-下面*/
   /*选择筛选的内容*/
-  choose: function(e){
+  choose: function (e) {
     var i = e.currentTarget.page, list_1 = this.data.choiceOfSearch;
     var j = this.data.presentPage;
     var list_2 = this.data.list;
-    list_1[j]=i;
-    list_2[j].name=i;
+    list_1[j] = i;
+    list_2[j].name = i;
 
     this.setData({
-      choiceOfSearch:list_1,
+      choiceOfSearch: list_1,
       list: list_2
     });
   },
 
-/*选择是否打开列表*/
+  /*选择是否打开列表*/
   tap: function (e) {
     var id = e.currentTarget.id, list = this.data.list, j = e.currentTarget.item_x;
     for (var i = 0, len = list.length; i < len; ++i) {
@@ -81,6 +80,7 @@ Page({
 /*Diff-上面*/
 
 
+ 
   Search:function()
   {
     Bmob.Cloud.run('Search', { "building":{building}, "classroom":{classroom}, "floor":{floor} }, {

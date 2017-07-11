@@ -48,8 +48,30 @@
     border-right: 8rpx solid transparent;
     border-top: 14rpx solid rgba(238, 238, 238,0.6);
 }
+/*按钮样式*/
+.button
+{
+  width: 130rpx;
+  height: 130rpx;
+  border-radius: 65rpx;
+  box-shadow: 1rpx 0rpx 5rpx 1rpx #999999;
+  background: #FF9100;
+  position: absolute;
+  left: 570rpx;
+  top: 930rpx;
+}
+/*icon样式*/
+.Search-pic
+{
+  width: 70rpx; 
+  height: 70rpx;
+  position: absolute;
+  left: 35rpx;
+  top: 30rpx;
+}
 
 
+/*下拉菜单*/
 .widgets__list{
     display: none;
 }
@@ -94,4 +116,3 @@
     right: 0;
     background-color: #D8D8D8;
 }
-
