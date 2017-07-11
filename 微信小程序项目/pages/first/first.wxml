@@ -1,7 +1,7 @@
-<!--Search Button-->
-<navigator class="button" hover="true" hover-stay-time="0" bindtap="buttonli" url="">
+<!--first.wxml-->
+<view class="button" hover="true" hover-stay-time="0" bindtap="Search" >
 <image  class="Search-pic" src="/image/Search.png" mode="aspectFill"></image>
- </navigator>
+ </view>
 
 <view class="contain">
   <block wx:for="{{list}}" wx:for-item="i">

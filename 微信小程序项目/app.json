@@ -9,8 +9,7 @@
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#53bbbb",
     "navigationBarTitleText": "BIT教室",
-    "navigationBarTextStyle": "white",
-    "backgroundColor": "#53bbbb"
+    "navigationBarTextStyle": "white"
   },
   "tabBar": {
     "color": "#a5a5a5",
