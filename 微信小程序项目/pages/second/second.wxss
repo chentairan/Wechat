@@ -25,13 +25,6 @@ page
   flex-direction: column;
   align-items: center;
 }
-.userinfo-avatar
-{
-  width: 200rpx;
-  height: 200rpx;
-  margin: 20rpx;
-  border-radius: 50%;
-}
 
 .userinfo-nickname 
 {
@@ -45,9 +38,8 @@ page
   background: #fff;
   border-top: 1rpx solid #f8f8f8;
   border-bottom: 1rpx solid #f8f8f8;
+  margin-top: 30rpx;
   overflow: hidden;
-  border-radius: 10rpx;
-  margin: 30rpx 20rpx 0 20rpx;
 }
 
 .cell
@@ -140,8 +132,6 @@ page
   width:400rpx; 
 }
 
-
-
 /*动画样式*/
 .loading_box {
   width: 100%;
@@ -183,6 +173,16 @@ page
   animation: pulse 0.5s linear infinite alternate;
   animation-delay: 0.3s;
 }
+
+.userinfo-avatar
+{
+  width: 200rpx;
+  height: 200rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+  animation: userinfo-avatar 10s linear infinite;
+}
+
 @-webkit-keyframes pulse {
   0% {
     transform: scaleY(1);
@@ -200,5 +200,53 @@ page
 
   100% {
     transform: scaleY(0);
+  }
+}
+
+@-webkit-keyframes userinfo-avatar {
+  0% {
+    transform: translate3d(0, 20rpx, 0) rotate(-15deg);
+  }
+  15% {
+    transform: translate3d(0, 0rpx, 0) rotate(25deg);
+  }
+  36% {
+    transform: translate3d(0, -20rpx, 0) rotate(-20deg);
+  }
+  50% {
+    transform: translate3d(0, -10rpx, 0) rotate(15deg);
+  }
+  68% {
+    transform: translate3d(0, 10rpx, 0) rotate(-25deg);
+  }
+  85% {
+    transform: translate3d(0, 15rpx, 0) rotate(15deg);
+  }
+  100% {
+    transform: translate3d(0, 20rpx, 0) rotate(-15deg);
+  }
+}
+
+@keyframes userinfo-avatar {
+  0% {
+    transform: translate3d(0, 20rpx, 0) rotate(-15deg);
+  }
+  15% {
+    transform: translate3d(0, 0rpx, 0) rotate(25deg);
+  }
+  36% {
+    transform: translate3d(0, -20rpx, 0) rotate(-20deg);
+  }
+  50% {
+    transform: translate3d(0, -10rpx, 0) rotate(15deg);
+  }
+  68% {
+    transform: translate3d(0, 10rpx, 0) rotate(-25deg);
+  }
+  85% {
+    transform: translate3d(0, 15rpx, 0) rotate(15deg);
+  }
+  100% {
+    transform: translate3d(0, 20rpx, 0) rotate(-15deg);
   }
 }
