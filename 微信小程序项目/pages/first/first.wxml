@@ -1,7 +1,16 @@
-<!--first.wxml-->
-<view class="main-core"></view>
-
 <!--Search Button-->
 <navigator class="button" hover="true" hover-stay-time="0" bindtap="buttonli" url="">
 <image  class="Search-pic" src="/image/Search.png" mode="aspectFill"></image>
  </navigator>
+
+<view class="contain">
+  <block wx:for="{{list}}" wx:for-item="i">
+    <view  class="tab">
+      <view class="text" bindtap="tap">
+        {{i.name}}
+        <view class="{{i.name=='教学楼'?'triangle-bug':'triangle'}}">
+        </view>
+      </view>
+    </view>
+  </block>
+</view>

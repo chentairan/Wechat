@@ -25,7 +25,7 @@
 <view class="dialog {{ showDialog ? 'dialog--show' : '' }}">
     <view class="dialog__mask" bindtap="toggleDialog" />
       <view class="dialog__container">
-        <view style="padding: 60rpx 0 10rpx 0;">
+        <view style="padding: 60rpx 0 20rpx 0;">
           <image  mode="aspectFit" class="image"  src="/image/pay.png"></image>
         <view class="color-text">感谢您对我们的支持！</view>
       </view>
