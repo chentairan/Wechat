@@ -30,7 +30,7 @@ Page({
         id: "three",
         name: "教室",
         open: false,
-        list_2: ["普通教室", "多媒体教室"]
+        list_2: ["1", "2", "3", "4", "5", "6", "7"]
       },
       {
         id: "four",
@@ -41,33 +41,21 @@ Page({
     ],
   /*Diff-下面*/
     /*检索条件*/
-    choiceOfSearch: ["理教", "一层", "1", "1"],
-    presentPage: 1
+    choiceOfSearch: ["理教", "二层", "2", "3"],
+    presentPage: 0
     /*Diff-上面*/
 
   },
 
   /*Diff-下面*/
-  /*选择筛选的内容*/
-  choose: function (e) {
-    var i = e.currentTarget.page, list_1 = this.data.choiceOfSearch;
-    var j = this.data.presentPage;
-    var list_2 = this.data.list;
-    list_1[j] = i;
-    list_2[j].name = i;
-
-    this.setData({
-      choiceOfSearch: list_1,
-      list: list_2
-    });
-  },
-
-  /*选择是否打开列表*/
+  /*一级菜单*/
   tap: function (e) {
-    var id = e.currentTarget.id, list = this.data.list, j = e.currentTarget.item_x;
-    for (var i = 0, len = list.length; i < len; ++i) {
+    var id = e.currentTarget.id, list = this.data.list;
+    var i = 0, j = 0;
+    for (var len = list.length; i < len; ++i) {
       if (list[i].id == id) {
         list[i].open = !list[i].open;
+        j = i;
       } else {
         list[i].open = false;
       }
@@ -76,6 +64,21 @@ Page({
       list: list,
       presentPage: j
     });
+  },
+  
+  /*二级菜单*/
+  choose: function (e) {
+    var i = e.currentTarget.id, list_1 = this.data.choiceOfSearch;//list_1为选择条件
+    var j = this.data.presentPage;//j is the present page.
+    var list_2 = this.data.list;//list_2为原始数据中的list
+    list_1[j] = i;
+    list_2[j].name = i;
+
+    this.setData({
+      choiceOfSearch: list_1,
+      list: list_2
+    });
+
   },
 /*Diff-上面*/
 
