@@ -1,7 +1,20 @@
 <!--fourth.wxml-->
 
-<text class="color-text">致力于打造全球第二好用的校园小程序</text>
-
-<view class="loading_box">
-  <view class="loading_fade_circle"></view>
+<view class="container">
+  <block >
+    <view class="content">
+      <view class="hd" style="transform:rotateZ({{angle}}deg);">
+          <image class="logo" src="/image/logo.png"></image>
+          <image class="wave" src="/image/wave.png" mode="aspectFill"></image>
+          <image class="wave wave-bg" src="/image/wave.png" mode="aspectFill"></image>
+      </view>
+      <text class="text1">BIT教室</text>
+      <text class="text2">致力于打造全球第二好用的校园小程序</text>
+      <view class="loading_box">
+        <view class="loading_fade_circle"></view>
+      </view>
+    </view>
+  </block>
 </view>
+
+
