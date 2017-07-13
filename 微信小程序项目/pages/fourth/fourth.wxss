@@ -1,9 +1,14 @@
 /**login.wxss**/
+page
+{
+  display: block;
+  background-color: rgba(244,244,244,1);
+}
 .container {
   background: #53bbbb;
   align-items: stretch;
   padding: 0;
-  height: 1334rpx;
+  height: 100%;
 }
 .content{
   flex: 1;
@@ -99,7 +104,7 @@
 {
   font-size: 50rpx;
   position: relative;
-  top: -350rpx;
+  top: 100rpx;
   left: 295rpx;
   z-index: 20;
   color: #656565;
@@ -108,7 +113,7 @@
 {
   font-size: 35rpx;
   position: relative;
-  top: -280rpx;
+  top: 140rpx;
   left: 86rpx;
   z-index: 20;
   color: #53bbbb;
@@ -116,7 +121,7 @@
 .loading_box {
   width: 100%;
   position: relative;
-  top: -220rpx;
+  top: 180rpx;
   left: 356rpx;
   z-index: 20;
 }
