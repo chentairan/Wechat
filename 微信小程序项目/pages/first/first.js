@@ -18,30 +18,30 @@ Page({
         id: "one",
         name: "教学楼",
         open: false,
-        list_2: ["理教", "综教A", "综教B"]
+        list_2: ["理教", "综教A", "综教B"],
       },
       {
         id: "two",
         name: "楼层",
         open: false,
-        list_2: ["一层", "二层", "三层", "四层", "五层"]
+        list_2: ["一层", "二层", "三层", "四层", "五层"],
       },
       {
         id: "three",
         name: "教室",
         open: false,
-        list_2: ["1", "2", "3", "4", "5", "6", "7"]
+        list_2: ["1", "2", "3", "4", "5", "6", "7"],
       },
       {
         id: "four",
         name: "时间",
         open: false,
-        list_2: ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
+        list_2: ["1", "2", "3", "4", "5", "6", "7", "8", "9"],
       }
     ],
   /*Diff-下面*/
     /*检索条件*/
-    choiceOfSearch: ["理教", "二层", "2", "3"],
+    choiceOfSearch: ["教学楼", "楼层", "教室", "时间"],
     presentPage: 0
     /*Diff-上面*/
 
@@ -66,6 +66,7 @@ Page({
     });
   },
   
+
   /*二级菜单*/
   choose: function (e) {
     var i = e.currentTarget.id, list_1 = this.data.choiceOfSearch;//list_1为选择条件
@@ -73,7 +74,6 @@ Page({
     var list_2 = this.data.list;//list_2为原始数据中的list
     list_1[j] = i;
     list_2[j].name = i;
-
     this.setData({
       choiceOfSearch: list_1,
       list: list_2
@@ -135,6 +135,20 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
+
+  
+    var list = this.data.list;
+    var choice = this.data.choiceOfSearch;
+    choice = ["教学楼", "楼层", "教室", "时间"]
+    list[0].name = "教学楼";
+    list[1].name = "楼层";
+    list[2].name = "教室";
+    list[3].name = "时间";
+    this.setData({
+      list:list,
+      choiceOfSearch:choice
+    })
+
   
   },
 

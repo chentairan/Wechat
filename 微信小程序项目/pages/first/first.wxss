@@ -24,7 +24,6 @@
   left:40rpx;
   font-size: 30rpx;
 }
-
 .triangle
 {
     width: 0;
@@ -71,8 +70,6 @@
   left: 35rpx;
   top: 30rpx;
 }
-
-
 /*下拉菜单*/
 .widgets__list{
     display: none;
@@ -97,7 +94,6 @@
     padding-right: 40rpx;
     background-color: #FFFFFF;
 }
-
 .widget_2{
     border-bottom-left-radius: 3%;
     border-bottom-right-radius: 3%;
