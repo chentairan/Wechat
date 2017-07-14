@@ -70,9 +70,9 @@
   border-radius: 65rpx;
   box-shadow: 1rpx 0rpx 5rpx 1rpx #999999;
   background: #FF9100;
-  position: absolute;
+  position: fixed;
   left: 570rpx;
-  top: 930rpx;
+  bottom: 40rpx;
   z-index: 2;
 }
 /*icon样式*/
@@ -129,60 +129,53 @@
 .infor-button1{
     width: 45rpx;
     height: 45rpx;
-    box-shadow: 1rpx 0rpx 5rpx 1rpx #cccccc;
+    box-shadow: 0rpx 0rpx 4rpx 4rpx rgba(238, 238, 238, 0.4);
     position: absolute;
     top: 120rpx;
     right: 45rpx;
-    background-color: #ffffff; 
+    background-color: rgba(255, 255, 255, 0.8); 
 }
 
 .infor-button-1{
     width: 45rpx;
     height: 45rpx;
-    box-shadow: 1rpx 0rpx 5rpx 1rpx #cccccc;
+    box-shadow: 0rpx 0rpx 4rpx 4rpx rgba(238, 238, 238, 0.4);
     position: absolute;
     top: 120rpx;
     right: 45rpx;
-    background-color: #666666; 
+    background-color: rgba(238, 238, 238, 0.8); 
 }
 
 .inforSearch1-pic
 {
-    width: 43rpx; 
-    height: 43rpx;
+    width: 30rpx; 
+    height: 30rpx;
     position: absolute;
-    left: 3rpx;
-    top: 2rpx;
+    left: 8rpx;
+    top: 8rpx;
 }
 
 .infor-button2{
     width: 45rpx;
     height: 45rpx;
-    box-shadow: 1rpx 0rpx 5rpx 1rpx #cccccc;
+    box-shadow: 0rpx 0rpx 4rpx 4rpx rgba(238, 238, 238, 0.4);
     position: absolute;
     top: 120rpx;
     right: 90rpx;
-    background-color: #ffffff;  
+    background-color: rgba(255, 255, 255, 0.8);  
 }
 
 .infor-button-2{
     width: 45rpx;
     height: 45rpx;
-    box-shadow: 1rpx 0rpx 5rpx 1rpx #cccccc;
+    box-shadow: 0rpx 0rpx 4rpx 4rpx rgba(238, 238, 238, 0.4);
     position: absolute;
     top: 120rpx;
     right: 90rpx;
-    background-color: #666666;
+    background-color: rgba(238, 238, 238, 0.8);
 }
 
-.inforSearch1-pic
-{
-    width: 43rpx; 
-    height: 43rpx;
-    position: absolute;
-    left: 3rpx;
-    top: 2rpx;
-}
+
 
 .inforbar
 {

@@ -8,6 +8,11 @@ Page({
    */
   data: {
     /*初始化数据*/
+
+    openinfor1: false,
+    openinfor2: false,
+
+
     A: new Array(),
     inforList: [
       {
@@ -70,6 +75,9 @@ Page({
         ]
       },
     ],
+
+
+
     list: [
       {
         id: "one",
@@ -182,7 +190,7 @@ Page({
 
 
 
-
+/*后端查找*/
 
 Search:function(e)
 {
@@ -233,10 +241,18 @@ Search:function(e)
   console.log(this.data.A);
 },
 /*button转化 */
-Switch: function () {
+Switch1: function () {
   this.setData
     ({
-      openinfor1: !this.data.openinfor1
+      openinfor1: false,
+      openinfor2: false
+    });
+},
+Switch2: function () {
+  this.setData
+    ({
+      openinfor1: true,
+      openinfor2: true
     });
 },
 

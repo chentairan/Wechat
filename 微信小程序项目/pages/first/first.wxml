@@ -50,10 +50,10 @@
   </view>
 
   <!--信息样式转换按钮-->
-  <view class='{{openinfor1?"infor-button1":"infor-button-1"}}' hover="true" bindtap="Switch">
+  <view class='{{openinfor1?"infor-button1":"infor-button-1"}}' hover="true" bindtap="Switch1">
     <image  class="inforSearch1-pic" src= "/image/inforSearch1.png"></image>
   </view>
-  <view class='{{openinfor1?"infor-button-2":"infor-button2"}}' hover="true" bindtap="Switch">
+  <view class='{{openinfor2?"infor-button-2":"infor-button2"}}' hover="true" bindtap="Switch2">
     <image  class="inforSearch1-pic" src= "/image/inforSearch2.png"></image>
   </view>
 
@@ -72,13 +72,13 @@
         <view class="line"></view>
         <view class="flex_column">
           <block wx:for-items="{{inforlist.timearray}}" wx:for-item="itemName" wx:key="id">
-            <block wx:if="{{ itemName.item==1}}"> 
+            <block wx:if="{{ itemName.item==1}}">
               <image class="iconclass" src="/image/yes.png"></image>
             </block>
-            <block wx:else> 
+            <block wx:else>
               <image class="iconclass" src="/image/no.png"></image>
             </block>
-          </block>      
+          </block>
         </view>
       </view>
     </block>
