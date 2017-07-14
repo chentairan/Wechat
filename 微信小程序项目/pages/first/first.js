@@ -8,7 +8,68 @@ Page({
    */
   data: {
     /*初始化数据*/
-  
+    A: new Array(),
+    inforList: [
+      {
+        id: 1,
+        classroom: {
+          building: "1",
+          roomnumber: "201"
+        },
+        weekday: "周一",
+        basicinfor: {
+          hold: "150",
+          feature: "多媒体阶梯教室"
+        },
+        timearray: [
+          {
+            'id': 1,
+            'item': 1
+          }, {
+            'id': 2,
+            'item': 1
+          }, {
+            'id': 3,
+            'item': 0
+          }, {
+            'id': 4,
+            'item': 1
+          }, {
+            'id': 5,
+            'item': 0
+          },
+        ]
+      }, {
+        id: 2,
+        classroom: {
+          building: "1",
+          roomnumber: "304"
+        },
+        weekday: "周一",
+        basicinfor: {
+          hold: "120",
+          feature: "多媒体教室（钢琴）"
+        },
+        timearray: [
+          {
+            'id': 1,
+            'item': 0
+          }, {
+            'id': 2,
+            'item': 0
+          }, {
+            'id': 3,
+            'item': 1
+          }, {
+            'id': 4,
+            'item': 1
+          }, {
+            'id': 5,
+            'item': 0
+          },
+        ]
+      },
+    ],
     list: [
       {
         id: "one",
@@ -165,9 +226,19 @@ Search:function(e)
       console.log("查询失败: " + error.code + " " + error.message);
     }
   });
+  this.setData
+    ({
+      A: this.data.inforList
+    });
+  console.log(this.data.A);
 },
- 
-
+/*button转化 */
+Switch: function () {
+  this.setData
+    ({
+      openinfor1: !this.data.openinfor1
+    });
+},
 
   /**
    * 生命周期函数--监听页面加载

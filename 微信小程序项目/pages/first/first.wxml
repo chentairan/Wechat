@@ -11,11 +11,6 @@
         <view class="{{item.name.length==3?'triangle-bug':'triangle'}}"></view>
       </view>
     </view>
-
-
-
-
-      
         <view class="widgets__list {{item.open ? 'widgets__list_show' : ''}}">
         <block wx:for-items="{{item.list_2}}" wx:for-item="page" wx:for-index="page_x">
             <view  class="widget {{page_x==item.list_2.length-1?'widget_2':''}}"  id="{{page_x}}" bindtap="choose">
@@ -24,7 +19,6 @@
             </view>
         </block>
         </view>
-      
   </block>
 
   <view wx:else>
@@ -51,6 +45,41 @@
 
 
 <!--搜索按钮-->
-<view class="button" hover="true" hover-stay-time="0" bindtap="Search" >
-<image  class="Search-pic" src="/image/Search.png" mode="aspectFill"></image>
- </view>
+  <view class="button" hover="true" hover-stay-time="0" catchtap="Search" >
+    <image  class="Search-pic" src="/image/Search.png" mode="aspectFill"></image>
+  </view>
+
+  <!--信息样式转换按钮-->
+  <view class='{{openinfor1?"infor-button1":"infor-button-1"}}' hover="true" bindtap="Switch">
+    <image  class="inforSearch1-pic" src= "/image/inforSearch1.png"></image>
+  </view>
+  <view class='{{openinfor1?"infor-button-2":"infor-button2"}}' hover="true" bindtap="Switch">
+    <image  class="inforSearch1-pic" src= "/image/inforSearch2.png"></image>
+  </view>
+
+  <!--数据显示-->
+  <view wx:if="{{openinfor1==false}}">
+    <block wx:for="{{A}}" wx:key="id" wx:for-item="inforlist">
+      <view  class="inforbar">
+        <test space="true" class="basicinfor">
+        {{inforlist.classroom.building}}-{{inforlist.classroom.roomnumber}}/{{inforlist.weekday}}
+        </test>
+        <text class="holdandtype">
+            规模：{{inforlist.basicinfor.hold}}
+            
+            类型：{{inforlist.basicinfor.feature}}
+        </text>
+        <view class="line"></view>
+        <view class="flex_column">
+          <block wx:for-items="{{inforlist.timearray}}" wx:for-item="itemName" wx:key="id">
+            <block wx:if="{{ itemName.item==1}}"> 
+              <image class="iconclass" src="/image/yes.png"></image>
+            </block>
+            <block wx:else> 
+              <image class="iconclass" src="/image/no.png"></image>
+            </block>
+          </block>      
+        </view>
+      </view>
+    </block>
+  </view>

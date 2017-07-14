@@ -4,6 +4,8 @@
   display:flex;
   flex-direction: row;
   position: fixed;
+  top: 0;
+  z-index: 10;
   background:-webkit-linear-gradient(top, #53bbbb, rgba(83,187,187,0.9));
   box-shadow: 0 6rpx 8rpx rgba(83,187,187,0.5);
   border-bottom-left-radius: 8rpx;
@@ -71,7 +73,7 @@
   position: absolute;
   left: 570rpx;
   top: 930rpx;
-  z-index: -1;
+  z-index: 2;
 }
 /*icon样式*/
 .Search-pic
@@ -123,4 +125,124 @@
     left: 0;
     right: 0;
     background-color: #D8D8D8;
+}
+.infor-button1{
+    width: 45rpx;
+    height: 45rpx;
+    box-shadow: 1rpx 0rpx 5rpx 1rpx #cccccc;
+    position: absolute;
+    top: 120rpx;
+    right: 45rpx;
+    background-color: #ffffff; 
+}
+
+.infor-button-1{
+    width: 45rpx;
+    height: 45rpx;
+    box-shadow: 1rpx 0rpx 5rpx 1rpx #cccccc;
+    position: absolute;
+    top: 120rpx;
+    right: 45rpx;
+    background-color: #666666; 
+}
+
+.inforSearch1-pic
+{
+    width: 43rpx; 
+    height: 43rpx;
+    position: absolute;
+    left: 3rpx;
+    top: 2rpx;
+}
+
+.infor-button2{
+    width: 45rpx;
+    height: 45rpx;
+    box-shadow: 1rpx 0rpx 5rpx 1rpx #cccccc;
+    position: absolute;
+    top: 120rpx;
+    right: 90rpx;
+    background-color: #ffffff;  
+}
+
+.infor-button-2{
+    width: 45rpx;
+    height: 45rpx;
+    box-shadow: 1rpx 0rpx 5rpx 1rpx #cccccc;
+    position: absolute;
+    top: 120rpx;
+    right: 90rpx;
+    background-color: #666666;
+}
+
+.inforSearch1-pic
+{
+    width: 43rpx; 
+    height: 43rpx;
+    position: absolute;
+    left: 3rpx;
+    top: 2rpx;
+}
+
+.inforbar
+{
+    width: 650rpx; 
+    height: 160rpx;
+    margin: 20rpx 0 0 0;
+    position: relative;
+    left: 52rpx;
+    top: 180rpx;
+    box-shadow: 1rpx 0rpx 5rpx 1rpx #cccccc;
+    background-color: #ffffff; 
+}
+
+.line
+{
+    content: " ";
+    position: absolute;
+    left: 200rpx;
+    top: 10rpx;
+    width: 2rpx;
+    bottom: 10rpx;
+    height: 140rpx;
+    background-color: #F0F0F0;
+}
+
+.iconclass
+{
+    width: 15rpx; 
+    height: 15rpx;
+    position: relative;
+    z-index: 0;
+    right: -595rpx;
+    top: -35rpx;
+    margin: 10rpx 0 0 0;
+}
+
+.flex_column
+{
+    display: flex;
+    flex-direction: column;
+    -webkit-flex-direction: column; 
+    -o-flex-direction: column;
+}
+
+.basicinfor
+{
+    font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+    color: #999999;
+    font-size: 35rpx;
+    position: relative;
+    top:50rpx;
+    left:25rpx;
+}
+
+.holdandtype
+{
+    font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+    color: #999999;
+    font-size: 26rpx;
+    position: absolute;
+    top:5rpx;
+    left:220rpx;
 }
