@@ -2,23 +2,50 @@
 <!--菜单栏-->
 <view class="contain">
   <block wx:for="{{list}}" wx:for-item="item" wx:for-index="item_x">
+
+  <block wx:if="{{item_x < 3}}">
+
     <view  class="tab">
-
-   	  <view id="{{item.id}}" class="text" bindtap="tap">
-    	  {{item.name}}
-   	    <view class="{{item.name=='教学楼'?'triangle-bug':'triangle'}}"></view>
+      <view id="{{item.id}}" class="text" bindtap="tap">
+        {{item.name}}
+        <view class="{{item.name.length==3?'triangle-bug':'triangle'}}"></view>
       </view>
-
-			<view class="widgets__list {{item.open ? 'widgets__list_show' : ''}}">
-        <block wx:for-items="{{item.list_2}}" wx:for-item="page" wx:for-index="page_x">
-            <view  class="widget {{page_x==item.list_2.length-1?'widget_2':''}}" >
-              <view class="widget__name" id="{{page}}" bindtap="choose">{{page}}</view>
-              <view class="widget__line {{page_x == 0 ? 'widget__line_first' : ''}}"></view>
-       	    </view>
-        </block>
-      </view>
-      
     </view>
+
+
+
+
+      
+        <view class="widgets__list {{item.open ? 'widgets__list_show' : ''}}">
+        <block wx:for-items="{{item.list_2}}" wx:for-item="page" wx:for-index="page_x">
+            <view  class="widget {{page_x==item.list_2.length-1?'widget_2':''}}"  id="{{page_x}}" bindtap="choose">
+              <view class="widget__name" >{{page}}</view>
+              <view class="widget__line {{page_x == 0 ? 'widget__line_first' : ''}}"></view>
+            </view>
+        </block>
+        </view>
+      
+  </block>
+
+  <view wx:else>
+      
+      <view  class="tab">
+        <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{list[3].multiIndex}}" range="{{list[3].multiArray}}">
+          <view class="text">
+            时间
+          </view>
+          <view class="triangleForTime"></view>
+        </picker>  
+      </view>
+
+
+      <view class="widgets__list"></view>
+
+      
+  </view>
+    
+      
+
   </block>
 </view>
 

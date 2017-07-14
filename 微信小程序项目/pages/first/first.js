@@ -36,18 +36,25 @@ Page({
         id: "four",
         name: "时间",
         open: false,
-        list_2: ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
+
+        multiArray: [
+          ["第一周", "第二周", "第三周", "第四周", "第五周", "第六周", "第七周", "第八周"],
+          ["星期一", "星期二", "星期三", "星期四", "星期五", "星期六", "星期日"],
+          ["第一小节", "第二小节", "第三小节", "第四小节", "第五小节", "第六小节", "第七小节", "第八小节", "第九小节", "第十小节", "第十一小节", "第十二小节"]
+        ],
+
+        multiIndex: [0, 0, 0]      
       }
     ],
   /*Diff-下面*/
     /*检索条件*/
-    choiceOfSearch: [1,2,2,3],
+    choiceOfSearch: [0, 0, 0, 0, 0, 0],
     presentPage: 0
     /*Diff-上面*/
 
   },
 
-  /*Diff-下面*/
+/*Diff-下面*/
   /*一级菜单*/
   tap: function (e) {
     var id = e.currentTarget.id, list = this.data.list;
@@ -66,21 +73,59 @@ Page({
     });
   },
   
+
   /*二级菜单*/
   choose: function (e) {
     var i = e.currentTarget.id, list_1 = this.data.choiceOfSearch;//list_1为选择条件
     var j = this.data.presentPage;//j is the present page.
     var list_2 = this.data.list;//list_2为原始数据中的list
-    list_1[j] = i;
-    list_2[j].name = i;
-
+    i = Number(i);
+    list_1[j] = i + 1;
+    list_2[j].name = list_2[j].list_2[i];
     this.setData({
       choiceOfSearch: list_1,
       list: list_2
     });
 
   },
-/*Diff-上面*/
+/*Diff-上面*//
+
+
+/*picker组件*/
+
+
+
+  bindMultiPickerChange: function (e) {
+    var list = this.data.list;
+    var choiceOfSearch = this.data.choiceOfSearch;
+    choiceOfSearch[3] = e.detail.value[0]+1;
+    choiceOfSearch[4] = e.detail.value[1]+1;
+    choiceOfSearch[5] = e.detail.value[2]+1;
+
+    list[3].multiIndex = e.detail.value;
+    console.log('picker发送选择改变，携带值为', e.detail.value)
+    this.setData({
+      list: list,
+      choiceOfSearch: choiceOfSearch
+    })
+  },
+
+  bindMultiPickerColumnChange: function (e) {
+    console.log('修改的列为', e.detail.column, ',值为', e.detail.value);
+    var multiIndex = this.data.list[3].multiIndex;
+    var list = this.data.list;
+    multiIndex[e.detail.column] = e.detail.value;
+    list[3].multiIndex = multiIndex;
+    this.setData({
+      list: list
+    });
+  },
+
+
+
+
+
+
 
 Search:function(e)
 {
@@ -165,6 +210,18 @@ Search:function(e)
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
+
+
+    var list = this.data.list;
+    var choice = this.data.choiceOfSearch;
+    choice = [0, 0, 0, 0, 0, 0]
+    list[0].name = "教学楼";
+    list[1].name = "楼层";
+    list[2].name = "教室";
+    this.setData({
+      list:list,
+      choiceOfSearch:choice
+    })
   
   },
 
