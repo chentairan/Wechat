@@ -1,10 +1,6 @@
 // first.js
 var Bmob = require('../../utils/bmob.js');
 var common = require('../../utils/common.js');
-var building=1;
-var floor=3;
-var classroom=8;
-var time=0;
 Page({
 
   /**
@@ -88,7 +84,7 @@ Page({
     });
 
   },
-/*Diff-上面*//
+/*Diff-上面*/
 
 
 /*picker组件*/
@@ -130,15 +126,17 @@ Page({
 Search:function(e)
 {
   var p = ["1", "2A", "2B"];
-  var build = Bmob.Object.extend("li");
-  var query = new Bmob.Query(build);
-
+  var con=["li","zonga","zongb"];
+  
+  var bul = this.data.choiceOfSearch[0];
   var flo = this.data.choiceOfSearch[1];
   var cla = this.data.choiceOfSearch[2];
   var Nwe = this.data.choiceOfSearch[3];
   var wee = this.data.choiceOfSearch[4];
   var tim = this.data.choiceOfSearch[5];
 
+  var build = Bmob.Object.extend(con[bul-1]);
+  var query = new Bmob.Query(build);
   if (flo!= 0)
   { query.equalTo("floor", flo);
     console.log('操作');}
@@ -160,7 +158,7 @@ Search:function(e)
         var temp;
         if (object.get('class') < 10)
         { temp = '0' + object.get('class'); }
-        console.log(p[object.get('building')] + ' - ' + object.get('floor') + temp +':'  + object.get('Nweek')+'周,星期'+object.get('week')+'，时间段：'+object.get('time'));
+        console.log(p[object.get('building')-1] + ' - ' + object.get('floor') + temp +':'  + object.get('Nweek')+'周,星期'+object.get('week')+'，时间段：'+object.get('time'));
       }
     },
     error: function (error) {
