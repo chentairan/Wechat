@@ -11,11 +11,6 @@ Page({
 
     openinfor1: false,
     openinfor2: false,
-    Default :
-    {
-      name:0,
-      status: [false, false, false, false, false]
-    },
    
 
     list: [
@@ -141,11 +136,9 @@ Search:function(e)
   var Build = Bmob.Object.extend(rep1[info[0]-1]);
   var build = new Bmob.Query(Build);
 
-  var Default = this.data.Default;
   var content = new Array();
   //中间变量
   var storage = new Array();
-  var temp;
 
   for (var i = 1; i < 6; i++) 
   {
@@ -160,7 +153,7 @@ Search:function(e)
       for (i = 0; i < results.length; i++)
       {
         var object = results[i];
-
+        var temp;
         if (object.get('class') < 10)
         {
           temp = '0' + object.get('class');
@@ -180,10 +173,10 @@ Search:function(e)
         }
         if (j == storage.length)
         {
-          content[j]=new Object();
+          content[j] = new Object();
           storage[storage.length] = temp;
-          content[j] = Default;
           content[j].name = temp;
+          content[j].status = [false, false, false, false, false];
           content[j].status[object.get('time') - 1] = true;
         }
       }
@@ -193,6 +186,7 @@ Search:function(e)
       console.log("查询失败!");
     }
   });
+  console.log(content);
   this.data.Content=content;
   this.setData({
     Content: this.data.Content
