@@ -1,6 +1,7 @@
 // first.js
 var Bmob = require('../../utils/bmob.js');
 var common = require('../../utils/common.js');
+var Content= new Array();
 Page({
 
   /**
@@ -11,7 +12,7 @@ Page({
 
     openinfor1: false,
     openinfor2: false,
-   
+    
 
     list: [
       {
@@ -187,10 +188,8 @@ Search:function(e)
     }
   });
   console.log(content);
-  this.data.Content=content;
-  this.setData({
-    Content: this.data.Content
-  });
+  Content=content;
+  console.log(Content);
 },
 /*button转化 */
 Switch1: function () {
