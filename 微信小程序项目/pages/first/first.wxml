@@ -57,7 +57,7 @@
     <image  class="inforSearch1-pic" src= "/image/inforSearch2.png"></image>
   </view>
 
-  <!--数据显示-->
+  <!--列表数据显示-->
   <view wx:if="{{openinfor1==false}}">
     <block wx:for="{{A}}" wx:key="id" wx:for-item="inforlist">
       <view  class="inforbar">

@@ -11,72 +11,12 @@ Page({
 
     openinfor1: false,
     openinfor2: false,
-
-
-    A: new Array(),
-    inforList: [
-      {
-        id: 1,
-        classroom: {
-          building: "1",
-          roomnumber: "201"
-        },
-        weekday: "周一",
-        basicinfor: {
-          hold: "150",
-          feature: "多媒体阶梯教室"
-        },
-        timearray: [
-          {
-            'id': 1,
-            'item': 1
-          }, {
-            'id': 2,
-            'item': 1
-          }, {
-            'id': 3,
-            'item': 0
-          }, {
-            'id': 4,
-            'item': 1
-          }, {
-            'id': 5,
-            'item': 0
-          },
-        ]
-      }, {
-        id: 2,
-        classroom: {
-          building: "1",
-          roomnumber: "304"
-        },
-        weekday: "周一",
-        basicinfor: {
-          hold: "120",
-          feature: "多媒体教室（钢琴）"
-        },
-        timearray: [
-          {
-            'id': 1,
-            'item': 0
-          }, {
-            'id': 2,
-            'item': 0
-          }, {
-            'id': 3,
-            'item': 1
-          }, {
-            'id': 4,
-            'item': 1
-          }, {
-            'id': 5,
-            'item': 0
-          },
-        ]
-      },
-    ],
-
-
+    Default :
+    {
+      name:0,
+      status: [false, false, false, false, false]
+    },
+    Content : new Array(),
 
     list: [
       {
@@ -194,51 +134,69 @@ Page({
 
 Search:function(e)
 {
-  var p = ["1", "2A", "2B"];
-  var con=["li","zonga","zongb"];
-  
-  var bul = this.data.choiceOfSearch[0];
-  var flo = this.data.choiceOfSearch[1];
-  var cla = this.data.choiceOfSearch[2];
-  var Nwe = this.data.choiceOfSearch[3];
-  var wee = this.data.choiceOfSearch[4];
-  var tim = this.data.choiceOfSearch[5];
+  var rep1 = ["li", "zonga", "zongb"];
+  var rep2 = ["floor", "class", "Nweek", "week", "time"];
+  var rep3 = ["1-", "2A-", "2B-"];
+  var info = this.data.choiceOfSearch;
+  var Build = Bmob.Object.extend(rep1[info[0]-1]);
+  var build = new Bmob.Query(Build);
 
-  var build = Bmob.Object.extend(con[bul-1]);
-  var query = new Bmob.Query(build);
-  if (flo!= 0)
-  { query.equalTo("floor", flo);
-    console.log('操作');}
-  if (cla != 0)
-  { query.equalTo("class", cla); }
-  if (Nwe != 0)
-  { query.equalTo("Nweek", Nwe); }
-  if (wee != 0)
-  { query.equalTo("week", wee); }
-  if (tim != 0)
-  { query.equalTo("time", tim); }
+  var Default = this.data.Default;
+  var content = this.data.Content;
+
+  //中间变量
+  var storage = new Array();
+  storage[0]=0;
+  var temp;
+
+  for (var i = 1; i < 6; i++) 
+  {
+    if (info[i] != 0) 
+    {
+      build.equalTo(rep2[i-1], info[i]);
+      console.log(rep2[i-1]);
+    }
+  }
   // 查询所有数据
-  query.find({
+  build.find({
     success: function (results) {
-      console.log("共查询到 " + results.length + " 条记录");
-      // 循环处理查询到的数据
-      for (var i = 0; i < results.length; i++) {
+      for (i = 0; i < results.length; i++)
+      {
         var object = results[i];
-        var temp;
+
         if (object.get('class') < 10)
-        { temp = '0' + object.get('class'); }
-        console.log(p[object.get('building')-1] + ' - ' + object.get('floor') + temp +':'  + object.get('Nweek')+'周,星期'+object.get('week')+'，时间段：'+object.get('time'));
+        {
+          temp = '0' + object.get('class');
+        }
+        
+        temp = rep3[object.get('building') - 1] + object.get('floor').toString() + temp.toString();
+        console.log(temp);//测试
+        for (var j = 0; j < storage.length; j++) 
+        {
+          if (temp == storage[j])
+          {
+            content[j].status[object.get('time') - 1] = true;
+            break;
+          }
+        }
+        if (j == storage.length)
+        {
+          storage[storage.length] = temp;
+          content[j] = Default;
+          content[j].name = temp;
+          content[j].status[object.get('time') - 1] = true;
+        }
       }
+      console.log(content);//测试
     },
     error: function (error) {
-      console.log("查询失败: " + error.code + " " + error.message);
+      console.log("查询失败!");
     }
   });
-  this.setData
-    ({
-      A: this.data.inforList
-    });
-  console.log(this.data.A);
+  console.log(content);//测试
+  this.setData({
+    Content: content
+  });
 },
 /*button转化 */
 Switch1: function () {
