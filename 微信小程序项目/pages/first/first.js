@@ -1,7 +1,7 @@
 // first.js
 var Bmob = require('../../utils/bmob.js');
 var common = require('../../utils/common.js');
-var Content;
+var that=this;
 Page({
 
   /**
@@ -130,6 +130,7 @@ Page({
 
 Search:function(e)
 {
+  var that = this;
   var rep1 = ["li", "zonga", "zongb"];
   var rep2 = ["floor", "class", "Nweek", "week", "time"];
   var rep3 = ["1-", "2A-", "2B-"];
@@ -150,7 +151,7 @@ Search:function(e)
   }
   // 查询所有数据
   build.find({
-    success: function (results,e) {
+    success: function (results) {
       for (i = 0; i < results.length; i++)
       {
         var object = results[i];
@@ -181,19 +182,16 @@ Search:function(e)
           content[j].status[object.get('time') - 1] = true;
         }
       }
-      
-      Content=content;
-      console.log(content);
+      that.setData
+        ({
+          inforlist: content
+      });
     },
     error: function (error)
     {
       console.log("查询失败!");
     }
   });
-  this.setData
-    ({
-      inforlist: Content
-    });
 },
 /*button转化 */
 Switch1: function () {
