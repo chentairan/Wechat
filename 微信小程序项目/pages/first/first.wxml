@@ -59,11 +59,11 @@
 
   <!--列表数据显示-->
   <view wx:if="{{openinfor1==false}}">
-    <block wx:for="{{A}}" wx:key="id" wx:for-item="inforlist">
+    <block wx:for="{{inforlist}}"  wx:for-item="inforlist">
       <view  class="inforbar">
-        <test space="true" class="basicinfor">
-        {{inforlist.classroom.building}}-{{inforlist.classroom.roomnumber}}/{{inforlist.weekday}}
-        </test>
+        <view space="true" class="basicinfor">
+        {{inforlist.name}}
+        </view>
         <text class="holdandtype">
             规模：{{inforlist.basicinfor.hold}}
             
@@ -71,8 +71,8 @@
         </text>
         <view class="line"></view>
         <view class="flex_column">
-          <block wx:for-items="{{inforlist.timearray}}" wx:for-item="itemName" wx:key="id">
-            <block wx:if="{{ itemName.item==1}}">
+          <block wx:for-items="{{inforlist.status}}" wx:for-item="itemName" >
+            <block wx:if="{{ itemName}}">
               <image class="iconclass" src="/image/yes.png"></image>
             </block>
             <block wx:else>

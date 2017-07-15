@@ -1,7 +1,7 @@
 // first.js
 var Bmob = require('../../utils/bmob.js');
 var common = require('../../utils/common.js');
-var Content= new Array();
+var Content;
 Page({
 
   /**
@@ -12,7 +12,7 @@ Page({
 
     openinfor1: false,
     openinfor2: false,
-    
+    inforlist :new Array(),
 
     list: [
       {
@@ -150,7 +150,7 @@ Search:function(e)
   }
   // 查询所有数据
   build.find({
-    success: function (results) {
+    success: function (results,e) {
       for (i = 0; i < results.length; i++)
       {
         var object = results[i];
@@ -181,15 +181,19 @@ Search:function(e)
           content[j].status[object.get('time') - 1] = true;
         }
       }
+      
+      Content=content;
+      console.log(content);
     },
     error: function (error)
     {
       console.log("查询失败!");
     }
   });
-  console.log(content);
-  Content=content;
-  console.log(Content);
+  this.setData
+    ({
+      inforlist: Content
+    });
 },
 /*button转化 */
 Switch1: function () {
