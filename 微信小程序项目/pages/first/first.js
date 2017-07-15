@@ -16,7 +16,7 @@ Page({
       name:0,
       status: [false, false, false, false, false]
     },
-    Content : new Array(),
+   
 
     list: [
       {
@@ -142,11 +142,9 @@ Search:function(e)
   var build = new Bmob.Query(Build);
 
   var Default = this.data.Default;
-  var content = this.data.Content;
-
+  var content = new Array();
   //中间变量
   var storage = new Array();
-  storage[0]=0;
   var temp;
 
   for (var i = 1; i < 6; i++) 
@@ -154,7 +152,6 @@ Search:function(e)
     if (info[i] != 0) 
     {
       build.equalTo(rep2[i-1], info[i]);
-      console.log(rep2[i-1]);
     }
   }
   // 查询所有数据
@@ -168,9 +165,11 @@ Search:function(e)
         {
           temp = '0' + object.get('class');
         }
-        
+        else
+        {
+          temp = object.get('class');
+        }
         temp = rep3[object.get('building') - 1] + object.get('floor').toString() + temp.toString();
-        console.log(temp);//测试
         for (var j = 0; j < storage.length; j++) 
         {
           if (temp == storage[j])
@@ -181,21 +180,22 @@ Search:function(e)
         }
         if (j == storage.length)
         {
+          content[j]=new Object();
           storage[storage.length] = temp;
           content[j] = Default;
           content[j].name = temp;
           content[j].status[object.get('time') - 1] = true;
         }
       }
-      console.log(content);//测试
     },
-    error: function (error) {
+    error: function (error)
+    {
       console.log("查询失败!");
     }
   });
-  console.log(content);//测试
+  this.data.Content=content;
   this.setData({
-    Content: content
+    Content: this.data.Content
   });
 },
 /*button转化 */

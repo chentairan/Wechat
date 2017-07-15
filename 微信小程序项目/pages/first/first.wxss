@@ -129,7 +129,7 @@
 .infor-button1{
     width: 45rpx;
     height: 45rpx;
-    box-shadow: 0rpx 0rpx 4rpx 4rpx rgba(238, 238, 238, 0.4);
+    box-shadow: 0rpx 0rpx 2rpx 2rpx rgba(238, 238, 238, 0.4);
     position: absolute;
     top: 120rpx;
     right: 45rpx;
@@ -139,7 +139,7 @@
 .infor-button-1{
     width: 45rpx;
     height: 45rpx;
-    box-shadow: 0rpx 0rpx 4rpx 4rpx rgba(238, 238, 238, 0.4);
+    box-shadow: 0rpx 0rpx 2rpx 2rpx rgba(238, 238, 238, 0.4);
     position: absolute;
     top: 120rpx;
     right: 45rpx;
@@ -158,7 +158,7 @@
 .infor-button2{
     width: 45rpx;
     height: 45rpx;
-    box-shadow: 0rpx 0rpx 4rpx 4rpx rgba(238, 238, 238, 0.4);
+    box-shadow: 0rpx 0rpx 2rpx 2rpx rgba(238, 238, 238, 0.4);
     position: absolute;
     top: 120rpx;
     right: 90rpx;
@@ -168,7 +168,7 @@
 .infor-button-2{
     width: 45rpx;
     height: 45rpx;
-    box-shadow: 0rpx 0rpx 4rpx 4rpx rgba(238, 238, 238, 0.4);
+    box-shadow: 0rpx 0rpx 2rpx 2rpx rgba(238, 238, 238, 0.4);
     position: absolute;
     top: 120rpx;
     right: 90rpx;
