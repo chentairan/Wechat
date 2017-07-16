@@ -215,12 +215,12 @@ Page({
 
 /*后端查找*/
   Search: function (e) {
-    var that = this ;
+    var that = this;
     //映射
     var rep1 = ["li", "zonga", "zongb"];
     var rep2 = ["floor", "class", "Nweek", "week", "time"];
     var rep3 = ["1-", "2A-", "2B-"];
-    var rep4 = ["一","二", "三", "四", "五", "六", "七"];
+    var rep4 = ["一", "二", "三", "四", "五", "六", "七"];
 
     //数据库声明
     var info = this.data.choiceOfSearch;
@@ -229,7 +229,9 @@ Page({
 
     //数组声明
     var content = new Array();
-
+    content.Nweek = new Array();
+    content.Nweek.week = new Array();
+    content.Nweek.week.time = new Array();
     //中间变量
     var storage = new Array();
 
@@ -262,11 +264,28 @@ Page({
 
 
 
+
+
+
+
+
+
+
+
+
           for (var j = 0; j < storage.length; j++) {
             if (temp == storage[j]) {
-              content[j].Nweek.nname[object.get('Nweek') - 1] = temp1;
-              content[j].Nweek.week.wname[object.get('week') - 1] = temp2;
-              content[j].Nweek.week.time[object.get('time') - 1] = true;
+              if (!content[j].Nweek[object.get('Nweek') - 1]) {
+                content[j].Nweek[object.get('Nweek') - 1] = new Object();
+                content[j].Nweek[object.get('Nweek') - 1].week = new Array();
+              }
+              content[j].Nweek[object.get('Nweek') - 1].nname = temp1;
+              if (!content[j].Nweek[object.get('Nweek') - 1].week[object.get('week') - 1]) {
+                content[j].Nweek[object.get('Nweek') - 1].week[object.get('week') - 1] = new Object();
+                content[j].Nweek[object.get('Nweek') - 1].week[object.get('week') - 1].time = [false, false, false, false, false];
+              }
+              content[j].Nweek[object.get('Nweek') - 1].week[object.get('week') - 1].wname = temp2;
+              content[j].Nweek[object.get('Nweek') - 1].week[object.get('week') - 1].time[object.get('time') - 1] = true;
               break;
             }
           }
@@ -274,15 +293,15 @@ Page({
             content[j] = new Object();
             storage[storage.length] = temp;
             content[j].cname = temp;
-            content[j].Nweek = new Object();
-            content[j].Nweek.nname = new Array();
-            content[j].Nweek.nname[object.get('Nweek') - 1] = temp1;
-            content[j].Nweek.week = new Object();
-            content[j].Nweek.week.wname = new Array();
-            content[j].Nweek.week.wname[object.get('week') - 1] = temp2;
-            content[j].Nweek.week.time = new Array();
-            content[j].Nweek.week.time = [false, false, false, false, false];
-            content[j].Nweek.week.time[object.get('time') - 1] = true;
+            content[j].Nweek = new Array();
+            content[j].Nweek[object.get('Nweek') - 1] = new Object();
+            content[j].Nweek[object.get('Nweek') - 1].nname = temp1;
+            content[j].Nweek[object.get('Nweek') - 1].week = new Array();
+            content[j].Nweek[object.get('Nweek') - 1].week[object.get('week') - 1] = new Object();
+            content[j].Nweek[object.get('Nweek') - 1].week[object.get('week') - 1].wname = temp2;
+            content[j].Nweek[object.get('Nweek') - 1].week[object.get('week') - 1].time = new Array;
+            content[j].Nweek[object.get('Nweek') - 1].week[object.get('week') - 1].time = [false, false, false, false, false];
+            content[j].Nweek[object.get('Nweek') - 1].week[object.get('week') - 1].time[object.get('time') - 1] = true;
           }
         }
 
