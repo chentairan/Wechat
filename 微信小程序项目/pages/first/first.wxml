@@ -40,27 +40,32 @@
 
   <!--列表数据显示-->
   <view wx:if="{{openinfor1==false}}">
-    <block wx:for="{{inforlist}}"  wx:for-item="inforlist">
-      <view  class="inforbar">
-        <view space="true" class="basicinfor">
-        {{inforlist.name}}
-        </view>
-        <text class="holdandtype">
-            规模：{{inforlist.basicinfor.hold}}
+    <block wx:for="{{inforlist}}"  wx:for-item="Classroom">
+        <block wx:for="{{Classroom.Nweek}}" wx:for-item="Nweek">
+          <view class="Nweek">{{Nweek.nname}}</view>
+          <view  class="cname">{{Classroom.cname}}</view>
+          <block wx:for="{{Nweek.week}}" wx:for-item="Week">
+            <view class="inforbar">
+              <text class="holdandtype">
+                规模：{{}}
             
-            类型：{{inforlist.basicinfor.feature}}
-        </text>
-        <view class="line"></view>
-        <view class="flex_column">
-          <block wx:for-items="{{inforlist.status}}" wx:for-item="itemName" >
-            <block wx:if="{{ itemName}}">
-              <image class="iconclass" src="/image/yes.png"></image>
-            </block>
-            <block wx:else>
-              <image class="iconclass" src="/image/no.png"></image>
-            </block>
+                类型：{{}}
+              </text>
+              <view class="wname">{{Week.wname}}</view>
+              <view class="line1"></view>
+              <view class="flex_column">
+                <block wx:for="{{Week.time}}" wx:for-item="itemName" >
+                  <block wx:if="{{ itemName}}">
+                    <image class="iconclass" src="/image/yes.png"></image>
+                  </block>
+                  <block wx:else>
+                    <image class="iconclass" src="/image/no.png"></image>
+                  </block>
+                </block>
+              </view>
+            </view>
           </block>
-        </view>
-      </view>
-    </block>
-  </view>
+        </block>
+      </block>
+    </view>
+  

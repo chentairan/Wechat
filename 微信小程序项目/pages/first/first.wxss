@@ -162,17 +162,18 @@ page
 .inforbar
 {
     width: 650rpx; 
-    height: 160rpx;
-    margin: 20rpx 0 0 0;
+    height: 200rpx;
+    margin: 25rpx;
     position: relative;
-    left: 52rpx;
+    float: left;
+    left: 20rpx;
     top: 180rpx;
     box-shadow: 0rpx 0rpx 5rpx 5rpx rgba(238, 238, 238, 0.4);
     background-color: #ffffff; 
     border-radius: 8rpx;
 }
 
-.line
+.line1
 {
     content: " ";
     position: absolute;
@@ -180,7 +181,7 @@ page
     top: 10rpx;
     width: 2rpx;
     bottom: 10rpx;
-    height: 140rpx;
+    height: 180rpx;
     background-color: #F0F0F0;
 }
 
@@ -191,8 +192,8 @@ page
     position: relative;
     z-index: 0;
     right: -595rpx;
-    top: -35rpx;
-    margin: 10rpx 0 0 0;
+    top: 20rpx;
+    margin: 15rpx 0 0 0;
 }
 
 .flex_column
@@ -203,22 +204,46 @@ page
     -o-flex-direction: column;
 }
 
-.basicinfor
-{
-    font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
-    color: #999999;
-    font-size: 35rpx;
-    position: relative;
-    top:60rpx;
-    left:25rpx;
-}
-
 .holdandtype
 {
     font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
     color: #999999;
     font-size: 26rpx;
     position: absolute;
-    top:5rpx;
+    top: 20rpx;
     left:220rpx;
+}
+
+.Nweek
+{
+    font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+    color: #999999;
+    font-size: 35rpx;
+    float: left;
+    margin: 10rpx;
+    position: relative;
+    top:180rpx;
+    left:25rpx;
+}
+
+.cname
+{
+    font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+    color: #999999;
+    font-size: 35rpx;
+    float: left;
+    margin: 10rpx;
+    position: relative;
+    top:180rpx;
+    left:25rpx;
+}
+
+.wname
+{
+    font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+    color: #999999;
+    font-size: 40rpx;
+    position: absolute;
+    top: 80rpx;
+    left:25rpx;
 }
