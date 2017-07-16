@@ -1,9 +1,14 @@
 /* first.wxss */
+page
+{
+  background-color: #f7f7f7;
+}
+
 .contain
 {
   display:flex;
   flex-direction: row;
-  position: relative;
+  position: fixed;
   top: 0;
   z-index: 10;
   background:-webkit-linear-gradient(top, #53bbbb, rgba(83,187,187,0.9));
