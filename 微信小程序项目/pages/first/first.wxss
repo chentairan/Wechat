@@ -53,8 +53,8 @@ page
   box-shadow: 1rpx 0rpx 5rpx 1rpx #999999;
   background: #FF9100;
   position: fixed;
-  left: 570rpx;
-  bottom: 40rpx;
+  left: 0rpx;
+  bottom: 0rpx;
   z-index: 2;
 }
 /*icon样式*/

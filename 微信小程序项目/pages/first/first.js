@@ -81,6 +81,11 @@ Page({
     ],
     multiIndex_time: [0, 0, 0],      
     
+    /*按钮的选择*/   
+    x: 275,
+    y: 402,
+
+
     /*检索条件*/
     choiceOfSearch: [0, 0, 0, 0, 0, 0],  
   },

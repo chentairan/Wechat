@@ -25,10 +25,13 @@
 
 
 <!--搜索按钮-->
-  <view class="button" hover="true" hover-stay-time="0" catchtap="Search" >
-    <image  class="Search-pic" src="/image/Search.png" mode="aspectFill"></image>
-  </view>
-
+  <movable-area style="z-index:11; position:fixed; left:5rpx; height:850rpx; width:740rpx; top:200rpx;backgroung:blue;">
+    <movable-view style="height: 130rpx; width: 130rpx; border-radius: 5rpx;" x="{{x}}" y="{{y}}" direction="all" out-of-bounds="true">
+    <view class="button" hover="true" hover-stay-time="0" catchtap="Search" >
+      <image  class="Search-pic" src="/image/Search.png" mode="aspectFill"></image>
+    </view>
+    </movable-view>
+  </movable-area>
 
   <!--信息样式转换按钮-->
   <view class='{{openinfor1?"infor-button1":"infor-button-1"}}' hover="true" bindtap="Switch1">
