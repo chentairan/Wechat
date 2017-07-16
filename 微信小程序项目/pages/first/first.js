@@ -21,8 +21,8 @@ Page({
     */
     multiArray_classroom: [
       ['理教', '综教A', '综教B'],
-      ['（不选）', '一层', '二层', '三层', '四层', '五层'],
-      ['（不选）']
+      ['不选', '一层', '二层', '三层', '四层', '五层'],
+      ['不选']
     ],
     objectMultiArray_classroom: [
       [
@@ -41,7 +41,7 @@ Page({
       ], [
         {
           id: 0,
-          name: '（不选）'
+          name: '不选'
         },
         {
           id: 1,
@@ -66,7 +66,7 @@ Page({
       ], [
         {
           id: 0,
-          name: '（不选）'
+          name: '不选'
         }
       ]
     ],
@@ -75,9 +75,9 @@ Page({
 
     /*时间的选择——multipickerForTime*/
     multiArray_time: [
-      ["（不选）", "第一周", "第二周", "第三周", "第四周", "第五周", "第六周", "第七周", "第八周", "第九周", "第十周", "第十一周", "第十二周", "第十三周", "第十四周", "第十五周", "第十六周", "第十七周", "第十八周", "第十九周"],
-      ["（不选）", "星期一", "星期二", "星期三", "星期四", "星期五"],
-      ["（不选）", "第一大节", "第二大节", "第三大节", "第四大节", "第五大节"]
+      ["不选", "第一周", "第二周", "第三周", "第四周", "第五周", "第六周", "第七周", "第八周", "第九周", "第十周", "第十一周", "第十二周", "第十三周", "第十四周", "第十五周", "第十六周", "第十七周", "第十八周", "第十九周"],
+      ["不选", "星期一", "星期二", "星期三", "星期四", "星期五"],
+      ["不选", "第一大节", "第二大节", "第三大节", "第四大节", "第五大节"]
     ],
     multiIndex_time: [0, 0, 0],      
     
@@ -111,73 +111,73 @@ Page({
       case 0://change the building
         data.multiIndex_classroom[1] = 0;
         data.multiIndex_classroom[2] = 0;
-        data.multiArray_classroom[2] = ['（不选）'];
+        data.multiArray_classroom[2] = ['不选'];
         break;
       case 1:
         switch (data.multiIndex_classroom[0]) {//change the floors according to the building
           case 0:// the li
             switch (data.multiIndex_classroom[1]) {
               case 0:
-                data.multiArray_classroom[2] = ['（不选）'];
+                data.multiArray_classroom[2] = ['不选'];
                 break;
               case 1:
-                data.multiArray_classroom[2] = ['（不选）', '1-101', '1-102', '1-103', '1-104', '1-105', '1-106', '1-107', '1-108', '1-109'];
+                data.multiArray_classroom[2] = ['不选', '1-101', '1-102', '1-103', '1-104', '1-105', '1-106', '1-107', '1-108', '1-109'];
                 break;
               case 2:
-                data.multiArray_classroom[2] = ['（不选）', '1-201', '1-202', '1-203', '1-204', '1-205', '1-206', '1-207', '1-208', '1-209', '1-210'];
+                data.multiArray_classroom[2] = ['不选', '1-201', '1-202', '1-203', '1-204', '1-205', '1-206', '1-207', '1-208', '1-209', '1-210'];
                 break;
               case 3:
-                data.multiArray_classroom[2] = ['（不选）', '1-301', '1-302', '1-303', '1-304', '1-305', '1-306', '1-307', '1-308', '1-309', '1-310'];
+                data.multiArray_classroom[2] = ['不选', '1-301', '1-302', '1-303', '1-304', '1-305', '1-306', '1-307', '1-308', '1-309', '1-310'];
                 break;
               case 4:
-                data.multiArray_classroom[2] = ['（不选）', '1-401', '1-402', '1-403', '1-404', '1-405', '1-406', '1-407', '1-408', '1-409', '1-410'];
+                data.multiArray_classroom[2] = ['不选', '1-401', '1-402', '1-403', '1-404', '1-405', '1-406', '1-407', '1-408', '1-409', '1-410'];
                 break;
               case 5:
-                data.multiArray_classroom[2] = ['（不选）', '1-501', '1-502', '1-503', '1-504', '1-505', '1-506'];
+                data.multiArray_classroom[2] = ['不选', '1-501', '1-502', '1-503', '1-504', '1-505', '1-506'];
                 break;
             }
             break;
           case 1://the zongA
             switch (data.multiIndex_classroom[1]) {
               case 0:
-                data.multiArray_classroom[2] = ['（不选）'];
+                data.multiArray_classroom[2] = ['不选'];
                 break;
               case 1:
-                data.multiArray_classroom[2] = ['（不选）', '2A-101', '2A-102', '2A-103', '2A-104', '2A-105', '2A-106'];
+                data.multiArray_classroom[2] = ['不选', '2A-101', '2A-102', '2A-103', '2A-104', '2A-105', '2A-106'];
                 break;
               case 2:
-                data.multiArray_classroom[2] = ['（不选）', '2A-201', '2A-202', '2A-203', '2A-204', '2A-205', '2A-206'];
+                data.multiArray_classroom[2] = ['不选', '2A-201', '2A-202', '2A-203', '2A-204', '2A-205', '2A-206'];
                 break;
               case 3:
-                data.multiArray_classroom[2] = ['（不选）', '2A-301', '2A-302', '2A-303', '2A-304', '2A-305', '2A-306'];
+                data.multiArray_classroom[2] = ['不选', '2A-301', '2A-302', '2A-303', '2A-304', '2A-305', '2A-306'];
                 break;
               case 4:
-                data.multiArray_classroom[2] = ['（不选）', '2A-401', '2A-402', '2A-403', '2A-404', '2A-405', '2A-406'];
+                data.multiArray_classroom[2] = ['不选', '2A-401', '2A-402', '2A-403', '2A-404', '2A-405', '2A-406'];
                 break;
               case 5:
-                data.multiArray_classroom[2] = ['（不选）', '2A-501', '2A-502', '2A-503', '2A-504'];
+                data.multiArray_classroom[2] = ['不选', '2A-501', '2A-502', '2A-503', '2A-504'];
                 break;
             }
             break;
           case 2://the zongB
             switch (data.multiIndex_classroom[1]) {
               case 0:
-                data.multiArray_classroom[2] = ['（不选）'];
+                data.multiArray_classroom[2] = ['不选'];
                 break;
               case 1:
-                data.multiArray_classroom[2] = ['（不选）', '2B-101', '2B-102', '2B-103', '2B-104', '2B-105', '2B-106'];
+                data.multiArray_classroom[2] = ['不选', '2B-101', '2B-102', '2B-103', '2B-104', '2B-105', '2B-106'];
                 break;
               case 2:
-                data.multiArray_classroom[2] = ['（不选）', '2B-201', '2B-202', '2B-203', '2B-204', '2B-205', '2B-206'];
+                data.multiArray_classroom[2] = ['不选', '2B-201', '2B-202', '2B-203', '2B-204', '2B-205', '2B-206'];
                 break;
               case 3:
-                data.multiArray_classroom[2] = ['（不选）', '2B-301', '2B-302', '2B-303', '2B-304', '2B-305', '2B-306'];
+                data.multiArray_classroom[2] = ['不选', '2B-301', '2B-302', '2B-303', '2B-304', '2B-305', '2B-306'];
                 break;
               case 4:
-                data.multiArray_classroom[2] = ['（不选）', '2B-401', '2B-402', '2B-403', '2B-404', '2B-405', '2B-406'];
+                data.multiArray_classroom[2] = ['不选', '2B-401', '2B-402', '2B-403', '2B-404', '2B-405', '2B-406'];
                 break;
               case 5:
-                data.multiArray_classroom[2] = ['（不选）', '2B-501', '2B-502', '2B-503', '2B-504', '2B-505'];
+                data.multiArray_classroom[2] = ['不选', '2B-501', '2B-502', '2B-503', '2B-504', '2B-505'];
                 break;
             }
             break;
@@ -215,12 +215,12 @@ Page({
 
 /*后端查找*/
   Search: function (e) {
-
+    var that = this ;
     //映射
     var rep1 = ["li", "zonga", "zongb"];
     var rep2 = ["floor", "class", "Nweek", "week", "time"];
     var rep3 = ["1-", "2A-", "2B-"];
-    var rep4 = ["一"，"二", "三", "四", "五", "六", "七"];
+    var rep4 = ["一","二", "三", "四", "五", "六", "七"];
 
     //数据库声明
     var info = this.data.choiceOfSearch;
@@ -274,14 +274,19 @@ Page({
             content[j] = new Object();
             storage[storage.length] = temp;
             content[j].cname = temp;
+            content[j].Nweek = new Object();
+            content[j].Nweek.nname = new Array();
             content[j].Nweek.nname[object.get('Nweek') - 1] = temp1;
+            content[j].Nweek.week = new Object();
+            content[j].Nweek.week.wname = new Array();
             content[j].Nweek.week.wname[object.get('week') - 1] = temp2;
+            content[j].Nweek.week.time = new Array();
             content[j].Nweek.week.time = [false, false, false, false, false];
             content[j].Nweek.week.time[object.get('time') - 1] = true;
           }
         }
 
-
+        console.log(content);
 
 
         //修改数据
