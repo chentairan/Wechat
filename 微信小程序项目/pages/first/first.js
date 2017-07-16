@@ -214,71 +214,90 @@ Page({
   },
 
 /*后端查找*/
-Search:function(e)
-{
-  var that = this;
-  var rep1 = ["li", "zonga", "zongb"];
-  var rep2 = ["floor", "class", "Nweek", "week", "time"];
-  var rep3 = ["1-", "2A-", "2B-"];
-  var info = this.data.choiceOfSearch;
-  var Build = Bmob.Object.extend(rep1[info[0]-1]);
-  var build = new Bmob.Query(Build);
+  Search: function (e) {
 
-  var content = new Array();
-  //中间变量
-  var storage = new Array();
+    //映射
+    var rep1 = ["li", "zonga", "zongb"];
+    var rep2 = ["floor", "class", "Nweek", "week", "time"];
+    var rep3 = ["1-", "2A-", "2B-"];
+    var rep4 = ["一"，"二", "三", "四", "五", "六", "七"];
 
-  for (var i = 1; i < 6; i++) 
-  {
-    if (info[i] != 0) 
-    {
-      build.equalTo(rep2[i-1], info[i]);
+    //数据库声明
+    var info = this.data.choiceOfSearch;
+    var Build = Bmob.Object.extend(rep1[info[0] - 1]);
+    var build = new Bmob.Query(Build);
+
+    //数组声明
+    var content = new Array();
+
+    //中间变量
+    var storage = new Array();
+
+    //筛选条件
+    for (var i = 1; i < 6; i++) {
+      if (info[i] != 0) {
+        build.equalTo(rep2[i - 1], info[i]);
+      }
     }
-  }
-  // 查询所有数据
-  build.find({
-    success: function (results) {
-      for (i = 0; i < results.length; i++)
-      {
-        var object = results[i];
-        var temp;
-        if (object.get('class') < 10)
-        {
-          temp = '0' + object.get('class');
-        }
-        else
-        {
-          temp = object.get('class');
-        }
-        temp = rep3[object.get('building') - 1] + object.get('floor').toString() + temp.toString();
-        for (var j = 0; j < storage.length; j++) 
-        {
-          if (temp == storage[j])
-          {
-            content[j].status[object.get('time') - 1] = true;
-            break;
+
+    // 查询所有数据
+    build.find({
+      success: function (results) {
+        for (i = 0; i < results.length; i++) {
+          var object = results[i];
+          var temp;
+          var temp1;
+          var temp2;
+          //翻译成1-101、2A-102、2B-203形式,8周，星期一
+          if (object.get('class') < 10) {
+            temp = '0' + object.get('class');
+          }
+          else {
+            temp = object.get('class');
+          }
+
+          temp = rep3[object.get('building') - 1] + object.get('floor').toString() + temp.toString();
+          temp1 = object.get('Nweek') + '周';
+          temp2 = '星期' + rep4[object.get('week') - 1];
+
+
+
+          for (var j = 0; j < storage.length; j++) {
+            if (temp == storage[j]) {
+              content[j].Nweek.nname[object.get('Nweek') - 1] = temp1;
+              content[j].Nweek.week.wname[object.get('week') - 1] = temp2;
+              content[j].Nweek.week.time[object.get('time') - 1] = true;
+              break;
+            }
+          }
+          if (j == storage.length) {
+            content[j] = new Object();
+            storage[storage.length] = temp;
+            content[j].cname = temp;
+            content[j].Nweek.nname[object.get('Nweek') - 1] = temp1;
+            content[j].Nweek.week.wname[object.get('week') - 1] = temp2;
+            content[j].Nweek.week.time = [false, false, false, false, false];
+            content[j].Nweek.week.time[object.get('time') - 1] = true;
           }
         }
-        if (j == storage.length)
-        {
-          content[j] = new Object();
-          storage[storage.length] = temp;
-          content[j].name = temp;
-          content[j].status = [false, false, false, false, false];
-          content[j].status[object.get('time') - 1] = true;
-        }
+
+
+
+
+        //修改数据
+        that.setData
+          ({
+            inforlist: content
+          });
+
+
+
+      },
+      error: function (error) {
+        console.log("查询失败!");
       }
-      that.setData
-        ({
-          inforlist: content
-      });
-    },
-    error: function (error)
-    {
-      console.log("查询失败!");
-    }
-  });
-},
+    });
+  },
 /*button转化 */
 Switch1: function () {
   this.setData
