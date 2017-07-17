@@ -46,13 +46,14 @@
     <block wx:for="{{inforlist}}"  wx:for-item="Classroom"  wx:if="{{Classroom.cname!=null}}">
         <block wx:for="{{Classroom.Nweek}}" wx:for-item="Nweek"  wx:if="{{Nweek.nname!=null}}">
           <view class="Nweek">{{Nweek.nname}}</view>
-          <view  class="cname">{{Classroom.cname}}</view>
+          <view  class="cname">{{Classroom.cname}}{{Classroom.number}}</view>
           <block wx:for="{{Nweek.week}}" wx:for-item="Week" wx:if="{{Week.wname!=null}}">
             <view class="inforbar">
               <text class="holdandtype">
-                规模：{{}}
+                规模：{{Classroom.number}}
             
-                类型：{{}}
+                类型：{{Classroom.type}}
+
               </text>
               <view class="wname">{{Week.wname}}</view>
               <view class="line1"></view>

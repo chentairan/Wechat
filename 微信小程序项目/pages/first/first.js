@@ -307,6 +307,12 @@ Page({
                 var object = results[0];
                 content[j].number = object.get('number');
                 content[j].type = object.get('type');
+                that.setData
+                  ({
+                    inforlist: content
+                  });
+                console.log(that.data.inforlist);
+
               },
               error: function (error) {
                 console.log("查询失败!");
@@ -331,7 +337,7 @@ Page({
           ({
             inforlist: content
           });
-
+        console.log(that.data.inforlist);
 
 
       },
