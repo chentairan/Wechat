@@ -2,7 +2,6 @@
 var Bmob = require('../../utils/bmob.js');
 var common = require('../../utils/common.js');
 var that=this;
-var app = getApp();
 Page({
 
   /**
@@ -13,7 +12,7 @@ Page({
     openinfor1: false,
     openinfor2: false,
     inforlist: new Array(),
-    wel_value: app.globalData.wel,
+    wel_value: false,
 
     /*教室的选择——multipickerForClassroom*/
     /*0 is the li.(changed in the functions)
@@ -93,12 +92,12 @@ Page({
   wel:function()
   {
     this.setData({
-      wel_value:false
+      wel_value:true
     });
-    wx.setStorage({
-      key: "welh",
-      data: false
-    })
+    try {
+      wx.setStorageSync('welh', true)
+    } catch (e) {
+    }
   },
 /*pickerForClassroom相关函数*/
 /* 1 is the classroom */
@@ -348,7 +347,15 @@ Switch2: function () {
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    var that=this;
+    wx.getStorage({
+      key: 'welh',
+      success: function (res) {
+        that.setData({
+          wel_value:res.data
+        })
+      }
+    })
   },
 
   /**

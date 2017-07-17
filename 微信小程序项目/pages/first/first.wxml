@@ -1,5 +1,5 @@
 <!--Welcome-->
-<view class="mask"  wx:if="{{wel_value==true}}">
+<view class="mask"  wx:if="{{wel_value==false}}">
   <view class="welcome">
     <image src="/image/logo.png" class="wel_logo"></image>
     <view class="wel_title">BIT教室</view>

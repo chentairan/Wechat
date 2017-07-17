@@ -353,13 +353,14 @@ page
 }
 .wel_logo
 {
-  width: 180rpx;
-  height: 180rpx;
+  width: 140rpx;
+  height: 140rpx;
   position: relative;
-  left :212rpx;
-  top: -110rpx;
+  left :232rpx;
+  top: -70rpx;
   box-shadow: 0 8rpx 2rpx 2rpx rgba(0,0,0,0.1);
   border-radius: 50%;
+  background-color: white
 }
 .wel_title
 {
@@ -367,22 +368,23 @@ page
   display: flex;
   justify-content: center;
   position: relative;
-  top: -50rpx;
+  top: 0rpx;
   color: #333333;
 }
 .wel_text
 {
-  font-size: 32rpx;
-  color: #333333;
+  font-size: 28rpx;
+  color: #6A6A6A;
   line-height: 80rpx;
   display: flex;
   justify-content: center;
   position: relative;
-  top: -50rpx;
+  top: 0rpx;
 }
 .wel_tap
 {
   background-color: #00A399;
+  top: 80rpx;
   width: 412rpx;
   height: 98rpx;
   border-radius: 12rpx;

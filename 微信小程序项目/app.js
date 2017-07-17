@@ -3,23 +3,13 @@ var Bmob = require('utils/bmob.js');
 Bmob.initialize("123abf63768d03aba6eaede069d0f7e1", "1e23019d9d04ce2270046b9c9bd502a5");
 App({
   
-  onLaunch: function() 
+  onLaunch: function()
   {
-    var that = getApp();
+    
     //调用API从本地缓存中获取数据
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
-    wx.getStorage({
-      key: 'welh',
-      success: function (res) {
-       console.log(res.data);
-       that.setData({
-         
-          'that.globalData.wel':res.data
-       })
-      }
-    })
   },
  
   getUserInfo: function(cb)
