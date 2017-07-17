@@ -135,7 +135,7 @@ Page({
                 data.multiArray_classroom[2] = ['不选', '1-301', '1-302', '1-303', '1-304', '1-305', '1-306', '1-307', '1-308', '1-309', '1-310'];
                 break;
               case 4:
-                data.multiArray_classroom[2] = ['不选', '1-401', '1-402', '1-403', '1-404', '1-405', '1-406', '1-407', '1-408', '1-409', '1-410'];
+                data.multiArray_classroom[2] = ['不选', '1-401', '1-402', '1-403', '1-404', '1-405', '1-406', '1-407', '1-408', '1-409'];
                 break;
               case 5:
                 data.multiArray_classroom[2] = ['不选', '1-501', '1-502', '1-503', '1-504', '1-505', '1-506'];
@@ -170,7 +170,7 @@ Page({
                 data.multiArray_classroom[2] = ['不选'];
                 break;
               case 1:
-                data.multiArray_classroom[2] = ['不选', '2B-101', '2B-102', '2B-103', '2B-104', '2B-105', '2B-106'];
+                data.multiArray_classroom[2] = ['不选', '2B-101', '2B-102', '2B-103', '2B-104', '2B-105'];
                 break;
               case 2:
                 data.multiArray_classroom[2] = ['不选', '2B-201', '2B-202', '2B-203', '2B-204', '2B-205', '2B-206'];
@@ -182,7 +182,7 @@ Page({
                 data.multiArray_classroom[2] = ['不选', '2B-401', '2B-402', '2B-403', '2B-404', '2B-405', '2B-406'];
                 break;
               case 5:
-                data.multiArray_classroom[2] = ['不选', '2B-501', '2B-502', '2B-503', '2B-504', '2B-505'];
+                data.multiArray_classroom[2] = ['不选', '2B-501', '2B-502', '2B-503', '2B-504', '2B-505', '2B-506'];
                 break;
             }
             break;
