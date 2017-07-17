@@ -219,7 +219,7 @@ Page({
   },
 
 /*后端查找*/
-  Search: function (e) {
+ Search: function (e) {
     var that = this;
     //映射
     var rep1 = ["li", "zonga", "zongb"];
