@@ -327,3 +327,70 @@ page
     top: 250rpx;
     margin: 0 5rpx 0 5rpx;
 }
+
+
+
+.mask
+{
+  background-color: rgba(0,0,0,0.484);
+  z-index: 20;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+}
+.welcome
+{
+  position: absolute;
+  left:74rpx;
+  top: 180rpx;
+  width: 604rpx;
+  height: 798rpx;
+  background-color: white;
+  border-radius: 12rpx;
+}
+.wel_logo
+{
+  width: 180rpx;
+  height: 180rpx;
+  position: relative;
+  left :212rpx;
+  top: -110rpx;
+  box-shadow: 0 8rpx 2rpx 2rpx rgba(0,0,0,0.1);
+  border-radius: 50%;
+}
+.wel_title
+{
+  font-size: 46rpx;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -50rpx;
+  color: #333333;
+}
+.wel_text
+{
+  font-size: 32rpx;
+  color: #333333;
+  line-height: 80rpx;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -50rpx;
+}
+.wel_tap
+{
+  background-color: #00A399;
+  width: 412rpx;
+  height: 98rpx;
+  border-radius: 12rpx;
+  position: relative;
+  left: 96rpx;
+  font-size: 40rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}

@@ -5,10 +5,21 @@ App({
   
   onLaunch: function() 
   {
+    var that = getApp();
     //调用API从本地缓存中获取数据
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
+    wx.getStorage({
+      key: 'welh',
+      success: function (res) {
+       console.log(res.data);
+       that.setData({
+         
+          'that.globalData.wel':res.data
+       })
+      }
+    })
   },
  
   getUserInfo: function(cb)
@@ -34,6 +45,7 @@ App({
 
   globalData:
   {
-    userInfo: null
+    userInfo: null,
+    wel:true
   }
 })

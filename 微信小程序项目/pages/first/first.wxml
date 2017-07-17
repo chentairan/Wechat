@@ -1,6 +1,26 @@
+<!--Welcome-->
+<view class="mask"  wx:if="{{wel_value==true}}">
+  <view class="welcome">
+    <image src="/image/logo.png" class="wel_logo"></image>
+    <view class="wel_title">BIT教室</view>
+    <text class="wel_text">
+    选中教室和时间
+    即可快速找到空闲教室
+    你身边的自习好帮手
+    </text>
+    <view class="wel_tap" bindtap="wel">
+    立即体验
+    </view>
+  </view>
+</view>
+
+
+
+
+
+
 <!--菜单栏-->
 <view class="contain">
-
   <view  class="tab">
     <picker mode="multiSelector" bindchange="bindMultiPickerChange_1" bindcolumnchange="bindMultiPickerColumnChange_1" value="{{multiIndex_classroom}}" range="{{multiArray_classroom}}">
       <view class="text">
