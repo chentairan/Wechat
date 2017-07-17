@@ -231,6 +231,7 @@ Page({
     var info = this.data.choiceOfSearch;
     var Build = Bmob.Object.extend(rep1[info[0] - 1]);
     var build = new Bmob.Query(Build);
+    var Class = Bmob.Object.extend('class');
 
     //数组声明
     var content = new Array();
@@ -295,9 +296,23 @@ Page({
             }
           }
           if (j == storage.length) {
+            var classroom = new Bmob.Query(Class);
+            classroom.equalTo("class", temp);
             content[j] = new Object();
             storage[storage.length] = temp;
             content[j].cname = temp;
+
+            classroom.find({
+              success: function (results) {
+                var object = results[0];
+                content[j].number = object.get('number');
+                content[j].type = object.get('type');
+              },
+              error: function (error) {
+                console.log("查询失败!");
+              }
+            });
+
             content[j].Nweek = new Array();
             content[j].Nweek[object.get('Nweek') - 1] = new Object();
             content[j].Nweek[object.get('Nweek') - 1].nname = temp1;
@@ -309,9 +324,7 @@ Page({
             content[j].Nweek[object.get('Nweek') - 1].week[object.get('week') - 1].time[object.get('time') - 1] = true;
           }
         }
-
         console.log(content);
-
 
         //修改数据
         that.setData
