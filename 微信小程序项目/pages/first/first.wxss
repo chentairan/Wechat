@@ -173,7 +173,21 @@ page
     border-radius: 8rpx;
 }
 
-.line1
+.inforblock
+{
+    width: 325rpx; 
+    height: 325rpx;
+    margin: 25rpx;
+    position: relative;
+    float: left;
+    left: 0rpx;
+    top: 180rpx;
+    box-shadow: 0rpx 0rpx 5rpx 5rpx rgba(238, 238, 238, 0.4);
+    background-color: #ffffff; 
+    border-radius: 8rpx;
+}
+
+.line
 {
     content: " ";
     position: absolute;
@@ -182,6 +196,17 @@ page
     width: 2rpx;
     bottom: 10rpx;
     height: 180rpx;
+    background-color: #F0F0F0;
+}
+
+.line1
+{
+    content: " ";
+    position: absolute;
+    left: 10rpx;
+    top: 150rpx;
+    width: 305rpx;
+    height: 3rpx;
     background-color: #F0F0F0;
 }
 
@@ -246,4 +271,59 @@ page
     position: absolute;
     top: 80rpx;
     left:25rpx;
+}
+
+.holdandtype1
+{
+    font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+    color: #999999;
+    font-size: 26rpx;
+    position: absolute;
+    top: 150rpx;
+    left:20rpx;
+}
+
+.Nweek1
+{
+    font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+    color: #999999;
+    font-size: 35rpx;
+    float: left;
+    margin: 10rpx;
+    position: relative;
+    top:10rpx;
+    left:25rpx;
+}
+
+.cname1
+{
+    font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+    color: #999999;
+    font-size: 35rpx;
+    float: left;
+    margin: 10rpx;
+    position: relative;
+    top:10rpx;
+    left:25rpx;
+}
+
+.wname1
+{
+    font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+    color: #999999;
+    font-size: 40rpx;
+    position: absolute;
+    top: 80rpx;
+    left:25rpx;
+}
+
+.iconclass1
+{
+    width: 15rpx; 
+    height: 15rpx;
+    position: relative;
+    z-index: 0;
+    right: 100rpx;
+    top: 250rpx;
+    margin: 0 7rpx 0 8rpx;
 }
