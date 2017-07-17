@@ -86,7 +86,7 @@
               </text>
               <view class="wname">{{Week.wname}}</view>
               <view class="line1"></view>
-              <view class="flex_row">
+              <view >
                 <block wx:for="{{Week.time}}" wx:for-item="itemName" >
                   <block wx:if="{{ itemName}}">
                     <image class="iconclass1" src="/image/yes.png"></image>

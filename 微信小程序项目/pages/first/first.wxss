@@ -203,9 +203,9 @@ page
 {
     content: " ";
     position: absolute;
-    left: 10rpx;
+    left: 20rpx;
     top: 150rpx;
-    width: 305rpx;
+    width: 285rpx;
     height: 3rpx;
     background-color: #F0F0F0;
 }
@@ -325,5 +325,5 @@ page
     z-index: 0;
     right: 100rpx;
     top: 250rpx;
-    margin: 0 7rpx 0 8rpx;
+    margin: 0 5rpx 0 5rpx;
 }

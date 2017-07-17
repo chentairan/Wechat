@@ -247,6 +247,7 @@ Page({
       }
     }
 
+    build.limit(1000);
     // 查询所有数据
     build.find({
       success: function (results) {
