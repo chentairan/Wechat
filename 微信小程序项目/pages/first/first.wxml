@@ -61,6 +61,7 @@
     <image  class="inforSearch1-pic" src= "/image/inforSearch2.png"></image>
   </view>
 
+ 
   <!--列表数据显示-->
   <view wx:if="{{openinfor1==false}}">
     <block wx:for="{{inforlist}}"  wx:for-item="Classroom"  wx:if="{{Classroom.cname!=null}}">
@@ -77,6 +78,12 @@
               </text>
               <view class="wname">{{Week.wname}}</view>
               <view class="line"></view>
+              <view class="iconback">
+              <view class="time">第一节</view>
+              <view class="time">第二节</view>
+              <view class="time">第三节</view>
+              <view class="time">第四节</view>
+              <view class="time">第五节</view>
               <view class="flex_column">
                 <block wx:for="{{Week.time}}" wx:for-item="itemName" >
                   <block wx:if="{{ itemName}}">
@@ -86,6 +93,7 @@
                     <image class="iconclass" src="/image/no.png"></image>
                   </block>
                 </block>
+              </view>
               </view>
             </view>
           </block>
