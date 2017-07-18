@@ -373,13 +373,14 @@ page
 }
 .wel_text
 {
-  font-size: 28rpx;
+  font-size: 32rpx;
   color: #6A6A6A;
   line-height: 80rpx;
   display: flex;
   justify-content: center;
   position: relative;
-  top: 0rpx;
+  top: -8rpx;
+  left: 10rpx;
 }
 .wel_tap
 {
