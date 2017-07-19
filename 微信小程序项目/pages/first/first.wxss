@@ -9,6 +9,7 @@ page
   display:flex;
   flex-direction: row;
   position: fixed;
+  width: 750rpx;
   top: 0;
   z-index: 10;
   background:-webkit-linear-gradient(top, #53bbbb, rgba(83,187,187,0.9));
@@ -50,7 +51,11 @@ page
   width: 130rpx;
   height: 130rpx;
   border-radius: 65rpx;
-  box-shadow: 1rpx 0rpx 5rpx 1rpx #999999;
+  box-shadow: inset 0 21rpx 30rpx -15rpx rgba(255,255,255,0.6),
+    0 0.9rpx 1.5rpx -0.6rpx rgba(100,100,100,1),
+    0 3rpx 6rpx -2.25rpx rgba(100,100,100,0.75),
+    0 3rpx 9rpx -1.5rpx rgba(100,100,100,0.5),
+    0 9rpx 9rpx -0.75rpx rgba(100,100,100,0.2);
   background: #FF9100;
   position: fixed;
   left: 0rpx;
@@ -111,7 +116,11 @@ page
 .infor-button1{
     width: 45rpx;
     height: 45rpx;
-    box-shadow: 0rpx 0rpx 2rpx 2rpx rgba(238, 238, 238, 0.4);
+    box-shadow: inset 0 21rpx 30rpx -15rpx rgba(255,255,255,0.6),
+    0 0.9rpx 1.5rpx -0.6rpx rgba(100,100,100,1),
+    0 3rpx 6rpx -2.25rpx rgba(100,100,100,0.75),
+    0 3rpx 9rpx -1.5rpx rgba(100,100,100,0.5),
+    0 9rpx 9rpx -0.75rpx rgba(100,100,100,0.2);
     position: absolute;
     top: 120rpx;
     right: 45rpx;
@@ -121,7 +130,11 @@ page
 .infor-button-1{
     width: 45rpx;
     height: 45rpx;
-    box-shadow: 0rpx 0rpx 2rpx 2rpx rgba(238, 238, 238, 0.4);
+    box-shadow: inset 0 21rpx 30rpx -15rpx rgba(255,255,255,0.6),
+    0 0.9rpx 1.5rpx -0.6rpx rgba(100,100,100,1),
+    0 3rpx 6rpx -2.25rpx rgba(100,100,100,0.75),
+    0 3rpx 9rpx -1.5rpx rgba(100,100,100,0.5),
+    0 9rpx 9rpx -0.75rpx rgba(100,100,100,0.2);
     position: absolute;
     top: 120rpx;
     right: 45rpx;
@@ -140,7 +153,12 @@ page
 .infor-button2{
     width: 45rpx;
     height: 45rpx;
-    box-shadow: 0rpx 0rpx 2rpx 2rpx rgba(238, 238, 238, 0.4);
+    box-shadow: 
+    inset 0 21rpx 30rpx -15rpx rgba(255,255,255,0.6),
+    0 0.9rpx 1.5rpx -0.6rpx rgba(100,100,100,1),
+    0 3rpx 6rpx -2.25rpx rgba(100,100,100,0.75),
+    0 3rpx 9rpx -1.5rpx rgba(100,100,100,0.5),
+    0 9rpx 9rpx -0.75rpx rgba(100,100,100,0.2);
     position: absolute;
     top: 120rpx;
     right: 90rpx;
@@ -150,7 +168,12 @@ page
 .infor-button-2{
     width: 45rpx;
     height: 45rpx;
-    box-shadow: 0rpx 0rpx 2rpx 2rpx rgba(238, 238, 238, 0.4);
+    box-shadow: 
+    inset 0 21rpx 30rpx -15rpx rgba(255,255,255,0.6),
+    0 0.9rpx 1.5rpx -0.6rpx rgba(100,100,100,1),
+    0 3rpx 6rpx -2.25rpx rgba(100,100,100,0.75),
+    0 3rpx 9rpx -1.5rpx rgba(100,100,100,0.5),
+    0 9rpx 9rpx -0.75rpx rgba(100,100,100,0.2);
     position: absolute;
     top: 120rpx;
     right: 90rpx;
@@ -168,7 +191,7 @@ page
     float: left;
     left: 25rpx;
     top: 180rpx;
-    box-shadow:
+    box-shadow: 
      inset 0 21rpx 30rpx -15rpx rgba(255,255,255,0.6),
     0 0.9rpx 1.5rpx -0.6rpx rgba(100,100,100,1),
     0 3rpx 6rpx -2.25rpx rgba(100,100,100,0.75),
@@ -187,7 +210,11 @@ page
     float: left;
     left: 0rpx;
     top: 180rpx;
-    box-shadow:0px 0px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 21rpx 30rpx -15rpx rgba(255,255,255,0.6),
+    0 0.9rpx 1.5rpx -0.6rpx rgba(100,100,100,1),
+    0 3rpx 6rpx -2.25rpx rgba(100,100,100,0.75),
+    0 3rpx 9rpx -1.5rpx rgba(100,100,100,0.5),
+    0 9rpx 9rpx -0.75rpx rgba(100,100,100,0.2);
     background-color: #ffffff; 
     border-radius: 8rpx;
 }
