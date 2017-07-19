@@ -1,9 +1,11 @@
 {
   "pages": [
+    
     "pages/first/first",
     "pages/second/second",
     "pages/third/third",
-    "pages/fourth/fourth"
+    "pages/fourth/fourth",
+    "pages/Thank/Thank"
   ],
   "window": {
     "backgroundTextStyle": "light",

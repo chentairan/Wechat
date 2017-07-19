@@ -14,13 +14,15 @@
     </navigator>
 </view>
 
-
-<view>
-  <view class="panel"  bindtap="toggleDialog">
+<view class="panel">
+  <navigator class="cell cell--access" url="/pages/Thank/Thank">
+    <view class="cell__bd">大感谢</view>
+    <view class="cell__ft"></view>
+  </navigator>
+  <view bindtap="toggleDialog">
     <view class="cell">支持我们</view>
   </view>
 </view>
-
 
 <view class="dialog {{ showDialog ? 'dialog--show' : '' }}">
     <view class="dialog__mask" bindtap="toggleDialog" />

@@ -1,11 +1,13 @@
-// welcome.js
+// Thank.js
+var Bmob = require('../../utils/bmob.js');
+var common = require('../../utils/common.js');
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+    thanklist:new Array()
   },
 
   /**
@@ -19,7 +21,30 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-  
+    var that=this;  
+    var Thank = Bmob.Object.extend('Thank');
+    var thank = new Bmob.Query(Thank);
+    thank.find({
+      success: function (results) {
+       var thanklist = new Array();
+       for(var i=0;i<results.length;i++)
+       {
+        var object = results[i];
+        thanklist[i] = new Object();
+        thanklist[i].name = object.get('name');
+        thanklist[i].image = object.get('image');
+        console.log(thanklist[i].image._url);
+       }
+       that.setData({
+          thanklist:thanklist
+       })
+      },
+      error: function (error) {
+        console.log("查询失败!");
+      }
+    });
+
+
   },
 
   /**
