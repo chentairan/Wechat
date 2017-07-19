@@ -168,7 +168,7 @@ page
     float: left;
     left: 25rpx;
     top: 180rpx;
-    box-shadow:0px 0px 24px rgba(0, 0, 0, 0.3);
+    box-shadow:0px 0px 20px rgba(0, 0, 0, 0.3);
     background-color: #ffffff; 
     border-radius: 8rpx;
 }
@@ -182,7 +182,7 @@ page
     float: left;
     left: 0rpx;
     top: 180rpx;
-    box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.3);
+    box-shadow:0px 0px 20px rgba(0, 0, 0, 0.3);
     background-color: #ffffff; 
     border-radius: 8rpx;
 }
