@@ -14,11 +14,6 @@
   </view>
 </view>
 
-
-
-
-
-
 <!--菜单栏-->
 <view class="contain">
   <view  class="tab">
@@ -43,7 +38,6 @@
 
 </view>
 
-
 <!--搜索按钮-->
   <movable-area style="z-index:11; position:fixed; left:5rpx; height:850rpx; width:740rpx; top:200rpx;backgroung:blue;">
     <movable-view style="height: 130rpx; width: 130rpx; border-radius: 5rpx;" x="{{x}}" y="{{y}}" direction="all" out-of-bounds="true">
@@ -61,7 +55,7 @@
     <image  class="inforSearch1-pic" src= "/image/inforSearch2.png"></image>
   </view>
 
- 
+
   <!--列表数据显示-->
   <view wx:if="{{openinfor1==false}}">
     <block wx:for="{{inforlist}}"  wx:for-item="Classroom"  wx:if="{{Classroom.cname!=null}}">
@@ -109,12 +103,13 @@
             <view class="Nweek1">{{Nweek.nname}}</view>
           <view  class="cname1">{{Classroom.cname}}</view>
               <text class="holdandtype1">
-                规模：{{Classroom.number}}    
+                规模：{{Classroom.number}}
+
                 类型：{{Classroom.type}}
               </text>
               <view class="wname">{{Week.wname}}</view>
               <view class="line1"></view>
-              <view >
+              <view class="flex_row">
                 <block wx:for="{{Week.time}}" wx:for-item="itemName" >
                   <block wx:if="{{ itemName}}">
                     <image class="iconclass1" src="/image/yes.png"></image>
