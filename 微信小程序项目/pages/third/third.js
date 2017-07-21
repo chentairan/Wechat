@@ -13,6 +13,7 @@ Page({
   /*提交反馈*/
   Submite:function(e)
   {
+    var that=this;
     var suggestion=new Suggestion();
     suggestion.set("text",e.detail.value);
     suggestion.save(null, 
@@ -25,7 +26,7 @@ Page({
           icon: 'success',
           duration: 2000
         })
-        wx.navigateBack(1);
+          setTimeout(that.goBack, 1500);
       },
       error: function (result, error)
       {
@@ -35,6 +36,12 @@ Page({
     })
 
   },
+
+  goBack: function()
+  {
+    wx.navigateBack(1);
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */
