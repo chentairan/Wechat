@@ -20,6 +20,12 @@ Page({
       success: function (result)
       {
         console.log("添加反馈成功, objectId:" + result.id);
+        wx.showToast({
+          title: '感谢您的反馈！',
+          icon: 'success',
+          duration: 2000
+        })
+        wx.navigateBack(1);
       },
       error: function (result, error)
       {
@@ -27,11 +33,7 @@ Page({
         console.log('添加反馈失败');
       }
     })
-    wx.showToast({
-      title: '感谢您的反馈！',
-            icon: 'success',
-            duration: 2000
-          })
+
   },
   /**
    * 生命周期函数--监听页面加载

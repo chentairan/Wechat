@@ -160,3 +160,13 @@ page
     opacity: 1;
   }
 }
+.contact
+{
+  color: #656565;
+  z-index: 20;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 450rpx;
+  font-size: 32rpx;
+}

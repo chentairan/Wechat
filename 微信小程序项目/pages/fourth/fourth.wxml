@@ -13,6 +13,7 @@
       <view class="loading_box">
         <view class="loading_fade_circle"></view>
       </view>
+      <text class="contact">联系方式：2856743386@qq.com</text>
     </view>
   </block>
 </view>

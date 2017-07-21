@@ -32,8 +32,6 @@ Page({
         var object = results[i];
         thanklist[i] = new Object();
         thanklist[i].name = object.get('name');
-        thanklist[i].image = object.get('image');
-        console.log(thanklist[i].image._url);
        }
        that.setData({
           thanklist:thanklist

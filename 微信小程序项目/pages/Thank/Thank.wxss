@@ -71,12 +71,5 @@
   align-items: center;
   justify-content: center;
   margin-top: 30rpx;
-}
-.t_image
-{
-  width: 300rpx;
-  height: 300rpx;
-  position:relative;
-  left:  225rpx;
-  margin-top: 30rpx;
+  color: gray;
 }

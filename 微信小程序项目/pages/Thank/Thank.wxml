@@ -11,6 +11,5 @@
 <view wx:for="{{thanklist}}" wx:for-item="list">
 
 <view class="text2">{{list.name}}</view>
-<image src="{{list.image._url}}" class="t_image"></image>
 
 </view>
