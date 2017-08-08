@@ -113,15 +113,17 @@ page
 {
   font-size: 35rpx;
   position: absolute;
-  top: 160rpx;
-  left: 86rpx;
+  top: 120rpx;
+  left: 21rpx;
+  line-height: 60rpx;
   z-index: 20;
-  color: #53bbbb;
+  padding: 45rpx;
+  color: #6c6c6c;
 }
 .loading_box {
   width: 100%;
   position: relative;
-  top: 160rpx;
+  top: 550rpx;
   left: 356rpx;
   z-index: 20;
 }
@@ -166,11 +168,11 @@ page
 }
 .contact
 {
-  color: #656565;
+  color: grey;
   z-index: 20;
   display: flex;
   position: absolute;
-  left: 159rpx;
-  top: 650rpx;
-  font-size: 32rpx;
+  left: 211.766rpx;
+  top: 540rpx;
+  font-size: 26rpx; 
 }

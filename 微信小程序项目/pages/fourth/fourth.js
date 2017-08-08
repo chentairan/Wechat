@@ -1,4 +1,3 @@
-
 Page({
   data: {
     angle: 0

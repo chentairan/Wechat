@@ -22,7 +22,7 @@
   position: relative;
   text-transform: uppercase;
   letter-spacing: 12rpx;
-  font-size: 150rpx;
+  font-size: 110rpx;
   font-weight: 900;
   text-decoration: none;
   color: white;
@@ -60,8 +60,7 @@
   justify-content: center;
   margin-left: 60rpx;
   margin-right: 60rpx;
-  margin-top: 60rpx;
-  margin-bottom: 100rpx;
+  margin-top: 30rpx;
   text-indent: 2em;
 }
 .text2

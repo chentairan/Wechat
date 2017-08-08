@@ -257,9 +257,13 @@ Page({
     }
 
     build.limit(1000);
+    wx.showLoading({
+      title: '请稍候',
+    })
     // 查询所有数据
     build.find({
       success: function (results) {
+        wx.hideLoading();
         for (i = 0; i < results.length; i++) {
           var object = results[i];
           var temp;
