@@ -60,5 +60,6 @@
 <p>后端文档：http://docs.bmob.cn/data/wechatApp/b_developdoc/doc/index.html</p>
 <p>Bmob API文档：http://docs.bmob.cn/data/JavaScript/i_doc/doc/index.html</p>
 <p>前端自由发挥</p>
+<p>进阶CSS可参考：https://codepen.io</p>
 </body>
 </html>
