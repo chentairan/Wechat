@@ -1,4 +1,4 @@
-<!--Welcome-->
+<!--first-->
 <view class="mask"  wx:if="{{wel_value==false}}">
   <view class="welcome">
     <image src="/image/logo.png" class="wel_logo"></image>
@@ -46,6 +46,12 @@
     </view>
     </movable-view>
   </movable-area>
+
+<!--清屏按钮-->
+<view hover="true" bindtap="clear" class="clear">
+ <image src="/image/Trash.png" class="clear-pic"></image>
+</view>
+
 
   <!--信息样式转换按钮-->
   <view class='{{openinfor1?"infor-button1":"infor-button-1"}}' hover="true" bindtap="Switch1">

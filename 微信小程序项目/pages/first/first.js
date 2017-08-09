@@ -229,6 +229,16 @@ Page({
     });
   },
 
+/*清屏*/
+  clear: function(e)
+  {
+    this.setData({
+      inforlist: null
+    })
+  }
+,
+
+
 /*后端查找*/
  Search: function (e) {
     var that = this;
