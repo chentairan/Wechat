@@ -1,8 +1,6 @@
 // first.js
 var Bmob = require('../../utils/bmob.js');
 var common = require('../../utils/common.js');
-var Operation = Bmob.Object.extend("Operation_data");
-
 var that=this;
 Page({
 
@@ -229,16 +227,6 @@ Page({
     });
   },
 
-/*清屏*/
-  clear: function(e)
-  {
-    this.setData({
-      inforlist: null
-    })
-  }
-,
-
-
 /*后端查找*/
  Search: function (e) {
     var that = this;
@@ -252,23 +240,6 @@ Page({
     var info = this.data.choiceOfSearch;
     var Build = Bmob.Object.extend(rep1[info[0] - 1]);
     var build = new Bmob.Query(Build);
-
-    //上传提交筛选信息到后端
-    var operation = new Operation();
-    // 添加数据，第一个入口参数是Json数据
-    operation.save({
-     data:info
-    }, {
-        success: function (result) {
-         console.log('上传成功')
-        },
-        error: function (result, error) {
-        console.log('上传失败！')
-        }
-      });
-
-
-
 
     //数组声明
     var content = new Array();
@@ -284,6 +255,7 @@ Page({
         build.equalTo(rep2[i - 1], info[i]);
       }
     }
+
     build.limit(1000);
     wx.showLoading({
       title: '请稍候',
