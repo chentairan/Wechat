@@ -378,7 +378,7 @@ page
     z-index: 0;
     right: 80rpx;
     top: 20rpx;
-    margin: 0 12rpx 0 0;
+    margin: 0 10rpx 0 0;
 }
 
 .mask
