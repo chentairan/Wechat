@@ -227,6 +227,15 @@ Page({
     });
   },
 
+  /*清屏*/
+  clear: function (e) {
+    this.setData({
+      inforlist: null
+    })
+    console.log('清屏');
+  }
+  ,
+
 /*后端查找*/
  Search: function (e) {
     var that = this;
