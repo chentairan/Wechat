@@ -56,10 +56,10 @@
 <!--白屏显示-->
 <view wx:if="{{blank==true}}">
 <text  class="blank">{{name}}</text>
-<navigator url="/pages/fourth/fourth" class="blank_nav">不要点这里!</navigator>
+<view class="blank_nav">
+<navigator style="z-index:11;" url="/pages/fourth/fourth" >不要点这里!</navigator>
 </view>
-
-
+</view>
 
 
   <!--信息样式转换按钮-->
