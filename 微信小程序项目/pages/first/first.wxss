@@ -491,14 +491,14 @@ page
   font-size: 56rpx;
   color: rgb(198,198,198);
   font-weight:300;
-  padding-top: 539rpx;
+  padding-top: 421rpx;
 }
 .blank_nav
 {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: rgb(223,223,223);
-  font-weight:200;
+  color: rgba(255,145,0,0.4);
+  font-weight:500;
   padding-top: 80rpx;
 }
