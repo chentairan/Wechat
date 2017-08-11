@@ -53,6 +53,15 @@
 </view>
 
 
+<!--白屏显示-->
+<view wx:if="{{blank==true}}">
+<text  class="blank">点击上方输入筛选条件</text>
+<navigator url="/pages/fourth/fourth" class="blank_nav">不要点这里!</navigator>
+</view>
+
+
+
+
   <!--信息样式转换按钮-->
   <view class='{{openinfor1?"infor-button1":"infor-button-1"}}' hover="true" bindtap="Switch1">
     <image  class="inforSearch1-pic" src= "/image/inforSearch1.png"></image>
