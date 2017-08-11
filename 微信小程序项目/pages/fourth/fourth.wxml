@@ -9,7 +9,7 @@
           <image class="wave wave-bg" src="/image/wave.png" mode="aspectFill"></image>
       </view>
       <text class="text1">BIT教室</text>
-      <text class="text2">BIT教室，是以查找空闲教室为主要功能的微信小程序，我们三人利用暑假空闲时间实现了这一功能。在接下来的版本中会不断迭代、完善，感谢大家的支持。同时也希望更多的人加入我们的开发!</text>
+      <text class="text2">BIT教室，是以查找空闲教室为主要功能的微信小程序，我们三人利用暑假空闲时间实现了这一功能。在接下来的版本中会不断迭代、完善，感谢大家的支持。同时也希望更多的人加入我们的开发、运营!</text>
        <text class="contact">微信：ctrTom，加入我们 ！</text>
       <view class="loading_box">
         <view class="loading_fade_circle"></view>
