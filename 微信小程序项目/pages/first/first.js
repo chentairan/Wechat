@@ -14,6 +14,7 @@ Page({
     inforlist: new Array(),
     wel_value: false,
     blank: true,
+    name:"点击上方选择筛选条件",
     /*教室的选择——multipickerForClassroom*/
     /*0 is the li.(changed in the functions)
      1 is the first floor.
@@ -239,9 +240,13 @@ Page({
 
 /*后端查找*/
  Search: function (e) {
-   this.setData({
-    blank: false
-   })
+   if (this.data.choiceOfSearch[0]!=0)
+   {
+      this.setData
+      ({
+        blank: false
+      })
+   }
     var that = this;
     //映射
     var rep1 = ["li", "zonga", "zongb"];

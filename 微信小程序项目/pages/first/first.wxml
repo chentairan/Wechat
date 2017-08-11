@@ -55,7 +55,7 @@
 
 <!--白屏显示-->
 <view wx:if="{{blank==true}}">
-<text  class="blank">点击上方输入筛选条件</text>
+<text  class="blank">{{name}}</text>
 <navigator url="/pages/fourth/fourth" class="blank_nav">不要点这里!</navigator>
 </view>
 
