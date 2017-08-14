@@ -1,5 +1,5 @@
 <!--first-->
-<view class="mask"  wx:if="{{wel_value==false}}">
+<view class="mask"  hidden="{{wel_value}}">
   <view class="welcome">
     <image src="/image/logo.png" class="wel_logo"></image>
     <view class="wel_title">BIT教室</view>
@@ -72,7 +72,7 @@
 
 
   <!--列表数据显示-->
-  <view wx:if="{{openinfor1==false}}">
+  <view hidden="{{openinfor1}}">
     <block wx:for="{{inforlist}}"  wx:for-item="Classroom"  wx:if="{{Classroom.cname!=null}}">
         <block wx:for="{{Classroom.Nweek}}" wx:for-item="Nweek"  wx:if="{{Nweek.nname!=null}}">
           <view class="Nweek">{{Nweek.nname}}</view>
@@ -110,7 +110,7 @@
       </block>
     </view>
   
-  <view wx:else>
+  <view hidden="{{!openinfor1}}">
     <block wx:for="{{inforlist}}"  wx:for-item="Classroom"  wx:if="{{Classroom.cname!=null}}">
         <block wx:for="{{Classroom.Nweek}}" wx:for-item="Nweek"  wx:if="{{Nweek.nname!=null}}">
           <block wx:for="{{Nweek.week}}" wx:for-item="Week" wx:if="{{Week.wname!=null}}">
