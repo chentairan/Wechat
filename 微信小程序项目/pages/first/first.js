@@ -12,7 +12,7 @@ Page({
     openinfor1: false,
     openinfor2: false,
     inforlist: new Array(),
-    wel_value: false,
+    wel_value: true,
     blank: true,
     name:"点击上方选择筛选条件",
     /*教室的选择——multipickerForClassroom*/
@@ -370,14 +370,19 @@ Switch2: function () {
    */
   onLoad: function (options) {
     var that=this;
-    wx.getStorage({
-      key: 'welh',
-      success: function (res) {
+    try {
+      var value = wx.getStorageSync('welh')
+      if (value) {
+        console.log('非第一次使用')
+      }
+      else{
         that.setData({
-          wel_value:res.data
+          wel_value:false
         })
       }
-    })
+    } catch (e) {
+      console.log('读取失败');
+    }
   },
 
   /**
