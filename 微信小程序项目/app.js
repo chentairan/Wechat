@@ -1,6 +1,11 @@
 //app.js
 var Bmob = require('utils/bmob.js');
+var BmobSocketIo = require('utils/bmobSocketIo.js').BmobSocketIo;
 Bmob.initialize("123abf63768d03aba6eaede069d0f7e1", "1e23019d9d04ce2270046b9c9bd502a5");
+BmobSocketIo.initialize("123abf63768d03aba6eaede069d0f7e1");
+
+
+
 App({
   
   onLaunch: function()

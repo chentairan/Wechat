@@ -1,11 +1,11 @@
 {
   "pages": [
-    
     "pages/first/first",
     "pages/second/second",
     "pages/third/third",
     "pages/fourth/fourth",
-    "pages/Thank/Thank"
+    "pages/Thank/Thank",
+    "pages/Chat/Chat"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -24,6 +24,12 @@
         "text": "找教室",
         "iconPath": "/image/find.png",
         "selectedIconPath": "/image/find-2.png"
+      },
+      {
+        "pagePath": "pages/Chat/Chat",
+        "text": "聊聊",
+        "iconPath": "/image/chat.png",
+        "selectedIconPath": "/image/chat-2.png"
       },
       {
         "pagePath": "pages/second/second",
