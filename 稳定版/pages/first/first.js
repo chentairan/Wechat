@@ -282,6 +282,20 @@ Page({
     build.find({
       success: function (results) {
         wx.hideLoading();
+        if(results.length>=30)
+        {
+          that.setData({
+            openinfor1: true,
+            openinfor2: true
+          })
+        }
+        else
+        {
+          that.setData({
+            openinfor1: false,
+            openinfor2: false
+          })
+        }
         for (i = 0; i < results.length; i++) {
           var object = results[i];
           var temp;
