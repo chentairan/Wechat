@@ -1,0 +1,17 @@
+<!--Thank.wxml-->
+<image src="/image/mark.png" class="image"></image>
+<view class="title">
+  <view class="text">感谢与致歉</view>
+</view>
+<view class="text1">
+感谢：有这么多 学生组织 和 朋友们 帮助我们将它推荐给更多人使用，在此感谢大家的支持。
+并且我们也乐于将这些优秀的组织推荐给大家
+</view>
+<view class="text1">
+致歉：由于目前受到的支持较少，我们没有足够的经费来购买独立、流畅的服务器。导致体验上可能会有网络卡顿现象，在此深表抱歉 ！
+</view>
+<view wx:for="{{thanklist}}" wx:for-item="list">
+
+<view class="text2">{{list.name}}</view>
+
+</view>
