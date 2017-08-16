@@ -55,10 +55,12 @@
 
 <!--白屏显示-->
 <view wx:if="{{blank==true}}">
-<text  class="blank">{{name}}</text>
-<view class="blank_nav">
-<navigator style="z-index:11;" url="/pages/fourth/fourth" >不要点这里!</navigator>
-</view>
+  <text  class="blank">{{name}}</text>
+  <view class="blank_nav">
+    <navigator style="z-index:11;" url="/pages/fourth/fourth" >不要点这里!</navigator>
+  </view>
+  <view class="drip"></view>
+  <view class="filters"></view>
 </view>
 
 
