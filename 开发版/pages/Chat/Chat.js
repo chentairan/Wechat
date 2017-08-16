@@ -74,7 +74,7 @@ Page({
         console.log('成功', res)
 
         var currentUser = Bmob.User.current();
-        that.pushMessage(createSystemMessage('恭喜' + currentUser.get('nickName')+'把聊聊成功分享给他人...'));
+        that.pushMessage(createSystemMessage('恭喜' + currentUser.get('nickName')+'把聊聊成功分享给他人'));
         wx.getShareInfo({
           shareTicket: res.shareTickets,
           success(res) {
@@ -128,7 +128,7 @@ Page({
     // 如果登录过，会记录当前用户openid
     var newOpenid = wx.getStorageSync('openid')
     if (!newOpenid) {
-      this.pushMessage(createSystemMessage('您当前未登陆...'));
+      this.pushMessage(createSystemMessage('您当前未登陆'));
     } else {
       var currentUser = Bmob.User.current();
       this.setData({ objectId: currentUser.id });
@@ -146,7 +146,7 @@ Page({
 
     var that = this;
 
-    that.pushMessage(createSystemMessage('欢迎加入群聊...'));
+    that.pushMessage(createSystemMessage('欢迎加入群聊'));
 
     //记录进入房间
     welcome(that);
@@ -162,7 +162,7 @@ Page({
       BmobSocketIo.updateTable("Chat"); //聊天记录表
       BmobSocketIo.updateTable("welcome");//欢迎进入表
       that.tunnel = true;
-      that.pushMessage(createSystemMessage('成功加入群聊...'));
+      that.pushMessage(createSystemMessage('成功加入群聊'));
 
     };
 
@@ -175,9 +175,9 @@ Page({
 
       if (tablename == "welcome") {
         if (data.online != 1) {
-          that.pushMessage(createSystemMessage(`${data.nickName}已加入群聊。`));
+          that.pushMessage(createSystemMessage(`${data.nickName}已加入群聊`));
         } else {
-          that.pushMessage(createSystemMessage(`${data.nickName}已退出群聊。`));
+          that.pushMessage(createSystemMessage(`${data.nickName}已退出群聊`));
         }
       }
     };
