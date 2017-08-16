@@ -17,7 +17,7 @@ page
   justify-content: space-between;
   padding: 20rpx 0;
   box-sizing: border-box;
-  background: linear-gradient(135deg,#1b3d3d, #53bbbb);
+  background: linear-gradient(112.457deg,#1b3d3d, #53bbbb);
 } 
 .userinfo
 {
