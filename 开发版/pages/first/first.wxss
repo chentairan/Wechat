@@ -269,6 +269,22 @@ page
   float:left;
 }
 
+.column1
+{
+    display: flex;
+    flex-direction: column;
+    -webkit-flex-direction: column; 
+    -o-flex-direction: column;
+}
+
+.row1
+{
+    display: flex;
+    flex-direction: row;
+    -webkit-flex-direction: row; 
+    -o-flex-direction: row;
+}
+
 .iconback
 {
     display: flex;
@@ -326,13 +342,23 @@ page
     left:40rpx;
 }
 
-.holdandtype1
+.hold
 {
     font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
     color: #999999;
     font-size: 26rpx;
     position: absolute;
-    top: 150rpx;
+    top: 166rpx;
+    left:20rpx;
+}
+
+.type
+{
+    font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+    color: #999999;
+    font-size: 26rpx;
+    position: absolute;
+    top: 218rpx;
     left:20rpx;
 }
 
@@ -377,7 +403,7 @@ page
   position:relative;
   z-index:0;
   left:85rpx;
-  top:210rpx;
+  top:220rpx;
   margin:0 20rpx 0 0;
 }
 

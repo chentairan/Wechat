@@ -74,7 +74,7 @@
 
 
   <!--列表数据显示-->
-  <view hidden="{{openinfor1}}">
+  <view wx:if="{{!openinfor1}}">
     <block wx:for="{{inforlist}}"  wx:for-item="Classroom"  wx:if="{{Classroom.cname!=null}}">
         <block wx:for="{{Classroom.Nweek}}" wx:for-item="Nweek"  wx:if="{{Nweek.nname!=null}}">
           <view class="Nweek">{{Nweek.nname}}</view>
@@ -112,21 +112,23 @@
       </block>
     </view>
   
-  <view hidden="{{!openinfor1}}">
+  <view wx:if="{{openinfor1}}">
     <block wx:for="{{inforlist}}"  wx:for-item="Classroom"  wx:if="{{Classroom.cname!=null}}">
         <block wx:for="{{Classroom.Nweek}}" wx:for-item="Nweek"  wx:if="{{Nweek.nname!=null}}">
           <block wx:for="{{Nweek.week}}" wx:for-item="Week" wx:if="{{Week.wname!=null}}">
             <view class="inforblock">
+            <view class="column1">
+            <view class="row1">
             <view class="Nweek1">{{Nweek.nname}}</view>
           <view  class="cname1">{{Classroom.cname}}</view>
-              <text class="holdandtype1">
-                规模：{{Classroom.number}}
-
-                类型：{{Classroom.type}}
-              </text>
+          </view>
+              <view class="row1">
+                <view class="hold"> 规模：{{Classroom.number}}</view>
+                <view class="type">类型：{{Classroom.type}}</view>
+              </view>
               <view class="wname">{{Week.wname}}</view>
               <view class="line1"></view>
-              <view class="flex_row">
+              <view class="row1">
                 <block wx:for="{{Week.time}}" wx:for-item="itemName" >
                   <block wx:if="{{ itemName}}">
                     <image class="iconclass1" src="/image/yes.png"></image>
@@ -135,6 +137,7 @@
                     <image class="iconclass1" src="/image/no.png"></image>
                   </block>
                 </block>
+              </view>
               </view>
             </view>
           </block>
