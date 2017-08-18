@@ -244,37 +244,53 @@ page
 
 .iconclass
 {
-    width: 15rpx; 
-    height: 15rpx;
-    position: relative;
-    z-index: 0;
-    left: 100rpx;
-    top: 20rpx;
-    margin: 15rpx 0 0 0;
-    float: left;
-    line-height: 15rpx;
+width:16rpx;
+height:16rpx;
+position:relative;
+z-index:0;
+left:45rpx;
+margin:16rpx 0 0 0;
+float:left;
+line-height:15rpx;
+top:22rpx;
+
 }
 
 .flex_column
 {
+  display: flex;
+  flex-direction: column;
+  -webkit-flex-direction: column; 
   position: relative; 
-  top: -140rpx;
   width: 20rpx;
+}
+
+.column1
+{
+  display: flex;
+  flex-direction: column;
+  -webkit-flex-direction: column; 
+}
+
+.row1
+{
+  display: flex;
+  flex-direction: row;
+  -webkit-flex-direction: row; 
 }
 
 .flex_row
 {
   position:relative;
   width:325rpx;
-  float:left;
 }
 
 .iconback
 {
     display: flex;
-    flex-direction: column;
-    -webkit-flex-direction: column; 
-    -o-flex-direction: column;
+    flex-direction: row;
+    -webkit-flex-direction: row; 
+    -o-flex-direction: row;
     width: 150rpx;
     height: 200rpx;
     position: relative;
@@ -326,13 +342,23 @@ page
     left:40rpx;
 }
 
-.holdandtype1
+.hold
 {
     font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
     color: #999999;
     font-size: 26rpx;
     position: absolute;
-    top: 150rpx;
+    top: 166rpx;
+    left:20rpx;
+}
+
+.type
+{
+    font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+    color: #999999;
+    font-size: 26rpx;
+    position: absolute;
+    top: 218rpx;
     left:20rpx;
 }
 
@@ -377,7 +403,7 @@ page
   position:relative;
   z-index:0;
   left:85rpx;
-  top:210rpx;
+  top:220rpx;
   margin:0 20rpx 0 0;
 }
 
@@ -452,13 +478,12 @@ page
 
 .time
 {
-    width: 60rpx;
-    height: 15rpx;
+    height: 16rpx;
     float: left;
     font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
     color: #999999;
-    font-size: 15rpx;
-    margin: 15rpx 0 0 0;
+    font-size: 16rpx;
+    margin: 16rpx 0 0 0;
     position: relative;
     top:20rpx;
     left:25rpx;
