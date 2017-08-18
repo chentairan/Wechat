@@ -90,12 +90,14 @@
               <view class="wname">{{Week.wname}}</view>
               <view class="line"></view>
               <view class="iconback">
+              <view class="column1">
               <view class="time">第一节</view>
               <view class="time">第二节</view>
               <view class="time">第三节</view>
               <view class="time">第四节</view>
               <view class="time">第五节</view>
-              <view class="flex_column">
+              </view>
+              <view class="column1">
                 <block wx:for="{{Week.time}}" wx:for-item="itemName" >
                   <block wx:if="{{ itemName}}">
                     <image class="iconclass" src="/image/yes.png"></image>
