@@ -282,7 +282,7 @@ Page({
     build.find({
       success: function (results) {
         wx.hideLoading();
-        if(results.length>=30)
+         if(results.length>=30)
         {
           that.setData({
             openinfor1: true,

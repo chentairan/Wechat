@@ -265,7 +265,6 @@ page
 .flex_row
 {
   position:relative;
-  left:100rpx;
   width:325rpx;
   float:left;
 }
@@ -377,7 +376,7 @@ page
   height:15rpx;
   position:relative;
   z-index:0;
-  right:10rpx;
+  left:85rpx;
   top:210rpx;
   margin:0 20rpx 0 0;
 }
