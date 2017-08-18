@@ -74,7 +74,7 @@
 
 
   <!--列表数据显示-->
-  <view hidden="{{openinfor1}}">
+  <view wx:if="{{openinfor1==false}}">
     <block wx:for="{{inforlist}}"  wx:for-item="Classroom"  wx:if="{{Classroom.cname!=null}}">
         <block wx:for="{{Classroom.Nweek}}" wx:for-item="Nweek"  wx:if="{{Nweek.nname!=null}}">
           <view class="Nweek">{{Nweek.nname}}</view>
@@ -112,7 +112,7 @@
       </block>
     </view>
   
-  <view hidden="{{!openinfor1}}">
+  <view wx:else>
     <block wx:for="{{inforlist}}"  wx:for-item="Classroom"  wx:if="{{Classroom.cname!=null}}">
         <block wx:for="{{Classroom.Nweek}}" wx:for-item="Nweek"  wx:if="{{Nweek.nname!=null}}">
           <block wx:for="{{Nweek.week}}" wx:for-item="Week" wx:if="{{Week.wname!=null}}">
