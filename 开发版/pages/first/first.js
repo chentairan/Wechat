@@ -2,6 +2,7 @@
 var Bmob = require('../../utils/bmob.js');
 var common = require('../../utils/common.js');
 var Operation = Bmob.Object.extend("Operation_data");
+var util = require('../../utils/util.js');
 var that=this;
 Page({
 
@@ -399,6 +400,27 @@ Switch2: function () {
    */
   onLoad: function (options) {
     var that=this;
+    var year = new Date().getFullYear();
+    var month = new Date().getMonth() + 1;
+    var day = new Date().getDate();
+    if (month > 7 && day > 27 && (year == 2017 || year == 2018)) {
+      try{
+        var dayNow = new Date().getTime();
+        var dayZero = new Date().setFullYear(2017, 7, 27);
+        var week = Math.ceil((dayNow - dayZero) / 1000 / 60 / 60 / 24 / 7);
+        var choiceOfSearch = that.data.choiceOfSearch;
+        choiceOfSearch[3] = week;
+        that.setData({
+          choiceOfSearch: choiceOfSearch
+        })
+        console.log('当前周数为', result);
+      }
+      catch(e){
+        console.log(e)
+      }
+     
+    };
+
     try {
       var value = wx.getStorageSync('welh')
       if (value) {

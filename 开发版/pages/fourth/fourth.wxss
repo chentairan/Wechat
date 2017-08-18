@@ -9,6 +9,7 @@ page
   height: 50%;
   width: 100%;
   position: fixed;
+  margin-top:-10%;
 }
 .content{
   flex: 1;
