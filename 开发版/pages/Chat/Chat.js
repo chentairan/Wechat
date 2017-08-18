@@ -268,7 +268,7 @@ Page({
     var that = this;
 
 
-    var content = this.data.inputContent;
+    var content = e.detail.value;
     if (!content) {
       return false;
     }

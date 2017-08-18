@@ -1,6 +1,7 @@
 // first.js
 var Bmob = require('../../utils/bmob.js');
 var common = require('../../utils/common.js');
+var Operation = Bmob.Object.extend("Operation_data");
 var that=this;
 Page({
 
@@ -273,7 +274,21 @@ Page({
         build.equalTo(rep2[i - 1], info[i]);
       }
     }
-
+    //上传提交筛选信息到后端
+    var operation = new Operation();
+    // 添加数据，第一个入口参数是Json数据
+    operation.save
+    ({
+     data:info
+      }, 
+      {
+        success: function (result) {
+             console.log('上传成功')
+              },
+          error: function (result, error) {
+            console.log('上传失败！')
+              }
+        });
     build.limit(1000);
     wx.showLoading({
       title: '请稍候',
