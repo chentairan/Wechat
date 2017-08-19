@@ -17,7 +17,7 @@
     </scroll-view>
     <view class="input-panel">
         <button class="pic-icon"></button>
-        <input type="text" value="{{inputContent}}" bindchange="changeInputContent" bindconfirm="sendMessage" class="send-input" confirm-type="send"></input>
+        <input type="text" value="{{inputContent}}" bindchange="changeInputContent" bindconfirm="sendMessage" class="send-input" confirm-type="send" confirm-hold="true"></input>
         
     </view>
 </view>
