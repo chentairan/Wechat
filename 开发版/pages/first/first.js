@@ -242,13 +242,25 @@ Page({
 
 /*后端查找*/
  Search: function (e) {
-   if (this.data.choiceOfSearch[0]!=0)
+   if (this.data.choiceOfSearch[0]==0)
    {
       this.setData
       ({
-        blank: false
+        blank: true
       })
+      
+      wx.showToast({
+        title: '请选择条件',
+        image: '/image/warning.png',
+        duration: 2000,
+        mask:'true'
+      })
+      return;
    }
+   this.setData
+     ({
+       blank: false
+     })
     var that = this;
     //映射
     var rep1 = ["li", "zonga", "zongb"];
