@@ -1975,7 +1975,6 @@
    */
 
   (function (exports, io) {
-    console.log('9999', exports, 'lllll', io, '000000');
     /**
      * Parser namespace.
      *

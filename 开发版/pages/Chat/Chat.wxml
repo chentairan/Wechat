@@ -1,4 +1,4 @@
-<!--pages/interface/chatroom/chatroom.wxml-->
+<!--pages/Chat/Chat.wxml-->
 
 <view class="page-wrap">
     <scroll-view class="chat-container" scroll-y scroll-into-view="{{lastMessageId}}" scroll-top="9999999999">
@@ -16,7 +16,7 @@
         </view>
     </scroll-view>
     <view class="input-panel">
-        <button class="pic-icon"></button>
+        
         <input type="text" value="{{inputContent}}" bindchange="changeInputContent" bindconfirm="sendMessage" class="send-input" confirm-type="send" confirm-hold="true"></input>
         
     </view>

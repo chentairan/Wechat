@@ -435,10 +435,7 @@ Switch2: function () {
 
     try {
       var value = wx.getStorageSync('welh')
-      if (value) {
-        console.log('非第一次使用')
-      }
-      else{
+      if (!value) {
         that.setData({
           wel_value:false
         })

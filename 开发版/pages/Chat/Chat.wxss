@@ -1,4 +1,4 @@
-/* pages/interface/chatroom/chatroom.wxss */
+/* pages/Chat/Chat.wxss */
 button {
 margin-top:0rpx;
 margin-bottom:0rpx;
