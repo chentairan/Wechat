@@ -1,2 +1,16 @@
 <!--Sign.wxml-->
-<text>Sign.wxml</text>
+  <view class="form">
+    <!--<form class="register-form">
+      <input type="text" placeholder="name"/>
+      <input password placeholder="password"/>
+      <input type="text" placeholder="email address"/>
+      <button>create</button>
+      <view class="message">Already registered?</view>
+    </form>-->
+    <form class="login-form">
+      <input type="text" placeholder="username"/>
+      <input password placeholder="password"/>
+      <navigator url="../Change/Change">login</navigator>
+      <view class="message">Not registered?</view>
+    </form>
+  </view>

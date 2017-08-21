@@ -18,6 +18,10 @@ Page({
       {
         name:'关于我们',
         path:'/pages/fourth/fourth'
+      },
+      {
+        name:'管理员',
+        path:'/pages/Sign/Sign'
       }
     ]
   },
