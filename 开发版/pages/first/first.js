@@ -421,9 +421,12 @@ Switch2: function () {
         var dayZero = new Date().setFullYear(2017, 7, 27);
         var week = Math.ceil((dayNow - dayZero) / 1000 / 60 / 60 / 24 / 7);
         var choiceOfSearch = that.data.choiceOfSearch;
+        var multiIndex_time = that.data.multiIndex_time;     
         choiceOfSearch[3] = week;
+        multiIndex_time[0] = week; 
         that.setData({
-          choiceOfSearch: choiceOfSearch
+          choiceOfSearch: choiceOfSearch,
+          multiIndex_time: multiIndex_time
         })
         console.log('当前周数为', result);
       }
