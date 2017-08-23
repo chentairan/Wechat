@@ -234,7 +234,8 @@ Page({
   clear: function (e) {
     this.setData({
       inforlist: null,
-      blank: true
+      blank: true,
+      choiceOfSearch: [0, 0, 0, 0, 0, 0]
     })
     console.log('清屏');
   }
@@ -261,6 +262,10 @@ Page({
      ({
        blank: false
      })
+
+   wx.pageScrollTo({
+     scrollTop: 0
+   })
     var that = this;
     //映射
     var rep1 = ["li", "zonga", "zongb"];
