@@ -230,12 +230,15 @@ Page({
     });
   },
 
-  /*清屏*/
+
+/*清屏*/
   clear: function (e) {
     this.setData({
       inforlist: null,
       blank: true,
-      choiceOfSearch: [0, 0, 0, 0, 0, 0]
+      choiceOfSearch: [0, 0, 0, 0, 0, 0],
+      multiIndex_time: [0, 0, 0],      
+      multiIndex_classroom: [0, 0, 0],
     })
     console.log('清屏');
   }
