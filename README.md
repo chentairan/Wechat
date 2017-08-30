@@ -8,7 +8,10 @@
 <p><b>关于开发：</b>熟练js，开发逻辑层或熟练交互设计的实现，对CSS样式熟练</p>
 <img src="https://github.com/chentairan/Wechat/blob/master/image/组织结构.png">
 </p>
-
+<img src="https://github.com/chentairan/Wechat/blob/master/image/添加至桌面.png">
+</p>
+<img src="https://github.com/chentairan/Wechat/blob/master/image/桌面.png">
+</p>
 <h1><b>日常运营：</b></h1>
 
 <p>
