@@ -3,6 +3,9 @@
 <h1>BIT教室项目：</h1>
 <br/>
 <h2>按照三方面来进行维护，目前人手较少，所以没有明确分工。</h2>
+<h3><b>需要设计和开发人员</b></h3>
+<p><b>关于设计：</b>要求熟悉BIT教室小程序的定位，熟悉小程序设计规范（参见官方文档），有审美，可以快速制作出原型界面（推荐使用Adobe XD）</p>
+<p><b>关于开发：</b>熟练js，开发逻辑层或熟练交互设计的实现，对CSS样式熟练</p>
 <img src="https://github.com/chentairan/Wechat/blob/master/image/组织结构.png">
 </p>
 
@@ -76,10 +79,5 @@
 </p>
 
 
-
-<p>后端文档：http://docs.bmob.cn/data/wechatApp/b_developdoc/doc/index.html</p>
-<p>Bmob API文档：http://docs.bmob.cn/data/JavaScript/i_doc/doc/index.html</p>
-<p>前端自由发挥</p>
-<p>进阶CSS可参考：https://codepen.io</p>
 </body>
 </html>
