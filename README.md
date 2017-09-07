@@ -22,6 +22,8 @@
 活动海报审批：<br/>
 需要两人,利用辅助审批小程序查看已上传的海报，分析内容的健康性和真实性。<br/>
 点击活动右下角的空心圈或实心圆实现活动信息的审批通过和下架<br/>
+<img src="https://github.com/chentairan/Wechat/blob/master/image/nav.png">
+</p>
 </p>
 
 <h1><b>推广宣传：（进度5%）</b></h1>
