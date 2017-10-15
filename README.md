@@ -98,7 +98,16 @@
 2. 修复教室查询bug<br/>
 3. 迫于压力，将聊聊功能移入意见反馈<br/>
 </p>
-
+<h2>寒假版本,代号：Darwin</h2>
+<p>
+1. 重新设计教室查询界面<br/>
+2. 全新首页，整合目前三个功能入口（找教室、活动、便签）<br/>
+3. 新功能：通知<br/>
+	通过python爬虫，爬取各大学院网站通知公告和教务处信息，存入MySQL数据库中，通过PHP上传至后端，前端进行展示。<br/>
+	后期当功能稳定后，推出短信提醒服务，定价为每月2元（根据通知数量决定,后端短信发送为0.03元/条），可能会实现小部分盈利，弥补后端的开销<br/>
+4. 全新的统一配色，全新的icon<br/>
+5. 改善聊聊功能，重新上线<br/>
+</p>
 
 <p>后端文档：http://docs.bmob.cn/data/wechatApp/b_developdoc/doc/index.html</p>
 <p>Bmob API文档：http://docs.bmob.cn/data/JavaScript/i_doc/doc/index.html</p>
