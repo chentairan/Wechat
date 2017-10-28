@@ -1,0 +1,276 @@
+<!--first-->
+<view class="mask"  hidden="{{wel_value}}">
+  <view class="welcome">
+    <image src="/image/logo.png" class="wel_logo"></image>
+    <view class="wel_title">BIT教室</view>
+    <text class="wel_text">
+    快速查询教室使用状态
+    你要的活动海报在这里
+    班级建立自己的小宇宙
+    </text>
+    <view class="wel_tap" bindtap="wel">
+    立即体验
+    </view>
+  </view>
+</view>
+
+<!--菜单栏-->
+<view class="contain">
+  <view  class="tab">
+    <picker mode="multiSelector" bindchange="bindMultiPickerChange_1" bindcolumnchange="bindMultiPickerColumnChange_1" value="{{multiIndex_classroom}}" range="{{multiArray_classroom}}">
+      <view class="text">
+        教室
+      </view>
+      <view class="triangle"></view>
+    </picker>  
+  </view>
+
+  <view  class="tab">
+    <picker mode="multiSelector" bindchange="bindMultiPickerChange_2" bindcolumnchange="bindMultiPickerColumnChange_2" value="{{multiIndex_time}}" range="{{multiArray_time}}">
+      <view class="text">
+        时间
+      </view>
+      <view class="triangle"></view>
+    </picker>  
+  </view>
+</view>
+
+<!--搜索按钮-->
+  <movable-area style="z-index:1; position:fixed; left:5rpx; height:850rpx; width:740rpx; top:200rpx;backgroung:blue;">
+    <movable-view style="height: 130rpx; width: 130rpx; border-radius: 5rpx;" x="{{x}}" y="{{y}}" direction="all" out-of-bounds="true">
+    <view class="button" hover="true" hover-stay-time="0" catchtap="Search" >
+      <image  class="Search-pic" src="/image/Search.png" mode="aspectFill"></image>
+    </view>
+    </movable-view>
+  </movable-area>
+
+<!--清屏按钮-->
+<view hover="true" bindtap="clear" class="clear">
+ <image src="/image/Trash.png" class="clear-pic"></image>
+</view>
+
+
+<!--白屏显示-->
+<view wx:if="{{blank==true}}">
+  <text  class="blank">{{name}}</text>
+  <view class="blank_nav">
+    <navigator style="z-index:2;" url="/pages/fourth/fourth" >关于我们</navigator>
+    <view class="rescouse">数据来源于阳光服务队</view>
+  </view>
+</view>
+
+
+  <!--信息样式转换按钮-->
+  <view class='{{openinfor1?"infor-button1":"infor-button-1"}}' hover="true" bindtap="Switch1">
+    <image  class="inforSearch1-pic" src= "/image/inforSearch1.png"></image>
+  </view>
+  <view class='{{openinfor2?"infor-button-2":"infor-button2"}}' hover="true" bindtap="Switch2">
+    <image  class="inforSearch1-pic" src= "/image/inforSearch2.png"></image>
+  </view>
+  
+<view class='{{state?"wrong_v1":"wrong_v2"}}' hover="true" bindtap="wrong" >
+  <text class='{{state?"wrong_t1":"wrong_t2"}}'>
+    教室信息报错
+  </text>
+  
+</view>
+
+  <!--列表数据显示-->
+  <view wx:if="{{!openinfor1}}">
+    <block wx:for="{{inforlist}}"  wx:for-item="Classroom"  wx:if="{{Classroom.cname!=null}}">
+        <block wx:for="{{Classroom.Nweek}}" wx:for-item="Nweek"  wx:if="{{Nweek.nname!=null}}">
+          <view class="Nweek">{{Nweek.nname}}</view>
+          <view  class="cname">{{Classroom.cname}}</view>
+          <block wx:for="{{Nweek.week}}" wx:for-item="Week" wx:if="{{Week.wname!=null}}">
+            <view class="inforbar">
+              <text class="holdandtype">
+                规模：{{Classroom.number}}
+            
+                类型：{{Classroom.type}}
+
+              </text>
+              <view class="wname">{{Week.wname}}</view>
+              <view class="line"></view>
+              <view class="iconback">
+              <block wx:if="{{!lessonflag}}">
+                <view class="column1">
+                <view class="time">第一节</view>
+                <view class="time">第二节</view>
+                <view class="time">第三节</view>
+                <view class="time">第四节</view>
+                <view class="time">第五节</view>
+                </view>
+                <view class="column1">
+                  <block wx:for="{{Week.time}}" wx:for-item="itemName" >
+                    <block wx:if="{{ itemName}}">
+                      <image class="iconclass" src="/image/yes.png"></image>
+                    </block>
+                    <block wx:else>
+                      <image class="iconclass" src="/image/no.png"></image>
+                    </block>
+                  </block>
+                </view>
+              </block>
+              <block wx:else>
+                <view class="column1">
+                  <view class="time3">第{{lesson}}节</view>
+                  <block wx:for="{{Week.time}}" wx:for-item="itemName" wx:for-index="indexname">
+                    <block wx:if="{{indexname==lessonnumber-1}}">
+                      <block wx:if="{{ itemName}}">
+                        <image class="iconclass2" src="/image/yes.png"></image>
+                      </block>
+                      <block wx:else>
+                        <image class="iconclass2" src="/image/no.png"></image>
+                      </block>
+                    </block>
+                  </block>
+                </view>
+              </block>
+              </view>
+            </view>
+          </block>
+        </block>
+      </block>
+    </view>
+  
+  <view wx:if="{{openinfor1}}">
+    <block wx:for="{{inforlist}}"  wx:for-item="Classroom"  wx:if="{{Classroom.cname!=null}}">
+        <block wx:for="{{Classroom.Nweek}}" wx:for-item="Nweek"  wx:if="{{Nweek.nname!=null}}">
+          <block wx:for="{{Nweek.week}}" wx:for-item="Week" wx:if="{{Week.wname!=null}}">
+            <view class="inforblock">
+            <view class="column1">
+            <view class="row2">
+           <view class="Nweek1">{{Nweek.nname}}</view>
+           <view class="cname1"> {{Classroom.cname}}</view>
+            </view>
+              <view class="wname1">{{Week.wname}}</view>
+              <view class="line1"></view>
+              <view class="row1">
+                <block wx:if="{{!lessonflag}}">
+                  <view class="column1">
+                    <view class="time1">第一节</view>
+                    <view class="time1">第二节</view>
+                    <view class="time1">第三节</view>
+                    <view class="time1">第四节</view>
+                    <view class="time1">第五节</view>
+                  </view>
+                </block>
+                <block wx:else>
+                    <view class="time4">
+                    <view>第</view>
+                    <view>{{lesson}}</view>
+                    <view>节</view>
+                    </view>
+                </block>
+                  <view class="line2"></view>
+                <block wx:if="{{!lessonflag}}">
+                  <view class="column1">
+                    <view class="time2">8:00-9:35</view>
+                    <view class="time2">9:50-11:25</view>
+                    <view class="time2">13:20-15:55</view>
+                    <view class="time2">15:10-16:45</view>
+                    <view class="time2">18:30-20:55</view>
+                  </view>
+                  <view class="column1">
+                    <block wx:for="{{Week.time}}" wx:for-item="itemName" >
+                      <block wx:if="{{ itemName}}">
+                        <image class="iconclass1" src="/image/yes.png"></image>
+                      </block>
+                      <block wx:else>
+                        <image class="iconclass1" src="/image/no.png"></image>
+                      </block>
+                    </block>
+                  </view>
+                </block>
+                <block wx:else>
+                  <block wx:for="{{Week.time}}" wx:for-item="itemName" wx:for-index="indexname">
+                    <block wx:if="{{indexname==lessonnumber-1}}">
+                      <block wx:if="{{ itemName}}">
+                        <image class="iconclass3" src="/image/yes.png"></image>
+                      </block>
+                      <block wx:else>
+                        <image class="iconclass3" src="/image/no.png"></image>
+                      </block>
+                    </block>
+                  </block>
+                </block>
+              </view>
+            </view>
+          </view>
+        </block>
+      </block>
+    </block>
+  </view>
+
+
+<!--报错-->
+<view class="mask"  hidden="{{wrong}}" bindtap="wrong"></view>
+<view class="wrong_c" hidden="{{wrong}}" style="z-index:12">
+  <image src="/image/wrong.png" class="wrong_l"></image>
+
+  <view class="wrong_1">当前周:
+  <view class="wrong_1_">
+  {{Nowweek}}
+  </view>
+   周
+  </view>
+  <view class="{{li}}" bindtap="wli">
+    理教
+  </view>
+  <view class="{{za}}" bindtap="wza">
+    综教A
+  </view>
+  <view class="{{zb}}" bindtap="wzb">
+    综教B
+  </view>
+
+  <text class="wrong_3">楼层：</text>
+  <input type="number" placeholder="填写数字如1" placeholder-class="holder" maxlength="1" bindblur="floornum" class="wrong_i3" value="{{floornum}}" />
+  <text class="wrong_4">教室号：</text>
+  <input type="number" placeholder="教室101填1" placeholder-class="holder" maxlength="2" bindblur="classnum" class="wrong_i4" value="{{classnum}}"/>
+  <view wx:if="{{single}}">
+    <text class="wrong_5">起始周：</text>
+    <input type="number" placeholder="填写数字如1"  placeholder-class="holder" maxlength="2" bindblur="startnum" class="wrong_i5" value="{{startnum}}"/>
+    <text class="wrong_6">结束周：</text>
+    <input type="number" placeholder="填写数字如2"  placeholder-class="holder" maxlength="2" bindblur="endnum" class="wrong_i6" value="{{endnum}}"/>
+    <view class="wrong_line c"></view>
+    <view class="wrong_line d"></view>
+  </view>
+  <view wx:else>
+    <text class="wrong_5">修改周：</text>
+    <input type="number" placeholder="填写数字如1" placeholder-class="holder" maxlength="2" bindblur="singleweek" class="wrong_i5" value="{{singleweek}}"/>
+    <view class="wrong_line c"></view>
+  </view>
+
+  <text class="wrong_7">星期：</text>
+  <input type="number" placeholder="填写数字如1" placeholder-class="holder" maxlength="1" bindblur="weeknum" class="wrong_i7" value="{{weeknum}}"/>
+  <text class="wrong_8">时间段</text>
+  <input type="number" placeholder="填写数字如1" placeholder-class="holder" maxlength="1" bindblur="time" class="wrong_i8" value="{{time}}"/>
+
+
+
+  
+
+  <view class="wrong_ra1" bindtap="ra1">
+    <icon type="{{ra1}}" size="10"/>
+    <view class="wrong_10">被占用</view>
+  </view>
+
+  <view class="wrong_ra2" bindtap="ra2">
+    <icon type="{{ra2}}" size="10"/>
+    <view class="wrong_10">空闲</view>
+  </view>
+
+  <view class="wrong_ra3" bindtap="ra3">
+    <icon type="{{ra3}}" size="10"/>
+    <view class="wrong_10">单周</view>
+  </view>
+
+  <view class="wrong_line a"></view>
+  <view class="wrong_line b"></view>
+  <view class="wrong_line e"></view>
+  <view class="wrong_line f"></view>
+
+
+  <view class="wrong_9" bindtap="sendinfo" >提交</view>
+</view>

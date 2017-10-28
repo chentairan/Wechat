@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/first/first",
+    "pages/second/second",
+    "pages/third/third",
+    "pages/fourth/fourth",
+    "pages/Thank/Thank",
+    "pages/Chat/Chat",
+    "pages/Poster/Poster",
+    "pages/Upload/Upload",
+    "pages/Search/Search",
+    "pages/Future/Future",
+    "pages/Homework/Homework",
+    "pages/Editor/Editor",
+    "pages/Repassword/Repassword"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#5383BB",
+    "navigationBarTitleText": "BIT教室",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#a5a5a5",
+    "selectedColor": "#5383BB",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/first/first",
+        "text": "找教室",
+        "iconPath": "/image/find.png",
+        "selectedIconPath": "/image/find-2.png"
+      },
+      {
+        "pagePath": "pages/Future/Future",
+        "text": "小工具",
+        "iconPath": "/image/future.png",
+        "selectedIconPath": "/image/future-2.png"
+      },
+      {
+        "pagePath": "pages/second/second",
+        "text": "我的",
+        "iconPath": "/image/user.png",
+        "selectedIconPath": "/image/user-2.png"
+      }
+    ]
+  }
+}

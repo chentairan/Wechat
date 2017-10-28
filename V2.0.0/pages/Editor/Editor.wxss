@@ -1,0 +1,86 @@
+/* pages/Editor/Editor.wxss */
+page 
+{
+  background-color: #FAFAFA;
+}
+.editor
+{
+  width: 650rpx;
+  height: 940rpx;
+  background-color: #FAFAFA;
+  font-size: 32rpx;
+  padding: 50rpx;
+}
+.submit
+{
+  width: 222rpx;
+  height: 76rpx;
+  background-color:#E9A63B;
+  color: white;
+  box-shadow: 0 6rpx 12rpx rgba(0, 0, 0, 0.16);
+  border-radius: 16rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  left: 264rpx;
+  bottom: 134rpx
+}
+.pic
+{
+  width: 60rpx;
+  height: 60rpx;
+}
+.text
+{
+  font-size: 16rpx;
+  color: #e3e3e3;
+}
+.timer
+{
+  position: fixed;
+  bottom: 18rpx;
+  left: 94rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Homework
+{
+  position: fixed;
+  bottom: 18rpx;
+  left: 346rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.activity
+{
+  position: fixed;
+  bottom: 18rpx;
+  left: 604rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.line1
+{
+  position: fixed;
+  bottom: 24rpx;
+  left: 242rpx;
+  background-color: #F8AC08;
+  height: 54rpx;
+  width: 2rpx;
+}
+.line2
+{
+  position: fixed;
+  bottom: 24rpx;
+  left: 508rpx;
+  background-color: #F8AC08;
+  height: 54rpx;
+  width: 2rpx;
+}

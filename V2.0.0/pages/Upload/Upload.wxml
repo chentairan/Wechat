@@ -1,0 +1,19 @@
+<!--Upload.wxml-->
+<view class="title">填写活动信息</view>
+<view class="line"></view>
+<view class="line_i t1"></view>
+<view class="line_i t2"></view>
+<view class="line_i t3"></view>
+<input class="name" placeholder="活动名：" placeholder-class="text" bindblur="name" />
+<input class="time" placeholder="活动时间：" placeholder-class="text" bindblur="time" />
+<input class="position" placeholder="活动地点：" placeholder-class="text" bindblur="place" />
+<view class="tap" bindtap="image"  hidden="{{state}}">
+  <view class="row"></view>
+  <view class="column"></view>
+</view>
+<icon type="success" class="success" size="33" hidden="{{!state}}" />
+<view class="image">添加图片</view>
+<view class="image_submit"></view>
+<view class="submit" bindtap="submit">
+  提交
+</view>

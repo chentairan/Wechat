@@ -1,0 +1,22 @@
+<!--pages/Editor/Editor.wxml-->
+<!--文字编辑、提交-->
+<textarea class='editor' bindfocus='editor' bindblur='done' placeholder='编辑并选择便签类型，点击提交' value='{{value}}' maxlength='-1'></textarea>
+<view class='submit' bindtap='submit' hidden='{{hide}}'>提交</view>
+
+<!--便签类型-->
+<view class='timer' bindtap='timer'>
+  <image src='{{timer}}' class='pic'></image>
+  <view class='text' style='color:{{timer_text}}'>提醒</view>
+</view>
+<view class='Homework' bindtap='Homework'>
+  <image src='{{Homework}}' class='pic'></image>
+  <view class='text' style='color:{{Homework_text}}'>作业</view>
+</view>
+<view class='activity' bindtap='activity'>
+  <image src='{{activity}}' class='pic'></image>
+  <view class='text' style='color:{{activity_text}}'>活动</view>
+</view>
+
+<!--分割装饰线-->
+<view class='line1'></view>
+<view class='line2'></view>

@@ -1,0 +1,94 @@
+/* pages/Homework/Homework.wxss */
+page 
+{
+  background-color: #EDEDED;
+}
+.cell
+{
+  width: 750rpx;
+  height: 200rpx;
+  margin-bottom: 40rpx;
+  background-color: white;
+}
+.date
+{
+  display: flex;
+  position: relative;
+  top: 40rpx;
+}
+.day
+{
+  position: absolute;
+  left: 34rpx;
+  font-size: 28rpx;
+  color: black;
+}
+.time
+{
+  position: absolute;
+  left: 156rpx;
+  font-size: 28rpx;
+  color: black;
+}
+.view
+{
+  position: relative;
+  left: 34rpx;
+  top: 100rpx;
+  width: 716rpx;
+  font-size: 32rpx;
+  color: black;
+}
+.editor
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 100%;
+  background-color: #E9A63B;
+  position: fixed;
+  bottom: 40rpx;
+  left: 316rpx;
+}
+.image
+{
+  width: 60rpx;
+  height: 60rpx;
+}
+.type
+{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 630rpx;
+  width: 80rpx;
+  height: 80rpx;
+}
+.tip
+{
+  color: #a5a5a5;
+  font-size: 32rpx;
+  position: fixed;
+  top: 40%;
+  left: 311rpx;
+}
+.logout
+{
+  display: flex;
+  position: fixed;
+  bottom: 80rpx;
+  left: 120rpx;
+  color: #E9A63B;
+  font-size: 32rpx;
+}
+.rep
+{
+  display: flex;
+  position: fixed;
+  bottom: 80rpx;
+  left: 501rpx;
+  color: #E9A63B;
+  font-size: 32rpx;
+}

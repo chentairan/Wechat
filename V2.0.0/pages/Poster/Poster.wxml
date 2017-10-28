@@ -1,0 +1,33 @@
+<!--Poster.wxml-->
+<view class="approve">
+  <view class="text1">审核中</view>
+</view>
+<view class="upload" bindtap="upload">上传</view>
+<view class="count">{{num}}</view>
+
+<view class="fix">
+<view wx:for="{{info}}" wx:for-item="post" class="template" >
+  <view class="title">
+    <view class="Name">
+    {{post.Name}}
+    </view>
+    <view class="time">
+    {{post.time}}
+    </view>
+  </view>
+  <image src="{{post.image}}" mode="widthFix" class="image"></image>
+  <view class="bottom">
+    <view class="position">
+      {{post.position}}
+    </view>
+    <block wx:for="{{posterlist}}" wx:for-item="item" >
+      <block wx:if="{{post.Id==item.Id}}">
+      <image src='{{item.lovestate?"/image/love_f.png":"/image/love_b.png"}}' class="png" bindtap="lovetap" data-id="{{post.Id}}"></image>
+      </block>
+    </block>
+    <view class="love">
+      点赞人数{{post.love}}人
+    </view>
+  </view>
+</view>
+</view>

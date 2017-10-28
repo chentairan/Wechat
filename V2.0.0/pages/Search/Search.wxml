@@ -1,0 +1,12 @@
+<!--Homework.wxml-->
+<view class="title">班级便签</view>
+<view class="line"></view>
+<view class="input1">输入班号</view>
+<view class="input2">{{input2}}</view>
+<view class="line_i t1"></view>
+<view class="line_i t2"></view>
+<input class="class" type="number" placeholder-class="text" bindblur="number" />
+<input class="password" type="text" password='{{state}}' placeholder-class="text" bindblur="password" />
+<view class="submit" bindtap="submit">
+  {{find}}
+</view>
