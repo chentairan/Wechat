@@ -7,5 +7,7 @@
 <p>有意愿加入我们团队，可以加微信：ctrTom（仅限BIT在校学生）</p>
 <h2>寒假版本,代号：Darwin</h2>
 <p>敬请期待！</p>
+<h2>计划采用react native框架移植小程序到app端</h2>
+<p>需要Objective-c或Java</p>
 </body>
 </html>
