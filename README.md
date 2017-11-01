@@ -10,9 +10,9 @@
 <h2>计划采用React Native框架移植小程序到app端</h2>
 <p>需要Objective-c、Java、JSX、React</p>
 <p>参考资料：</p>
-<a href="http://reactnative.cn/docs/0.49">React Native开发文档</a>
-<a href="http://www.ruanyifeng.com/blog/2015/03/react.html">React 入门实例教程</a>
-<a href="http://es6.ruanyifeng.com">ECMAScript 6入门</a>
+<a href="http://reactnative.cn/docs/0.49">1.React Native开发文档</a><br/>
+<a href="http://www.ruanyifeng.com/blog/2015/03/react.html">2.React 入门实例教程</a><br/>
+<a href="http://es6.ruanyifeng.com">3.ECMAScript 6入门</a><br/>
 <p>
 	待验证问题：安卓、iOS后端的使用，是否可以和当前共用。<br/>
 	React Native和原生代码之间的关系<br/>
